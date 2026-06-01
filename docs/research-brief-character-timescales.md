@@ -2,6 +2,9 @@
 
 _Date:_ 2026-06-01
 
+Portfolio status: part of `full_research` track
+`docs/full-research/cyclic-representation-probes.md`.
+
 ## Abstract
 
 Recent grokking work increasingly frames delayed generalization as competition between a fast

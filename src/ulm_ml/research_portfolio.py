@@ -1,0 +1,114 @@
+"""Binary portfolio map for ULM ML research threads.
+
+The user-facing rule is intentionally harsh: a project is either a full research
+track with a concrete evidence plan, or it is given up as an active project.
+This module gives tests and future agents one compact source of truth.
+"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+from typing import Literal
+
+ResearchStatus = Literal["full_research", "given_up"]
+
+
+@dataclass(frozen=True)
+class ResearchProject:
+    """One research thread and its current binary verdict."""
+
+    slug: str
+    title: str
+    status: ResearchStatus
+    verdict: str
+    primary_doc: str
+    representative_command: str | None
+
+
+PROJECTS: tuple[ResearchProject, ...] = (
+    ResearchProject(
+        slug="cyclic-representation-probes",
+        title="Cyclic Representation Probes",
+        status="full_research",
+        verdict=(
+            "Merged modular spectral diagnostics, modular character baselines, and "
+            "phase-state tracking into one research track on cyclic representations."
+        ),
+        primary_doc="docs/full-research/cyclic-representation-probes.md",
+        representative_command=(
+            "python experiments/modular_spectral_probe.py --modulus 31 "
+            "--fractions 0.05 0.10 0.20 --seeds 0 1 2 3"
+        ),
+    ),
+    ResearchProject(
+        slug="symmetry-sparse-recovery",
+        title="Symmetry-Augmented Sparse Recovery",
+        status="full_research",
+        verdict=(
+            "Strict one-to-one recovery improves under the correct cyclic action and "
+            "fails under a size-matched shuffled-action control."
+        ),
+        primary_doc="docs/full-research/symmetry-sparse-recovery.md",
+        representative_command="python experiments/symmetry_augmented_sparse_recovery.py",
+    ),
+    ResearchProject(
+        slug="sequence-memory-interference",
+        title="Sequence-Memory Interference",
+        status="full_research",
+        verdict=(
+            "Compact fast-weight memories are now framed as an interference benchmark "
+            "with load curves against nearest-neighbor retrieval."
+        ),
+        primary_doc="docs/full-research/sequence-memory-interference.md",
+        representative_command=(
+            "python experiments/sequence_memory/associative_recall_fast_weights.py "
+            "--epochs 8 --key-dims 16 32 64 --train-size 2048 --test-size 1024"
+        ),
+    ),
+    ResearchProject(
+        slug="adaptive-self-consistency",
+        title="Adaptive Posterior Self-Consistency",
+        status="given_up",
+        verdict=(
+            "Given up as active research until cached real-model answer traces exist; "
+            "current synthetic simulator remains only replay infrastructure."
+        ),
+        primary_doc="docs/given-up/adaptive-self-consistency.md",
+        representative_command=None,
+    ),
+    ResearchProject(
+        slug="egpr-prototype-replay",
+        title="EGPR Prototype Replay",
+        status="given_up",
+        verdict=(
+            "Given up as an adaptation method because true no-adapt baselines beat or "
+            "match online prototype updates on the digits shifts."
+        ),
+        primary_doc="docs/given-up/egpr-prototype-replay.md",
+        representative_command=None,
+    ),
+    ResearchProject(
+        slug="pace-bias-tta",
+        title="PACE Bias-Only TTA",
+        status="given_up",
+        verdict=(
+            "Given up as a standalone project; it survives only as a narrow "
+            "label-prior-drift diagnostic baseline."
+        ),
+        primary_doc="docs/given-up/pace-bias-tta.md",
+        representative_command=None,
+    ),
+)
+
+
+def projects_by_status(status: ResearchStatus) -> tuple[ResearchProject, ...]:
+    """Return projects with a given binary status."""
+
+    return tuple(project for project in PROJECTS if project.status == status)
+
+
+def project_slugs() -> set[str]:
+    """Return all registered portfolio slugs."""
+
+    return {project.slug for project in PROJECTS}
+

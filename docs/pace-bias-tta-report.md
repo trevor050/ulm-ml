@@ -2,6 +2,9 @@
 
 Date: 2026-06-01
 
+Portfolio verdict: **given up as standalone research**. Keep PACE only as a
+narrow prior-drift diagnostic baseline. See `docs/given-up/pace-bias-tta.md`.
+
 ## One-line claim
 
 A class-bias-only test-time adapter with a conservative entropy floor and a weak source-prior anchor is a cheap, auditable way to repair **logit prior drift** without touching model weights; on a 5-seed corrupted/digit-logit benchmark it improved balanced-stream accuracy from **89.2% source** to **90.9% PACE**, while exposing an important negative control: image corruptions are not fixed by bias updates alone.

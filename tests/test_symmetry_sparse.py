@@ -7,6 +7,7 @@ from ulm_ml.symmetry_sparse import (
     make_orbit_dictionary,
     orbit_closure_score,
     sample_observations,
+    shuffled_coordinate_augment,
     unique_feature_recovery,
 )
 
@@ -29,6 +30,19 @@ def test_cyclic_augment_stacks_every_group_action() -> None:
     assert augmented.shape == (8, 8)
     np.testing.assert_array_equal(augmented[:2], observations)
     np.testing.assert_array_equal(augmented[2:4], np.roll(observations, config.shift, axis=1))
+
+
+def test_shuffled_coordinate_augment_is_size_matched_negative_control() -> None:
+    config = OrbitSparseConfig(ambient_dim=8, orbit_size=4, n_orbits=1)
+    observations = np.arange(16, dtype=np.float64).reshape(2, 8)
+
+    augmented = shuffled_coordinate_augment(observations, config, seed=3)
+    repeated = shuffled_coordinate_augment(observations, config, seed=3)
+
+    assert augmented.shape == (8, 8)
+    np.testing.assert_array_equal(augmented[:2], observations)
+    np.testing.assert_array_equal(augmented, repeated)
+    assert not np.array_equal(augmented[2:4], np.roll(observations, config.shift, axis=1))
 
 
 def test_metrics_recognize_ground_truth_dictionary() -> None:

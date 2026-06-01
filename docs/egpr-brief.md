@@ -1,5 +1,9 @@
 # Entropy-Gated Prototype Replay (EGPR)
 
+Portfolio verdict: **given up as an adaptation method**. Keep this document as
+a negative TTA record and safety-diagnostic scaffold. See
+`docs/given-up/egpr-prototype-replay.md`.
+
 ## One-line idea
 
 When adapting a classifier to unlabeled shifted test data, keep the source model frozen and update only a small prototype memory with low-entropy, high-confidence target examples; then interpolate frozen source logits with prototype-similarity logits at prediction time.

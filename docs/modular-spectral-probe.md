@@ -1,5 +1,8 @@
 # Modular Spectral Split Probe
 
+Portfolio status: part of `full_research` track
+`docs/full-research/cyclic-representation-probes.md`.
+
 ## One-sentence claim
 
 Before spending long runs on grokking-style modular arithmetic, measure whether the

@@ -23,6 +23,7 @@ from ulm_ml.symmetry_sparse import (
     make_orbit_dictionary,
     orbit_closure_score,
     sample_observations,
+    shuffled_coordinate_augment,
     unique_feature_recovery,
 )
 
@@ -49,10 +50,24 @@ def run_trial(
     n_samples: int,
     data_seed: int,
     fit_seed: int,
-    augment: bool,
+    augmentation: str,
 ) -> TrialResult:
     observations, _ = sample_observations(true_dictionary, n_samples, config, seed=data_seed)
-    fit_observations = cyclic_augment(observations, config) if augment else observations
+    if augmentation == "none":
+        fit_observations = observations
+        method = "baseline"
+    elif augmentation == "cyclic":
+        fit_observations = cyclic_augment(observations, config)
+        method = "cyclic_augmented"
+    elif augmentation == "shuffled":
+        fit_observations = shuffled_coordinate_augment(
+            observations,
+            config,
+            seed=10_000 * data_seed + fit_seed,
+        )
+        method = "shuffled_augmented"
+    else:
+        raise ValueError(f"unknown augmentation: {augmentation}")
     learned, mse, n_iter = fit_nmf_dictionary(
         fit_observations, config.n_features, seed=fit_seed
     )
@@ -60,7 +75,7 @@ def run_trial(
     unique_mean, unique_frac_090 = unique_feature_recovery(learned, true_dictionary)
     return TrialResult(
         n_samples=n_samples,
-        method="cyclic_augmented" if augment else "baseline",
+        method=method,
         data_seed=data_seed,
         fit_seed=fit_seed,
         loose_mean_best_cosine=loose_mean_best,
@@ -85,7 +100,7 @@ def run_experiment(
         for data_seed_index in range(n_data_seeds):
             data_seed = 100 + data_seed_index
             for fit_seed in range(n_fit_seeds):
-                for augment in (False, True):
+                for augmentation in ("none", "cyclic", "shuffled"):
                     results.append(
                         run_trial(
                             config,
@@ -93,7 +108,7 @@ def run_experiment(
                             n_samples=n_samples,
                             data_seed=data_seed,
                             fit_seed=fit_seed,
-                            augment=augment,
+                            augmentation=augmentation,
                         )
                     )
     return results

@@ -2,6 +2,10 @@
 
 ## Status
 
+Portfolio verdict: **folded into full research track** at
+`docs/full-research/cyclic-representation-probes.md`. Phase tracking is no
+longer a standalone project.
+
 Evidence level: **constructive oracle/probe**.
 
 The current root-of-unity result is an exact hand-built state update for modular
