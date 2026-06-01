@@ -34,6 +34,11 @@ docs/              research notes and decisions
 tests/             regression tests for reusable code
 ```
 
+
+## Active Research Threads
+
+- Modular spectral split probe: a low-compute diagnostic for whether modular arithmetic train splits cover the latent Fourier coordinate before launching expensive grokking runs. See `docs/modular-spectral-probe.md` and `experiments/modular_spectral_probe.py`.
+
 ## Working Pattern
 
 Use notebooks for exploration, then promote repeatable pieces into `src/ulm_ml/` and cover them with tests. Keep large data, generated artifacts, checkpoints, and secrets out of git.
