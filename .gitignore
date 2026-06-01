@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Research outputs and local-only assets
+data/**
+artifacts/**
+models/**
+reports/figures/**
+!data/.gitkeep
+!data/raw/
+!data/raw/.gitkeep
+!data/processed/
+!data/processed/.gitkeep
+!artifacts/.gitkeep
+!models/.gitkeep
+!reports/figures/.gitkeep
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
