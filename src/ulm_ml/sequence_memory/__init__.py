@@ -8,6 +8,7 @@ from ulm_ml.sequence_memory.associative_recall import (
 from ulm_ml.sequence_memory.models import (
     DeltaFastWeightsMemory,
     GatedFastWeightsMemory,
+    OrthogonalizedFastWeightsMemory,
     RecencyMemory,
     ScalarFastWeightsMemory,
 )
@@ -17,6 +18,7 @@ __all__ = [
     "AssociativeRecallDataset",
     "DeltaFastWeightsMemory",
     "GatedFastWeightsMemory",
+    "OrthogonalizedFastWeightsMemory",
     "RecencyMemory",
     "ScalarFastWeightsMemory",
     "generate_associative_recall_batch",

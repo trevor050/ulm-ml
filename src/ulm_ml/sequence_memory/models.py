@@ -59,6 +59,51 @@ class ScalarFastWeightsMemory:
 
 
 @dataclass
+class OrthogonalizedFastWeightsMemory:
+    """Fast weights that write only the component of each key not already spanned.
+
+    This is still a compact matrix memory, but it adds an online Gram-Schmidt
+    step before writing. It is a deliberately stronger interference-control
+    baseline than a scalar gate: if this helps, the next research target is key
+    orthogonalization/whitening rather than another confidence gate.
+    """
+
+    write_scale: float = 1.0
+    decay: float = 1.0
+    eps: float = 1e-6
+
+    def __post_init__(self) -> None:
+        if self.write_scale < 0.0:
+            raise ValueError("write_scale must be non-negative")
+        if not 0.0 <= self.decay <= 1.0:
+            raise ValueError("decay must lie in [0, 1]")
+        if self.eps <= 0.0:
+            raise ValueError("eps must be positive")
+
+    def predict(self, keys: np.ndarray, values: np.ndarray, query: np.ndarray) -> np.ndarray:
+        batch_size, _, key_dim = keys.shape
+        value_dim = values.shape[-1]
+        memory = np.zeros((batch_size, key_dim, value_dim), dtype=np.float32)
+        basis = np.zeros((batch_size, key_dim, key_dim), dtype=np.float32)
+
+        for position in range(keys.shape[1]):
+            key = keys[:, position, :]
+            coefficients = np.einsum("bd,bkd->bk", key, basis)
+            projection = np.einsum("bk,bkd->bd", coefficients, basis)
+            residual = key - projection
+            residual_norm = np.linalg.norm(residual, axis=-1, keepdims=True)
+            valid = residual_norm[:, 0] > self.eps
+            normalized_residual = residual / np.maximum(residual_norm, self.eps)
+            write_key = np.where(valid[:, None], normalized_residual, 0.0)
+            memory = self.decay * memory + self.write_scale * np.einsum(
+                "bd,bv->bdv", write_key, values[:, position, :]
+            )
+            if position < key_dim:
+                basis[:, position, :] = write_key
+        return np.einsum("bd,bdv->bv", query, memory)
+
+
+@dataclass
 class GatedFastWeightsMemory:
     """Fast-weights key-value memory with a scalar learned write gate.
 

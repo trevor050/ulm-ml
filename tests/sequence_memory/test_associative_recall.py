@@ -3,6 +3,7 @@ import numpy as np
 from ulm_ml.sequence_memory import AssociativeRecallConfig, generate_associative_recall_batch
 from ulm_ml.sequence_memory.models import (
     GatedFastWeightsMemory,
+    OrthogonalizedFastWeightsMemory,
     RecencyMemory,
     ScalarFastWeightsMemory,
     cosine_accuracy,
@@ -81,3 +82,33 @@ def test_scalar_fast_weights_memory_has_fixed_write_scale() -> None:
     assert active.shape == (8, 5)
     assert np.linalg.norm(active) > 0.0
     assert np.allclose(inactive, 0.0)
+
+
+def test_orthogonalized_fast_weights_controls_key_interference() -> None:
+    keys = np.array(
+        [
+            [
+                [1.0, 0.0],
+                [1.0, 0.0],
+            ]
+        ],
+        dtype=np.float32,
+    )
+    values = np.array(
+        [
+            [
+                [1.0],
+                [-1.0],
+            ]
+        ],
+        dtype=np.float32,
+    )
+    query = np.array([[1.0, 0.0]], dtype=np.float32)
+
+    scalar = ScalarFastWeightsMemory(write_scale=1.0).predict(keys, values, query)
+    orthogonalized = OrthogonalizedFastWeightsMemory(write_scale=1.0).predict(
+        keys, values, query
+    )
+
+    assert np.allclose(scalar, 0.0)
+    assert np.allclose(orthogonalized, 1.0)

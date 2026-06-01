@@ -46,6 +46,12 @@ on this toy benchmark, and a frozen prototype head is often as good as or better
 than replay. That makes EGPR more valuable as a scaffold for **predicting when
 online adaptation is unsafe without labels** than as an accuracy method.
 
+The module now includes `adaptation_risk_score(stats)`, a no-label diagnostic
+that combines source entropy and accepted-class collapse. A two-seed smoke run
+shows it is only a first crude signal: brightness shift gets elevated risk
+(`0.375` and `0.614`) while several harmful noisy/mixed batches still look low
+risk. Future work should make the safety score predictive, not just plausible.
+
 ## Research hypotheses opened by the first run
 
 1. **Prototype trust should be shift-aware.** The fixed `source_logit_weight=0.65` is too blunt. A per-batch trust coefficient based on entropy drift or class-balance drift may prevent EGPR from hurting on mixed/noisy shifts.
@@ -59,7 +65,7 @@ online adaptation is unsafe without labels** than as an accuracy method.
 - Sweep `entropy_quantile`, `confidence_floor`, `source_logit_weight`, and `prototype_logit_scale` over 5 seeds and report mean +/- std.
 - Add a `--feature-space` flag for whitened PCA, unwhitened PCA, random projection, and scaled raw pixels.
 - Log accepted-class histograms and compare them with target predictions to quantify class-collapse risk.
-- Add a no-label online safety score: if target entropy drift is high and accepted-class effective number is low, fall back to source-only.
+- Improve the no-label online safety score until it predicts the cases where EGPR hurts and can trigger source-only fallback.
 
 ## References checked
 

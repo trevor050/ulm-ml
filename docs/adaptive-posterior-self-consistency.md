@@ -76,9 +76,11 @@ token_count
 ```
 
 `load_answer_trace_csv(path)` loads this schema into `AnswerTraceRow` records and
-sorts by `(task_id, sample_index)` so policies see deterministic prefixes. Extra
-columns are ignored, so a local trace file can include split names, model names,
-or prompt hashes.
+sorts by `(task_id, sample_index)` so policies see deterministic prefixes.
+`evaluate_trace_policy()` then replays fixed-budget, margin, or posterior
+policies over string answers without assuming every task has the same answer
+vocabulary. Extra columns are ignored, so a local trace file can include split
+names, model names, or prompt hashes.
 
 Minimal example:
 
@@ -87,6 +89,14 @@ task_id,sample_index,answer,correct_answer,token_count
 gsm8k-0001,0,42,42,89
 gsm8k-0001,1,40,42,95
 gsm8k-0002,0,17,17,76
+```
+
+Replay command:
+
+```bash
+PYTHONPATH=src python experiments/adaptive_consistency_replay.py traces.csv \
+  --max-samples 32 \
+  --output reports/adaptive-consistency-replay.csv
 ```
 
 ## Minimum viable real experiment

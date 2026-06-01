@@ -1,6 +1,15 @@
 import numpy as np
 
-from ulm_ml.egpr import EGPRConfig, EntropyGatedPrototypeReplay, normalized_entropy, softmax
+from ulm_ml.egpr import (
+    BatchAdaptationStats,
+    EGPRConfig,
+    EntropyGatedPrototypeReplay,
+    adaptation_risk_score,
+    effective_class_count,
+    normalized_entropy,
+    should_fallback_to_source,
+    softmax,
+)
 
 
 def test_softmax_rows_sum_to_one() -> None:
@@ -81,3 +90,32 @@ def test_egpr_all_replay_bypasses_entropy_gate_but_keeps_confidence_floor() -> N
     stats = adapter.adapt_batch(np.array([[0.2, 0.0], [0.0, 0.0], [-0.2, 0.0]]))
 
     assert stats.accepted == 3
+
+
+def test_adaptation_risk_scores_class_collapse_and_empty_updates() -> None:
+    collapsed = BatchAdaptationStats(
+        accepted=10,
+        entropy_threshold=0.2,
+        mean_entropy=0.2,
+        mean_confidence=0.9,
+        accepted_class_histogram=(10, 0, 0, 0),
+    )
+    spread = BatchAdaptationStats(
+        accepted=12,
+        entropy_threshold=0.2,
+        mean_entropy=0.2,
+        mean_confidence=0.9,
+        accepted_class_histogram=(3, 3, 3, 3),
+    )
+    empty = BatchAdaptationStats(
+        accepted=0,
+        entropy_threshold=0.2,
+        mean_entropy=0.2,
+        mean_confidence=0.9,
+        accepted_class_histogram=(0, 0, 0, 0),
+    )
+
+    assert effective_class_count(spread.accepted_class_histogram) == 4.0
+    assert adaptation_risk_score(collapsed) > adaptation_risk_score(spread)
+    assert should_fallback_to_source(collapsed)
+    assert adaptation_risk_score(empty) == 1.0

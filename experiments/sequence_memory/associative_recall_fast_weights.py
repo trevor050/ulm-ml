@@ -23,6 +23,7 @@ from ulm_ml.sequence_memory import AssociativeRecallConfig, AssociativeRecallDat
 from ulm_ml.sequence_memory.models import (
     DeltaFastWeightsMemory,
     GatedFastWeightsMemory,
+    OrthogonalizedFastWeightsMemory,
     RecencyMemory,
     ScalarFastWeightsMemory,
     cosine_accuracy,
@@ -63,6 +64,7 @@ def run(config: AssociativeRecallConfig, *, epochs: int = 12) -> dict[str, objec
     models = {
         **baselines,
         "scalar_fast_weights": ScalarFastWeightsMemory(write_scale=0.5),
+        "orthogonalized_fast_weights": OrthogonalizedFastWeightsMemory(write_scale=1.0),
         "delta_fast_weights": DeltaFastWeightsMemory(),
         "gated_fast_weights": fast_weights,
     }

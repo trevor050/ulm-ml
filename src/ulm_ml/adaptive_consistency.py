@@ -45,6 +45,18 @@ class PolicyMetrics:
 
 
 @dataclass(frozen=True)
+class TraceReplayResult:
+    """Outcome from replaying a stopping policy on one task's answer trace."""
+
+    task_id: str
+    prediction: str
+    correct_answer: str
+    correct: bool
+    samples_used: int
+    token_count: int | None
+
+
+@dataclass(frozen=True)
 class AnswerTraceRow:
     """One normalized answer sample from a cached self-consistency trace CSV.
 
@@ -339,6 +351,86 @@ def load_answer_trace_csv(path: str | Path) -> list[AnswerTraceRow]:
             )
 
     return sorted(rows, key=lambda row: (row.task_id, row.sample_index))
+
+
+def group_answer_traces(rows: Sequence[AnswerTraceRow]) -> dict[str, list[AnswerTraceRow]]:
+    """Group trace rows by task id and validate per-task gold answer consistency."""
+
+    grouped: dict[str, list[AnswerTraceRow]] = {}
+    for row in rows:
+        grouped.setdefault(row.task_id, []).append(row)
+    for task_id, task_rows in grouped.items():
+        answers = {row.correct_answer for row in task_rows}
+        if len(answers) != 1:
+            raise ValueError(f"task_id {task_id!r} has inconsistent correct_answer values")
+        task_rows.sort(key=lambda row: row.sample_index)
+    return dict(sorted(grouped.items()))
+
+
+def run_trace(
+    task_rows: Sequence[AnswerTraceRow],
+    should_stop: StopRule,
+) -> TraceReplayResult:
+    """Replay one task's string-answer trace through an integer stopping rule."""
+
+    if not task_rows:
+        raise ValueError("task_rows must not be empty")
+    correct_answers = {row.correct_answer for row in task_rows}
+    if len(correct_answers) != 1:
+        raise ValueError("all rows for a task must share one correct_answer")
+
+    answer_vocab = sorted({row.answer for row in task_rows} | correct_answers)
+    if len(answer_vocab) == 1:
+        answer_vocab.append("__unobserved_alternative__")
+    answer_to_id = {answer: idx for idx, answer in enumerate(answer_vocab)}
+    id_to_answer = {idx: answer for answer, idx in answer_to_id.items()}
+    sample_ids = [answer_to_id[row.answer] for row in task_rows]
+    correct_id = answer_to_id[next(iter(correct_answers))]
+
+    def bounded_should_stop(counts: NDArray[np.int_], samples_seen: int) -> bool:
+        return samples_seen >= len(sample_ids) or should_stop(counts, samples_seen)
+
+    result = run_stream(sample_ids, correct_id, len(answer_vocab), bounded_should_stop)
+    used_rows = task_rows[: result.samples_used]
+    token_count: int | None
+    if all(row.token_count is not None for row in used_rows):
+        token_count = sum(row.token_count or 0 for row in used_rows)
+    else:
+        token_count = None
+    prediction = id_to_answer[result.prediction]
+    correct_answer = id_to_answer[correct_id]
+    return TraceReplayResult(
+        task_id=task_rows[0].task_id,
+        prediction=prediction,
+        correct_answer=correct_answer,
+        correct=prediction == correct_answer,
+        samples_used=result.samples_used,
+        token_count=token_count,
+    )
+
+
+def evaluate_trace_policy(
+    name: str,
+    rows: Sequence[AnswerTraceRow],
+    should_stop_factory: Callable[[], StopRule],
+) -> dict[str, float | int | str]:
+    """Evaluate a stopping policy on cached string-answer traces."""
+
+    grouped = group_answer_traces(rows)
+    outcomes = [run_trace(task_rows, should_stop_factory()) for task_rows in grouped.values()]
+    samples = np.array([outcome.samples_used for outcome in outcomes], dtype=float)
+    token_values = [outcome.token_count for outcome in outcomes if outcome.token_count is not None]
+    mean_tokens = float(np.mean(token_values)) if token_values else float("nan")
+    return {
+        "policy": name,
+        "tasks": len(outcomes),
+        "accuracy": float(np.mean([outcome.correct for outcome in outcomes])),
+        "mean_samples": float(np.mean(samples)),
+        "median_samples": float(np.median(samples)),
+        "p90_samples": float(np.quantile(samples, 0.9)),
+        "max_samples": int(np.max(samples)),
+        "mean_tokens": mean_tokens,
+    }
 
 
 def format_metrics_table(metrics: Sequence[PolicyMetrics]) -> str:

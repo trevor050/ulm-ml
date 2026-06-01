@@ -28,7 +28,7 @@ from sklearn.model_selection import train_test_split  # noqa: E402
 from sklearn.pipeline import make_pipeline  # noqa: E402
 from sklearn.preprocessing import StandardScaler  # noqa: E402
 
-from ulm_ml.egpr import EGPRConfig, EntropyGatedPrototypeReplay  # noqa: E402
+from ulm_ml.egpr import EGPRConfig, EntropyGatedPrototypeReplay, adaptation_risk_score  # noqa: E402
 from ulm_ml.paths import ARTIFACTS_DIR  # noqa: E402
 
 FloatArray = NDArray[np.float64]
@@ -56,6 +56,7 @@ class ExperimentResult:
     egpr_accuracy: float
     all_replay_accepted: int
     egpr_accepted: int
+    egpr_mean_risk: float
     egpr_mean_entropy: float
     egpr_mean_confidence: float
 
@@ -105,6 +106,7 @@ def evaluate_online(
     accepted = 0
     entropies = []
     confidences = []
+    risks = []
     for batch in stream_batches(features, batch_size):
         probabilities = adapter.predict_proba(batch)
         predictions.append(np.argmax(probabilities, axis=1).astype(np.int64))
@@ -112,10 +114,12 @@ def evaluate_online(
         accepted += stats.accepted
         entropies.append(stats.mean_entropy)
         confidences.append(stats.mean_confidence)
+        risks.append(adaptation_risk_score(stats))
     predicted_labels = np.concatenate(predictions)
     return (
         float(accuracy_score(labels, predicted_labels)),
         accepted,
+        float(np.mean(risks)),
         float(np.mean(entropies)),
         float(np.mean(confidences)),
     )
@@ -187,7 +191,7 @@ def run_experiment(
             y_train,
             EGPRConfig(adaptation_enabled=False),
         )
-        prototype_no_adapt_accuracy, _, _, _ = evaluate_online(
+        prototype_no_adapt_accuracy, _, _, _, _ = evaluate_online(
             prototype_no_adapt_adapter, x_target_features, y_test, batch_size=batch_size
         )
 
@@ -203,7 +207,7 @@ def run_experiment(
                 min_accept_per_batch=0,
             ),
         )
-        all_replay_accuracy, all_replay_accepted, _, _ = evaluate_online(
+        all_replay_accuracy, all_replay_accepted, _, _, _ = evaluate_online(
             all_replay_adapter, x_target_features, y_test, batch_size=batch_size
         )
 
@@ -214,7 +218,7 @@ def run_experiment(
             y_train,
             EGPRConfig(),
         )
-        egpr_accuracy, accepted, mean_entropy, mean_confidence = evaluate_online(
+        egpr_accuracy, accepted, mean_risk, mean_entropy, mean_confidence = evaluate_online(
             egpr_adapter, x_target_features, y_test, batch_size=batch_size
         )
         results.append(
@@ -227,6 +231,7 @@ def run_experiment(
                 egpr_accuracy=egpr_accuracy,
                 all_replay_accepted=all_replay_accepted,
                 egpr_accepted=accepted,
+                egpr_mean_risk=mean_risk,
                 egpr_mean_entropy=mean_entropy,
                 egpr_mean_confidence=mean_confidence,
             )
@@ -285,7 +290,8 @@ def main() -> None:
             f"source={result.source_only_accuracy:.3f} "
             f"proto_no_adapt={result.prototype_no_adapt_accuracy:.3f} "
             f"all_replay={result.all_replay_accuracy:.3f} "
-            f"egpr={result.egpr_accuracy:.3f} accepted={result.egpr_accepted}"
+            f"egpr={result.egpr_accuracy:.3f} risk={result.egpr_mean_risk:.3f} "
+            f"accepted={result.egpr_accepted}"
         )
     if len(results) > len(corruptions):
         print(json.dumps(summarize_results(results), indent=2))
