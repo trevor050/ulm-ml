@@ -24,3 +24,4 @@ Use this as the compact source of truth for experiments that matter.
   64 pairs, while compact fast-weight variants degrade with length; a learned
   gate improves the 64-pair result over a residual delta rule (0.564 vs. 0.420)
   but does not solve interference. See `docs/sequence-memory-fast-weights.md`.
+- Started EGPR (Entropy-Gated Prototype Replay), a low-compute test-time adaptation probe that freezes the source classifier and adapts class prototypes only from low-entropy/high-confidence target examples. Initial digits-corruption run: helps localized occlusion slightly (0.951 source-only vs 0.954 EGPR) but hurts brightness, mixed, and noisy shifts, suggesting the next research target should be adaptation-safety prediction rather than raw accuracy chasing. See `docs/egpr-brief.md` and `experiments/egpr_digits_tta.py`.
