@@ -13,10 +13,10 @@ replay or clearly becomes a negative control that saves future GPU time.
 | ---: | --- | --- | --- | --- |
 | 1 | Modular arithmetic spectral diagnostics | Strong oracle/control | The Fourier character family and latent-sum coverage diagnostics are the cleanest current tools. They do not prove neural grokking, but they sharply separate data coverage from representation discovery. | Train one tiny MLP/transformer across random, sum-balanced, and operand-block splits, logging Fourier readout coverage at checkpoints. |
 | 2 | Symmetry-augmented sparse recovery | Controlled synthetic recovery | Cyclic augmentation improves strict one-to-one feature recovery in the toy dictionary setting. This is promising because the metric now resists duplicate learned atoms. | Move from synthetic coordinate shifts to a controlled activation space with a known or estimated group action. |
-| 3 | Sequence-memory fast weights | Useful negative toy benchmark | Compact outer-product memories degrade with length; learned gating helps but does not close the gap to explicit key storage. | Sweep key dimension and report recall against `pairs / key_dim`, including scalar write-scale and learned-gate baselines. |
+| 3 | Sequence-memory fast weights | Useful negative toy benchmark | Compact outer-product memories degrade with length; scalar, gated, delta, and orthogonalized baselines now separate write scaling from interference control. Orthogonalization helps at low load but collapses when the compact basis saturates. | Test learned whitening/projection rules that can recycle basis capacity instead of discarding saturated writes. |
 | 4 | Phase-state tracking | Constructive oracle/probe | Root-of-unity channels solve modular counting exactly when the transition is handed to the model. This is a boundary condition, not evidence of learnability. | Train small recurrent transition families to see when rotations are discovered rather than supplied. |
-| 5 | Adaptive posterior self-consistency | Synthetic policy sanity check | The posterior stopping rule behaves plausibly on simulated answer streams, but there is no real LLM trace replay yet. | Collect answer-only traces from one small reasoning model and replay policies from the CSV schema. |
-| 6 | TTA prototype replay / EGPR | Mostly negative toy dataset result | Freezing the source classifier and gating prototype updates is auditable, but current digits shifts are seed- and corruption-sensitive. The better thread is adaptation-safety prediction. | Run multi-seed sweeps with true no-adapt and all-replay baselines, then predict when adaptation should be disabled. |
+| 5 | Adaptive posterior self-consistency | Synthetic plus replay infrastructure | The posterior stopping rule behaves plausibly on simulated answer streams, and the repo now has CSV replay utilities for cached real-model answer traces. | Collect answer-only traces from one small reasoning model and compare fixed, margin, and posterior policies on identical prefixes. |
+| 6 | TTA prototype replay / EGPR | Mostly negative toy dataset result | True no-adapt and all-replay baselines show online prototype updates usually hurt on digits shifts. A crude no-label risk score exists but is not yet predictive enough. | Learn or calibrate safety diagnostics that trigger source-only fallback before harmful adaptation. |
 | 7 | PACE bias-only TTA | Narrow positive/negative split | Bias-only adaptation helps some prior-shift cases and fails on feature corruption, which is exactly the limitation it should expose. | Treat it as a diagnostic baseline for label-prior drift before trying richer adaptation. |
 
 ## Cross-thread lessons
@@ -56,11 +56,13 @@ replay or clearly becomes a negative control that saves future GPU time.
 
 ## Immediate next batch
 
-1. Add real answer-trace replay for adaptive self-consistency using
-   `load_answer_trace_csv`.
+1. Collect answer-only traces for adaptive self-consistency and run
+   `experiments/adaptive_consistency_replay.py`.
 2. Run the modular spectral coverage card alongside one neural modular-addition
    training sweep.
-3. Finish the fast-weight key-dimension sweep and scalar-write baseline.
-4. Re-run sparse recovery with strict unique assignment as the headline metric.
+3. Replace the fast-weight hand-built orthogonalization with a learned whitening
+   or projection rule that can handle `pairs/key_dim > 1`.
+4. Re-run sparse recovery with strict unique assignment as the headline metric
+   on a less toy activation space.
 5. Convert EGPR from "does adaptation improve accuracy?" to "can diagnostics
    predict when adaptation will hurt?"

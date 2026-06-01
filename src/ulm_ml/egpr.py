@@ -113,6 +113,45 @@ def l2_normalize(features: ArrayLike) -> FloatArray:
     return feature_array / safe_norms
 
 
+def effective_class_count(histogram: tuple[int, ...] | ArrayLike) -> float:
+    """Return entropy effective count for accepted pseudo-label classes."""
+
+    counts = np.asarray(histogram, dtype=np.float64)
+    total = counts.sum()
+    if total <= 0:
+        return 0.0
+    probs = counts[counts > 0] / total
+    return float(np.exp(-np.sum(probs * np.log(probs))))
+
+
+def adaptation_risk_score(
+    stats: BatchAdaptationStats,
+    *,
+    min_effective_classes: float = 3.0,
+) -> float:
+    """Estimate no-label risk that a prototype update is unsafe.
+
+    The score combines two cheap signals: high source entropy and accepted-class
+    collapse. It is intentionally conservative and heuristic; use it to rank or
+    disable updates before spending effort on stronger TTA machinery.
+    """
+
+    if stats.accepted == 0:
+        return 1.0
+    effective = effective_class_count(stats.accepted_class_histogram)
+    collapse_risk = 1.0 - min(effective / min_effective_classes, 1.0)
+    uncertainty_risk = float(np.clip(stats.mean_entropy, 0.0, 1.0))
+    return float(np.clip(max(collapse_risk, uncertainty_risk), 0.0, 1.0))
+
+
+def should_fallback_to_source(stats: BatchAdaptationStats, *, risk_threshold: float = 0.65) -> bool:
+    """Return whether source-only prediction should be preferred for a batch."""
+
+    if not 0.0 <= risk_threshold <= 1.0:
+        raise ValueError("risk_threshold must be in [0, 1]")
+    return adaptation_risk_score(stats) >= risk_threshold
+
+
 class EntropyGatedPrototypeReplay:
     """Test-time adapter that replays confident target samples into prototypes.
 
