@@ -36,6 +36,10 @@ class EGPRConfig:
             accept the best samples up to this count as long as they satisfy the
             confidence floor.  This avoids dead adapters on easy-but-calibrated
             batches.
+        use_entropy_gate: If false, confidence-eligible samples bypass entropy
+            filtering. This is the true all-replay baseline.
+        adaptation_enabled: If false, `adapt_batch` reports diagnostics without
+            updating prototypes. This is the no-adaptation prototype baseline.
     """
 
     entropy_quantile: float = 0.35
@@ -44,6 +48,8 @@ class EGPRConfig:
     prototype_logit_scale: float = 8.0
     source_logit_weight: float = 0.65
     min_accept_per_batch: int = 1
+    use_entropy_gate: bool = True
+    adaptation_enabled: bool = True
 
     def __post_init__(self) -> None:
         if not 0.0 < self.entropy_quantile <= 1.0:
@@ -183,9 +189,20 @@ class EntropyGatedPrototypeReplay:
         confidences = np.max(source_probabilities, axis=1)
         pseudo_labels = np.argmax(source_probabilities, axis=1).astype(np.int64)
         threshold = float(np.quantile(self.source_entropy_reference, self.config.entropy_quantile))
-        accepted_mask = (entropies <= threshold) & (confidences >= self.config.confidence_floor)
+        confident = confidences >= self.config.confidence_floor
+        if not self.config.adaptation_enabled:
+            accepted_mask = np.zeros(feature_array.shape[0], dtype=bool)
+        elif self.config.use_entropy_gate:
+            accepted_mask = (entropies <= threshold) & confident
+        else:
+            accepted_mask = confident
 
-        if not np.any(accepted_mask) and self.config.min_accept_per_batch > 0:
+        if (
+            self.config.adaptation_enabled
+            and self.config.use_entropy_gate
+            and not np.any(accepted_mask)
+            and self.config.min_accept_per_batch > 0
+        ):
             confident_order = np.argsort(entropies)
             accepted_indices: list[int] = []
             for index in confident_order:

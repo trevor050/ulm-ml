@@ -34,6 +34,31 @@ class RecencyMemory:
 
 
 @dataclass
+class ScalarFastWeightsMemory:
+    """Fast-weight outer-product memory with a fixed global write scale.
+
+    This baseline asks whether a learned gate is doing more than shrinking every
+    write by a constant. It uses the same retrieval shape as the gated fast
+    weights but has no trainable parameters.
+    """
+
+    write_scale: float = 0.5
+    decay: float = 1.0
+
+    def __post_init__(self) -> None:
+        if self.write_scale < 0.0:
+            raise ValueError("write_scale must be non-negative")
+        if not 0.0 <= self.decay <= 1.0:
+            raise ValueError("decay must lie in [0, 1]")
+
+    def predict(self, keys: np.ndarray, values: np.ndarray, query: np.ndarray) -> np.ndarray:
+        powers = self.decay ** np.arange(keys.shape[1] - 1, -1, -1, dtype=np.float32)
+        weighted_values = values * np.float32(self.write_scale) * powers[None, :, None]
+        memory = np.einsum("bpd,bpv->bdv", keys, weighted_values)
+        return np.einsum("bd,bdv->bv", query, memory)
+
+
+@dataclass
 class GatedFastWeightsMemory:
     """Fast-weights key-value memory with a scalar learned write gate.
 

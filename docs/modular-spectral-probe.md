@@ -51,8 +51,14 @@ The reusable module `src/ulm_ml/modular_spectral.py` implements:
   `operand_block` control;
 - latent sum coverage diagnostics (`missing_sums`, coefficient of variation, Fourier
   design condition number);
-- a closed-form ridge probe over real Fourier features of `(a + b) mod p`;
+- a closed-form ridge probe over oracle real Fourier features of `(a + b) mod p`;
 - a sweep helper for reproducible CPU-only experiments.
+
+Important boundary: this probe explicitly computes the latent sum coordinate.
+It is a split/data-geometry diagnostic, not evidence that a neural model learned
+the coordinate. The companion character-interaction baseline in
+`docs/research-brief-character-timescales.md` is the operand-derived
+representation control.
 
 The runnable script is `experiments/modular_spectral_probe.py`.
 
@@ -66,6 +72,14 @@ PYTHONPATH=src python experiments/modular_spectral_probe.py \
 ```
 
 The generated CSV is intentionally kept under ignored `artifacts/` and is not committed.
+
+The script now also prints coverage cards such as:
+
+```text
+split=sum_balanced fraction=0.032 train_size=31 missing_sums=0 sum_count_cv=0.000 design_condition=1.41 train_acc=1.000 test_acc=1.000
+```
+
+Those cards are the intended pre-flight artifact for future grokking runs.
 
 ## First result
 

@@ -24,6 +24,7 @@ from ulm_ml.sequence_memory.models import (
     DeltaFastWeightsMemory,
     GatedFastWeightsMemory,
     RecencyMemory,
+    ScalarFastWeightsMemory,
     cosine_accuracy,
     mean_squared_error,
 )
@@ -61,6 +62,7 @@ def run(config: AssociativeRecallConfig, *, epochs: int = 12) -> dict[str, objec
 
     models = {
         **baselines,
+        "scalar_fast_weights": ScalarFastWeightsMemory(write_scale=0.5),
         "delta_fast_weights": DeltaFastWeightsMemory(),
         "gated_fast_weights": fast_weights,
     }
@@ -74,7 +76,9 @@ def run(config: AssociativeRecallConfig, *, epochs: int = 12) -> dict[str, objec
                 pairs=pairs,
                 seed_offset=10_000 + pairs,
             )
-            evaluations[name][str(pairs)] = evaluate(model, dataset)
+            row = evaluate(model, dataset)
+            row["pairs_per_key_dim"] = float(pairs / config.key_dim)
+            evaluations[name][str(pairs)] = row
 
     return {
         "config": asdict(config),
@@ -90,6 +94,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--epochs", type=int, default=12)
     parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--key-dims", type=int, nargs="+", default=[32])
     parser.add_argument("--train-size", type=int, default=4096)
     parser.add_argument("--test-size", type=int, default=2048)
     parser.add_argument(
@@ -97,14 +102,27 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    config = AssociativeRecallConfig(
-        seed=args.seed, train_size=args.train_size, test_size=args.test_size
-    )
-    result = run(config, epochs=args.epochs)
+    results = []
+    for key_dim in args.key_dims:
+        config = AssociativeRecallConfig(
+            seed=args.seed,
+            key_dim=key_dim,
+            train_size=args.train_size,
+            test_size=args.test_size,
+        )
+        results.append(run(config, epochs=args.epochs))
+    result: dict[str, object]
+    if len(results) == 1:
+        result = results[0]
+    else:
+        result = {"sweeps": results}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2) + "\n")
 
-    print(json.dumps(result["evaluations"], indent=2))
+    if "evaluations" in result:
+        print(json.dumps(result["evaluations"], indent=2))
+    else:
+        print(json.dumps(result, indent=2))
     print(f"wrote {args.output}")
 
 

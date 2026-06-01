@@ -27,6 +27,10 @@ python -m pip install -e ".[dev]"
 - Modular character baseline: explicit cyclic-character interaction features as a control for grokking-style modular arithmetic. See `docs/research-brief-character-timescales.md` and `experiments/modular_character_timescales.py`.
 - Symmetry-augmented sparse recovery: cyclic augmentation as a controlled sparse-dictionary feature recovery probe. See `docs/symmetry-augmented-sparse-recovery.md`.
 - PACE bias TTA: Prior-Anchored Conservative Entropy for bias-only logit calibration under unlabeled target drift. See `docs/pace-bias-tta-report.md`.
+- EGPR prototype replay: mostly negative TTA scaffold now framed around predicting when adaptation is unsafe. See `docs/egpr-brief.md`.
+- Sequence-memory fast weights: associative-recall harness with nearest-neighbor, scalar fast-weight, delta-rule, and learned-gate baselines. See `docs/sequence-memory-fast-weights.md`.
+- Phase state tracking: root-of-unity finite-state sidecar as a constructive oracle/probe for recurrent models. See `docs/phase-state-tracking.md`.
+- Cross-thread ranking and next experiments: see `docs/research-synthesis.md`.
 
 ## Repository Layout
 

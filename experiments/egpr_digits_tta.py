@@ -48,10 +48,13 @@ class CorruptionConfig:
 class ExperimentResult:
     """Serializable result for one corruption setting."""
 
+    seed: int
     corruption: str
     source_only_accuracy: float
-    naive_replay_accuracy: float
+    prototype_no_adapt_accuracy: float
+    all_replay_accuracy: float
     egpr_accuracy: float
+    all_replay_accepted: int
     egpr_accepted: int
     egpr_mean_entropy: float
     egpr_mean_confidence: float
@@ -118,6 +121,33 @@ def evaluate_online(
     )
 
 
+def summarize_results(results: Sequence[ExperimentResult]) -> list[dict[str, float | str | int]]:
+    """Return mean/std accuracy rows for every corruption and method."""
+
+    rows: list[dict[str, float | str | int]] = []
+    methods = [
+        ("source_only", "source_only_accuracy"),
+        ("prototype_no_adapt", "prototype_no_adapt_accuracy"),
+        ("all_replay", "all_replay_accuracy"),
+        ("egpr", "egpr_accuracy"),
+    ]
+    corruptions = sorted({result.corruption for result in results})
+    for corruption in corruptions:
+        group = [result for result in results if result.corruption == corruption]
+        for method, field in methods:
+            values = np.array([getattr(result, field) for result in group], dtype=np.float64)
+            rows.append(
+                {
+                    "corruption": corruption,
+                    "method": method,
+                    "seeds": len(group),
+                    "accuracy_mean": float(values.mean()),
+                    "accuracy_std": float(values.std(ddof=1)) if len(values) > 1 else 0.0,
+                }
+            )
+    return rows
+
+
 def run_experiment(
     seed: int,
     batch_size: int,
@@ -150,15 +180,31 @@ def run_experiment(
         source_probabilities = classifier.predict_proba(x_target_features)
         source_accuracy = float(accuracy_score(y_test, np.argmax(source_probabilities, axis=1)))
 
-        naive_adapter = EntropyGatedPrototypeReplay(
+        prototype_no_adapt_adapter = EntropyGatedPrototypeReplay(
             classifier.coef_,
             classifier.intercept_,
             x_train_features,
             y_train,
-            EGPRConfig(entropy_quantile=1.0, confidence_floor=0.0, update_rate=0.08),
+            EGPRConfig(adaptation_enabled=False),
         )
-        naive_accuracy, _, _, _ = evaluate_online(
-            naive_adapter, x_target_features, y_test, batch_size=batch_size
+        prototype_no_adapt_accuracy, _, _, _ = evaluate_online(
+            prototype_no_adapt_adapter, x_target_features, y_test, batch_size=batch_size
+        )
+
+        all_replay_adapter = EntropyGatedPrototypeReplay(
+            classifier.coef_,
+            classifier.intercept_,
+            x_train_features,
+            y_train,
+            EGPRConfig(
+                confidence_floor=0.0,
+                update_rate=0.08,
+                use_entropy_gate=False,
+                min_accept_per_batch=0,
+            ),
+        )
+        all_replay_accuracy, all_replay_accepted, _, _ = evaluate_online(
+            all_replay_adapter, x_target_features, y_test, batch_size=batch_size
         )
 
         egpr_adapter = EntropyGatedPrototypeReplay(
@@ -173,10 +219,13 @@ def run_experiment(
         )
         results.append(
             ExperimentResult(
+                seed=seed,
                 corruption=corruption,
                 source_only_accuracy=source_accuracy,
-                naive_replay_accuracy=naive_accuracy,
+                prototype_no_adapt_accuracy=prototype_no_adapt_accuracy,
+                all_replay_accuracy=all_replay_accuracy,
                 egpr_accuracy=egpr_accuracy,
+                all_replay_accepted=all_replay_accepted,
                 egpr_accepted=accepted,
                 egpr_mean_entropy=mean_entropy,
                 egpr_mean_confidence=mean_confidence,
@@ -192,6 +241,7 @@ def run_experiment(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--seed", type=int, default=7)
+    parser.add_argument("--seeds", type=int, nargs="+")
     parser.add_argument("--batch-size", type=int, default=64)
     parser.add_argument(
         "--output",
@@ -218,13 +268,27 @@ def main() -> None:
         "brightness_shift",
         "mixed_shift",
     ]
-    results = run_experiment(args.seed, args.batch_size, output_path, corruptions)
+    seeds = args.seeds or [args.seed]
+    results: list[ExperimentResult] = []
+    for seed in seeds:
+        results.extend(run_experiment(seed, args.batch_size, None, corruptions))
+    if output_path is not None:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        payload = {
+            "results": [asdict(result) for result in results],
+            "summary": summarize_results(results),
+        }
+        output_path.write_text(json.dumps(payload, indent=2) + "\n")
     for result in results:
         print(
-            f"{result.corruption:18s} source={result.source_only_accuracy:.3f} "
-            f"naive={result.naive_replay_accuracy:.3f} egpr={result.egpr_accuracy:.3f} "
-            f"accepted={result.egpr_accepted}"
+            f"seed={result.seed:<2d} {result.corruption:18s} "
+            f"source={result.source_only_accuracy:.3f} "
+            f"proto_no_adapt={result.prototype_no_adapt_accuracy:.3f} "
+            f"all_replay={result.all_replay_accuracy:.3f} "
+            f"egpr={result.egpr_accuracy:.3f} accepted={result.egpr_accepted}"
         )
+    if len(results) > len(corruptions):
+        print(json.dumps(summarize_results(results), indent=2))
 
 
 if __name__ == "__main__":

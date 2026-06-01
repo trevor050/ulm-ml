@@ -35,7 +35,9 @@ Implemented memories:
    expose pathological recency shortcuts.
 3. `delta_fast_weights`: a compact matrix memory updated with an online residual
    delta rule.
-4. `gated_fast_weights`: a compact matrix memory with a tiny learned write gate.
+4. `scalar_fast_weights`: the same outer-product memory with a fixed global write
+   scale. This checks whether a learned gate is doing more than shrinking writes.
+5. `gated_fast_weights`: a compact matrix memory with a tiny learned write gate.
 
 ## Current result
 
@@ -54,11 +56,22 @@ Cosine recall from the generated JSON artifact:
 | delta_fast_weights | 0.910 | 0.818 | 0.644 | 0.420 |
 | gated_fast_weights | 0.891 | 0.807 | 0.693 | 0.564 |
 
-Interpretation: the compact fast-weight memories are clearly capacity-limited.
-The learned scalar/vector gate helps at the longest tested contexts relative to
-the residual delta rule, but it does not close the gap to explicit key storage.
-This is a useful negative result because it says a tiny surprise/write gate alone
-is not enough; the next idea should target interference directly.
+The current script also supports `--key-dims` and records `pairs_per_key_dim`.
+A small smoke sweep with 2 training epochs showed that `gated_fast_weights` and
+`scalar_fast_weights` are nearly tied, while both degrade smoothly as
+`pairs/key_dim` rises:
+
+| key dim | model | 8 pairs | 16 pairs | 32 pairs | 64 pairs |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 16 | scalar_fast_weights | 0.832 | 0.703 | 0.573 | 0.428 |
+| 16 | gated_fast_weights | 0.830 | 0.699 | 0.572 | 0.429 |
+| 32 | scalar_fast_weights | 0.890 | 0.806 | 0.686 | 0.582 |
+| 32 | gated_fast_weights | 0.888 | 0.805 | 0.686 | 0.580 |
+
+Interpretation: compact fast-weight memories are clearly interference-limited.
+The learned gate may help in some longer training runs, but the scalar baseline
+shows that much of the behavior is explained by write scaling. The next idea
+should target interference directly, not just add another tiny gate.
 
 ## Hypotheses worth testing next
 

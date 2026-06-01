@@ -1,7 +1,12 @@
 import numpy as np
 
 from ulm_ml.sequence_memory import AssociativeRecallConfig, generate_associative_recall_batch
-from ulm_ml.sequence_memory.models import GatedFastWeightsMemory, RecencyMemory, cosine_accuracy
+from ulm_ml.sequence_memory.models import (
+    GatedFastWeightsMemory,
+    RecencyMemory,
+    ScalarFastWeightsMemory,
+    cosine_accuracy,
+)
 
 
 def test_generated_query_targets_one_of_the_keys() -> None:
@@ -56,3 +61,23 @@ def test_fast_weights_training_step_reduces_loss_on_reused_batch() -> None:
         last = model.train_batch(keys, values, query, target)
 
     assert last < first
+
+
+def test_scalar_fast_weights_memory_has_fixed_write_scale() -> None:
+    rng = np.random.default_rng(9)
+    keys, values, query, _, _ = generate_associative_recall_batch(
+        rng,
+        batch_size=8,
+        pairs=4,
+        key_dim=12,
+        value_dim=5,
+        key_noise=0.0,
+        value_noise=0.0,
+    )
+
+    active = ScalarFastWeightsMemory(write_scale=0.5).predict(keys, values, query)
+    inactive = ScalarFastWeightsMemory(write_scale=0.0).predict(keys, values, query)
+
+    assert active.shape == (8, 5)
+    assert np.linalg.norm(active) > 0.0
+    assert np.allclose(inactive, 0.0)

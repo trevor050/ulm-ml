@@ -10,7 +10,7 @@ import argparse
 import csv
 from pathlib import Path
 
-from ulm_ml.modular_spectral import run_split_sweep
+from ulm_ml.modular_spectral import SplitDiagnostics, coverage_card, run_split_sweep
 from ulm_ml.paths import ARTIFACTS_DIR
 
 
@@ -44,6 +44,26 @@ def main() -> None:
     for (fraction, split), values in sorted(grouped.items()):
         mean = sum(values) / len(values)
         print(f"fraction={fraction:.2f} split={split:>12} mean_test_acc={mean:.3f}")
+    print("\ncoverage cards")
+    for row in rows:
+        diagnostics = SplitDiagnostics(
+            train_size=int(row["train_size"]),
+            modulus=args.modulus,
+            train_fraction=float(row["actual_fraction"]),
+            min_sum_count=int(row["min_sum_count"]),
+            max_sum_count=int(row["max_sum_count"]),
+            missing_sums=int(row["missing_sums"]),
+            sum_count_cv=float(row["sum_count_cv"]),
+            design_condition=float(row["design_condition"]),
+        )
+        print(
+            coverage_card(
+                str(row["split"]),
+                diagnostics,
+                train_acc=float(row["train_acc"]),
+                test_acc=float(row["test_acc"]),
+            )
+        )
 
 
 if __name__ == "__main__":

@@ -9,8 +9,10 @@ sample streams before spending real inference budget.
 
 from __future__ import annotations
 
+import csv
 from collections.abc import Callable, Sequence
 from dataclasses import dataclass
+from pathlib import Path
 
 import numpy as np
 from numpy.typing import NDArray
@@ -40,6 +42,29 @@ class PolicyMetrics:
     p90_samples: float
     max_samples: int
     efficiency: float
+
+
+@dataclass(frozen=True)
+class AnswerTraceRow:
+    """One normalized answer sample from a cached self-consistency trace CSV.
+
+    Required CSV columns are ``task_id``, ``sample_index``, ``answer``, and
+    ``correct_answer``.  ``token_count`` is optional.  The loader preserves
+    normalized answers as strings because real benchmark answers are not a
+    shared integer class set across tasks.
+    """
+
+    task_id: str
+    sample_index: int
+    answer: str
+    correct_answer: str
+    token_count: int | None = None
+
+    @property
+    def is_correct(self) -> bool:
+        """Return whether this sample's normalized answer matches the gold answer."""
+
+        return self.answer == self.correct_answer
 
 
 def majority_vote(counts: NDArray[np.int_]) -> Answer:
@@ -261,6 +286,61 @@ def evaluate_policy(
     )
 
 
+def load_answer_trace_csv(path: str | Path) -> list[AnswerTraceRow]:
+    """Load cached answer-only self-consistency traces from a compact CSV schema.
+
+    The intended replay schema is one row per sampled answer:
+
+    ``task_id,sample_index,answer,correct_answer,token_count``
+
+    ``token_count`` may be omitted or left blank.  Rows are returned sorted by
+    ``(task_id, sample_index)`` so replay policies see deterministic prefixes.
+    Extra columns are ignored, which lets callers keep model names, prompt ids,
+    or split labels in the same file without changing this lightweight loader.
+    """
+
+    trace_path = Path(path)
+    required = {"task_id", "sample_index", "answer", "correct_answer"}
+    rows: list[AnswerTraceRow] = []
+    seen: set[tuple[str, int]] = set()
+
+    with trace_path.open(newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        fieldnames = set(reader.fieldnames or [])
+        missing = required - fieldnames
+        if missing:
+            missing_columns = ", ".join(sorted(missing))
+            raise ValueError(f"answer trace CSV missing required column(s): {missing_columns}")
+
+        for line_number, raw in enumerate(reader, start=2):
+            task_id = _required_text(raw, "task_id", line_number)
+            sample_index = _nonnegative_int(raw["sample_index"], "sample_index", line_number)
+            answer = _required_text(raw, "answer", line_number)
+            correct_answer = _required_text(raw, "correct_answer", line_number)
+            token_count = _optional_nonnegative_int(
+                raw.get("token_count"), "token_count", line_number
+            )
+
+            key = (task_id, sample_index)
+            if key in seen:
+                raise ValueError(
+                    f"duplicate sample_index {sample_index} for task_id {task_id!r} "
+                    f"at line {line_number}"
+                )
+            seen.add(key)
+            rows.append(
+                AnswerTraceRow(
+                    task_id=task_id,
+                    sample_index=sample_index,
+                    answer=answer,
+                    correct_answer=correct_answer,
+                    token_count=token_count,
+                )
+            )
+
+    return sorted(rows, key=lambda row: (row.task_id, row.sample_index))
+
+
 def format_metrics_table(metrics: Sequence[PolicyMetrics]) -> str:
     """Render policy metrics as a Markdown table."""
 
@@ -276,3 +356,26 @@ def format_metrics_table(metrics: Sequence[PolicyMetrics]) -> str:
             f"{item.max_samples:d} | {item.efficiency:.4f} |"
         )
     return "\n".join(rows)
+
+
+def _required_text(row: dict[str, str], column: str, line_number: int) -> str:
+    value = row[column].strip()
+    if not value:
+        raise ValueError(f"{column} must be non-empty at line {line_number}")
+    return value
+
+
+def _nonnegative_int(value: str, column: str, line_number: int) -> int:
+    try:
+        parsed = int(value)
+    except ValueError as exc:
+        raise ValueError(f"{column} must be an integer at line {line_number}") from exc
+    if parsed < 0:
+        raise ValueError(f"{column} must be non-negative at line {line_number}")
+    return parsed
+
+
+def _optional_nonnegative_int(value: str | None, column: str, line_number: int) -> int | None:
+    if value is None or value.strip() == "":
+        return None
+    return _nonnegative_int(value, column, line_number)

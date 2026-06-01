@@ -22,25 +22,29 @@ This makes the method cheap, auditable, and resistant to catastrophic online dri
 The runnable scaffold uses `sklearn.datasets.load_digits` as a source task, creates target-domain shifts with deterministic corruptions, trains a fixed PCA + logistic-regression source model, and compares:
 
 - **Source-only:** no target adaptation.
-- **Naive replay:** prototype updates from all target examples.
+- **Prototype no-adapt:** source/prototype logit interpolation with frozen source prototypes, isolating the prototype head from online adaptation.
+- **All replay:** prototype updates from every target example, bypassing the entropy gate.
 - **EGPR:** entropy/confidence-gated prototype updates.
 
 Command:
 
 ```bash
-python experiments/egpr_digits_tta.py --output /dev/null
+python experiments/egpr_digits_tta.py --seeds 0 1 2 3 4 --output artifacts/egpr_digits_tta.json
 ```
 
-Observed on 2026-06-01 in this environment with seed 7:
+Five-seed accuracy mean +/- std on 2026-06-01:
 
-| Corruption | Source-only | Naive replay | EGPR | EGPR accepted |
+| Corruption | Source-only | Prototype no-adapt | All replay | EGPR |
 |---|---:|---:|---:|---:|
-| Gaussian noise | 0.297 | 0.275 | 0.261 | 298 |
-| Top-left occlusion | 0.951 | 0.954 | 0.954 | 218 |
-| Brightness shift | 0.750 | 0.750 | 0.695 | 137 |
-| Mixed shift | 0.229 | 0.219 | 0.216 | 339 |
+| Gaussian noise | 0.372 +/- 0.054 | **0.377 +/- 0.054** | 0.353 +/- 0.051 | 0.339 +/- 0.052 |
+| Top-left occlusion | **0.948 +/- 0.010** | 0.946 +/- 0.009 | 0.947 +/- 0.009 | 0.947 +/- 0.010 |
+| Brightness shift | 0.461 +/- 0.227 | **0.466 +/- 0.224** | 0.459 +/- 0.227 | 0.406 +/- 0.183 |
+| Mixed shift | 0.299 +/- 0.065 | **0.301 +/- 0.065** | 0.285 +/- 0.063 | 0.278 +/- 0.059 |
 
-The first run is intentionally humbling: EGPR helps slightly on localized occlusion, but it is not universally better. That is useful because it points to a sharper research target than cosmetic accuracy chasing: **predicting when online adaptation is unsafe without labels**.
+The result is intentionally humbling: online prototype adaptation usually hurts
+on this toy benchmark, and a frozen prototype head is often as good as or better
+than replay. That makes EGPR more valuable as a scaffold for **predicting when
+online adaptation is unsafe without labels** than as an accuracy method.
 
 ## Research hypotheses opened by the first run
 
@@ -52,7 +56,7 @@ The first run is intentionally humbling: EGPR helps slightly on localized occlus
 
 ## Next concrete experiments
 
-- Sweep `entropy_quantile`, `confidence_floor`, `source_logit_weight`, and `prototype_logit_scale` over 5 seeds and report mean ± std.
+- Sweep `entropy_quantile`, `confidence_floor`, `source_logit_weight`, and `prototype_logit_scale` over 5 seeds and report mean +/- std.
 - Add a `--feature-space` flag for whitened PCA, unwhitened PCA, random projection, and scaled raw pixels.
 - Log accepted-class histograms and compare them with target predictions to quantify class-collapse risk.
 - Add a no-label online safety score: if target entropy drift is high and accepted-class effective number is low, fall back to source-only.

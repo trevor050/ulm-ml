@@ -9,6 +9,7 @@ from ulm_ml.sequence_memory.models import (
     DeltaFastWeightsMemory,
     GatedFastWeightsMemory,
     RecencyMemory,
+    ScalarFastWeightsMemory,
 )
 
 __all__ = [
@@ -17,5 +18,6 @@ __all__ = [
     "DeltaFastWeightsMemory",
     "GatedFastWeightsMemory",
     "RecencyMemory",
+    "ScalarFastWeightsMemory",
     "generate_associative_recall_batch",
 ]

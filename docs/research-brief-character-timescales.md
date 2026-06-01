@@ -104,6 +104,13 @@ the full character model.
 
 ## Interpretation
 
+This note is the **operand-derived representation baseline**. It differs from
+`docs/modular-spectral-probe.md`, whose `addition_fourier_features()` diagnostic
+explicitly computes the latent sum coordinate and should be treated as an oracle
+split/data-geometry probe. Use them together: first ask whether the split covers
+the latent coordinate, then ask whether an operand-derived character family can
+solve the task from that split.
+
 The striking result is not that Fourier characters can solve modular addition; that is expected.
 The useful part is the diagnostic contrast:
 

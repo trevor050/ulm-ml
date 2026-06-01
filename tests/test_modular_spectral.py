@@ -1,6 +1,7 @@
 import numpy as np
 
 from ulm_ml.modular_spectral import (
+    coverage_card,
     make_train_mask,
     modular_addition_grid,
     ridge_probe_accuracy,
@@ -34,3 +35,23 @@ def test_operand_block_has_bad_coverage_diagnostics():
     diagnostics = split_diagnostics(17, mask)
     assert diagnostics.missing_sums > 0
     assert diagnostics.sum_count_cv > 0.0
+
+
+def test_coverage_card_formats_split_diagnostics_and_accuracy():
+    mask = make_train_mask(11, 0.2, seed=3, kind="sum_balanced")
+    diagnostics = split_diagnostics(11, mask)
+
+    card = coverage_card(
+        "sum_balanced",
+        diagnostics,
+        train_acc=1.0,
+        test_acc=1.0,
+    )
+
+    assert "split=sum_balanced" in card
+    assert "fraction=0.198" in card
+    assert "missing_sums=0" in card
+    assert "sum_count_cv=" in card
+    assert "design_condition=" in card
+    assert "train_acc=1.000" in card
+    assert "test_acc=1.000" in card

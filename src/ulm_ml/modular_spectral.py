@@ -100,11 +100,13 @@ def sum_counts(modulus: int, train_mask: NDArray[np.bool_]) -> NDArray[np.int_]:
 def addition_fourier_features(
     a: NDArray[np.int_], b: NDArray[np.int_], modulus: int
 ) -> NDArray[np.float64]:
-    """Real Fourier features of the latent sum coordinate ``(a + b) mod p``.
+    """Oracle real Fourier features of the latent sum coordinate ``(a + b) mod p``.
 
     The first column is a bias. For frequencies 1..floor((p-1)/2), the feature map
     includes cosine and sine components. This is the minimum real Fourier basis needed
-    to represent one-hot modular sums when ``p`` is odd.
+    to represent one-hot modular sums when ``p`` is odd. Unlike operand-only character
+    interactions, this diagnostic explicitly computes the latent sum coordinate; use it
+    to test split/data geometry, not to claim a model learned the representation.
     """
 
     sums = (a + b) % modulus
@@ -164,6 +166,27 @@ def split_diagnostics(modulus: int, train_mask: NDArray[np.bool_]) -> SplitDiagn
     )
 
 
+def coverage_card(
+    split: str,
+    diagnostics: SplitDiagnostics,
+    *,
+    train_acc: float,
+    test_acc: float,
+) -> str:
+    """Format a compact latent-coverage card for a modular-addition split."""
+
+    return (
+        f"split={split} "
+        f"fraction={diagnostics.train_fraction:.3f} "
+        f"train_size={diagnostics.train_size} "
+        f"missing_sums={diagnostics.missing_sums} "
+        f"sum_count_cv={diagnostics.sum_count_cv:.3f} "
+        f"design_condition={diagnostics.design_condition:.2f} "
+        f"train_acc={train_acc:.3f} "
+        f"test_acc={test_acc:.3f}"
+    )
+
+
 def run_split_sweep(
     modulus: int,
     fractions: list[float],
@@ -184,10 +207,14 @@ def run_split_sweep(
                     {
                         "modulus": modulus,
                         "fraction": fraction,
+                        "actual_fraction": diagnostics.train_fraction,
                         "seed": seed,
                         "split": kind,
+                        "train_size": diagnostics.train_size,
                         "train_acc": train_acc,
                         "test_acc": test_acc,
+                        "min_sum_count": diagnostics.min_sum_count,
+                        "max_sum_count": diagnostics.max_sum_count,
                         "missing_sums": diagnostics.missing_sums,
                         "sum_count_cv": diagnostics.sum_count_cv,
                         "design_condition": diagnostics.design_condition,
