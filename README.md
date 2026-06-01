@@ -23,6 +23,10 @@ python -m pip install -e ".[dev]"
 ## Current Research Threads
 
 - Adaptive posterior self-consistency: a lightweight stopping rule for chain-of-thought self-consistency that spends fewer samples on converged prompts. See `docs/adaptive-posterior-self-consistency.md`, `src/ulm_ml/adaptive_consistency.py`, and `experiments/adaptive_consistency_synthetic.py`.
+- Modular spectral split probe: a low-compute diagnostic for whether modular arithmetic train splits cover the latent Fourier coordinate before launching expensive grokking runs. See `docs/modular-spectral-probe.md` and `experiments/modular_spectral_probe.py`.
+- Modular character baseline: explicit cyclic-character interaction features as a control for grokking-style modular arithmetic. See `docs/research-brief-character-timescales.md` and `experiments/modular_character_timescales.py`.
+- Symmetry-augmented sparse recovery: cyclic augmentation as a controlled sparse-dictionary feature recovery probe. See `docs/symmetry-augmented-sparse-recovery.md`.
+- PACE bias TTA: Prior-Anchored Conservative Entropy for bias-only logit calibration under unlabeled target drift. See `docs/pace-bias-tta-report.md`.
 
 ## Repository Layout
 
@@ -37,11 +41,6 @@ reports/figures/   generated figures, ignored by git
 docs/              research notes and decisions
 tests/             regression tests for reusable code
 ```
-
-
-## Active Research Threads
-
-- Modular spectral split probe: a low-compute diagnostic for whether modular arithmetic train splits cover the latent Fourier coordinate before launching expensive grokking runs. See `docs/modular-spectral-probe.md` and `experiments/modular_spectral_probe.py`.
 
 ## Working Pattern
 

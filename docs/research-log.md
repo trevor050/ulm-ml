@@ -18,3 +18,4 @@ Use this as the compact source of truth for experiments that matter.
   `docs/symmetry-augmented-sparse-recovery.md` and
   `experiments/symmetry_augmented_sparse_recovery.py`.
 - Started the adaptive posterior self-consistency thread: a Dirichlet posterior early-stopping rule for answer-only self-consistency traces. Initial synthetic replay (`reports/adaptive-consistency.md`) matched fixed-32 accuracy with about half the samples; next step is replay on cached GSM8K/SVAMP traces from a small reasoning model.
+- Added a CPU-only TTA seed project: Prior-Anchored Conservative Entropy (PACE) for bias-only adaptation. Initial five-seed digits experiments suggest small gains for logit prior drift (balanced stream: source 0.892 accuracy, PACE 0.909) and a useful negative result for image corruption, where bias-only adaptation does not repair feature damage. See `docs/pace-bias-tta-report.md` and `experiments/pace_bias_tta.py`.
