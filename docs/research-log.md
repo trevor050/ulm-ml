@@ -11,3 +11,9 @@ Use this as the compact source of truth for experiments that matter.
   p=43, while pair one-hot memorization stays at chance. No external datasets or committed
   artifacts were added.
 - Added a CPU-only modular spectral split probe. Initial p=31 sweep shows sum-balanced latent residue coverage gives 1.000 Fourier-probe test accuracy at 3% train fraction, while random splits average 0.633 and operand-block splits 0.300; see `docs/modular-spectral-probe.md`.
+- Added a lightweight symmetry-augmented sparse feature recovery study. The
+  result: cyclic group augmentation improves known-feature recovery in a
+  controlled sparse dictionary benchmark, especially with only 40 observations
+  (0.481 -> 0.736 of true atoms recovered at cosine >= 0.90). See
+  `docs/symmetry-augmented-sparse-recovery.md` and
+  `experiments/symmetry_augmented_sparse_recovery.py`.
