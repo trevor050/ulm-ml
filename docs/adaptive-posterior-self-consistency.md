@@ -2,6 +2,9 @@
 
 ## Status
 
+Portfolio verdict: **given up as active research** until real answer traces
+exist. See `docs/given-up/adaptive-self-consistency.md`.
+
 Evidence level: **synthetic sanity check only**.
 
 The current result in `reports/adaptive-consistency.md` is a simulator over

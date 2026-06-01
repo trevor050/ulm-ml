@@ -1,5 +1,8 @@
 # Fast-weight associative recall: a low-compute research probe
 
+Portfolio status: `full_research`. The hardened interference framing is in
+`docs/full-research/sequence-memory-interference.md`.
+
 ## Motivation
 
 Recent efficient-sequence-model work keeps returning to the same idea in different

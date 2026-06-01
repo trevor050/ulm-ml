@@ -20,17 +20,33 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
 ```
 
-## Current Research Threads
+## Research Portfolio
 
-- Adaptive posterior self-consistency: a lightweight stopping rule for chain-of-thought self-consistency that spends fewer samples on converged prompts. See `docs/adaptive-posterior-self-consistency.md`, `src/ulm_ml/adaptive_consistency.py`, and `experiments/adaptive_consistency_synthetic.py`.
-- Modular spectral split probe: a low-compute diagnostic for whether modular arithmetic train splits cover the latent Fourier coordinate before launching expensive grokking runs. See `docs/modular-spectral-probe.md` and `experiments/modular_spectral_probe.py`.
-- Modular character baseline: explicit cyclic-character interaction features as a control for grokking-style modular arithmetic. See `docs/research-brief-character-timescales.md` and `experiments/modular_character_timescales.py`.
-- Symmetry-augmented sparse recovery: cyclic augmentation as a controlled sparse-dictionary feature recovery probe. See `docs/symmetry-augmented-sparse-recovery.md`.
-- PACE bias TTA: Prior-Anchored Conservative Entropy for bias-only logit calibration under unlabeled target drift. See `docs/pace-bias-tta-report.md`.
-- EGPR prototype replay: mostly negative TTA scaffold now framed around predicting when adaptation is unsafe. See `docs/egpr-brief.md`.
-- Sequence-memory fast weights: associative-recall harness with nearest-neighbor, scalar fast-weight, delta-rule, and learned-gate baselines. See `docs/sequence-memory-fast-weights.md`.
-- Phase state tracking: root-of-unity finite-state sidecar as a constructive oracle/probe for recurrent models. See `docs/phase-state-tracking.md`.
-- Cross-thread ranking and next experiments: see `docs/research-synthesis.md`.
+Every project is now forced into one of two buckets: `full_research` or
+`given_up`. See `docs/research-portfolio.md` for the binary verdict table and
+`src/ulm_ml/research_portfolio.py` for the machine-readable manifest.
+
+### Full Research Tracks
+
+- Cyclic representation probes: modular spectral diagnostics, modular character
+  baselines, and phase-state tracking are one track about cyclic representations
+  and data-split geometry, now including a learned MLP memorization sanity
+  check. See `docs/full-research/cyclic-representation-probes.md`.
+- Symmetry-augmented sparse recovery: cyclic augmentation improves strict
+  one-to-one sparse feature recovery while a size-matched false-symmetry control
+  fails. See `docs/full-research/symmetry-sparse-recovery.md`.
+- Sequence-memory interference: associative-recall load curves expose where
+  compact fast-weight, delta, gated, and orthogonalized memories fail against
+  retrieval baselines. See `docs/full-research/sequence-memory-interference.md`.
+
+### Given Up As Active Projects
+
+- Adaptive posterior self-consistency: parked until cached real-model answer
+  traces exist. See `docs/given-up/adaptive-self-consistency.md`.
+- EGPR prototype replay: given up as an adaptation method after no-adapt
+  baselines beat online updates. See `docs/given-up/egpr-prototype-replay.md`.
+- PACE bias-only TTA: kept only as a narrow prior-drift diagnostic baseline.
+  See `docs/given-up/pace-bias-tta.md`.
 
 ## Repository Layout
 

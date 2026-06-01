@@ -10,6 +10,8 @@ Research staging repo for ULM machine-learning experiments. Keep this file tight
 - `data/`, `artifacts/`, `models/`, and `reports/figures/` are intentionally ignored except for `.gitkeep` placeholders.
 - `docs/research-log.md` is the lightweight running log for decisions, datasets, and results worth remembering.
 - `docs/research-synthesis.md` is the current cross-thread ranking and caveat map.
+- `docs/research-portfolio.md` and `src/ulm_ml/research_portfolio.py` are the binary project map: every thread is either `full_research` or `given_up`.
+- `docs/research-portfolio.md` is the hard binary keep/give-up map. Use it before spending time deepening a thread.
 
 ## Commands
 
@@ -25,4 +27,5 @@ Research staging repo for ULM machine-learning experiments. Keep this file tight
 - If adding external data sources, document source, license/terms, retrieval date, and preprocessing path in `docs/research-log.md`.
 - Treat modular spectral features and phase channels as oracle/control probes unless a learned model actually discovers them.
 - For sparse recovery, use the unique one-to-one metric as the headline; loose best-match recovery is only diagnostic.
-- For EGPR, current evidence is mostly negative; frame future work around no-label safety prediction instead of raw accuracy claims.
+- The active full-research tracks are cyclic representation probes, symmetry-augmented sparse recovery, and sequence-memory interference.
+- Adaptive self-consistency, EGPR prototype replay, and PACE bias-only TTA are given up as active standalone projects unless their `docs/given-up/` resurrection gates are satisfied.

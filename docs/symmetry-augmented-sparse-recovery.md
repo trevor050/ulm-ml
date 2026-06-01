@@ -1,5 +1,8 @@
 # Cyclic symmetry augmentation for sparse feature recovery
 
+Portfolio status: `full_research`. The hardened version with false-symmetry
+control is summarized in `docs/full-research/symmetry-sparse-recovery.md`.
+
 ## Claim
 
 A cheap way to make sparse feature recovery more reliable is to augment unlabeled

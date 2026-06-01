@@ -107,6 +107,26 @@ def cyclic_augment(observations: FloatArray, config: OrbitSparseConfig) -> Float
     )
 
 
+def shuffled_coordinate_augment(
+    observations: FloatArray,
+    config: OrbitSparseConfig,
+    *,
+    seed: int,
+) -> FloatArray:
+    """Stack size-matched false-symmetry augmentations.
+
+    This deliberately uses random coordinate permutations instead of the known
+    cyclic action. It is a negative control for the boring explanation that
+    cyclic augmentation only helps because NMF sees more rows.
+    """
+
+    rng = np.random.default_rng(seed)
+    augmented = [observations]
+    for _ in range(1, config.orbit_size):
+        augmented.append(observations[:, rng.permutation(config.ambient_dim)])
+    return np.vstack(augmented)
+
+
 def fit_nmf_dictionary(
     observations: FloatArray,
     n_components: int,
