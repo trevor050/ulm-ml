@@ -20,6 +20,11 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
 ```
 
+
+## Current Research Threads
+
+- `docs/pace-bias-tta-report.md` documents a small CPU-only test-time adaptation idea: Prior-Anchored Conservative Entropy (PACE) for bias-only logit calibration under unlabeled target drift.
+
 ## Repository Layout
 
 ```text
