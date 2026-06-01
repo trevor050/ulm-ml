@@ -11,6 +11,7 @@ from dataclasses import dataclass
 
 import numpy as np
 from numpy.typing import NDArray
+from scipy.optimize import linear_sum_assignment
 from sklearn.decomposition import NMF
 
 FloatArray = NDArray[np.float64]
@@ -133,7 +134,11 @@ def fit_nmf_dictionary(
 
 
 def feature_recovery(learned_atoms: FloatArray, true_atoms: FloatArray) -> tuple[float, float]:
-    """Measure ground-truth recovery by best cosine match per true feature.
+    """Measure loose ground-truth recovery by best cosine match per true feature.
+
+    This metric is useful as a quick diagnostic, but it can overstate recovery
+    because several true atoms may choose the same learned atom as their best
+    match. Use :func:`unique_feature_recovery` for the headline metric.
 
     Returns:
         ``(mean_best_cosine, fraction_at_0_90)``.
@@ -142,6 +147,29 @@ def feature_recovery(learned_atoms: FloatArray, true_atoms: FloatArray) -> tuple
     similarities = normalize_rows(learned_atoms) @ normalize_rows(true_atoms).T
     best_per_truth = similarities.max(axis=0)
     return float(best_per_truth.mean()), float(np.mean(best_per_truth >= 0.90))
+
+
+def unique_feature_recovery(
+    learned_atoms: FloatArray,
+    true_atoms: FloatArray,
+    *,
+    threshold: float = 0.90,
+) -> tuple[float, float]:
+    """Measure one-to-one feature recovery with optimal cosine assignment.
+
+    Each true atom can be matched to at most one learned atom and vice versa.
+    This prevents duplicate learned atoms from making recovery look better than
+    it is, mirroring the one-to-one matching spirit of PW-MCC-style dictionary
+    comparisons used in sparse-autoencoder consistency work.
+    """
+
+    if threshold < -1.0 or threshold > 1.0:
+        raise ValueError("threshold must be in [-1, 1]")
+    similarities = normalize_rows(learned_atoms) @ normalize_rows(true_atoms).T
+    learned_indices, true_indices = linear_sum_assignment(-similarities)
+    assigned = np.zeros(true_atoms.shape[0], dtype=np.float64)
+    assigned[true_indices] = similarities[learned_indices, true_indices]
+    return float(np.mean(assigned)), float(np.mean(assigned >= threshold))
 
 
 def orbit_closure_score(learned_atoms: FloatArray, config: OrbitSparseConfig) -> float:

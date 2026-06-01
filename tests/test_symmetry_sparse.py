@@ -7,6 +7,7 @@ from ulm_ml.symmetry_sparse import (
     make_orbit_dictionary,
     orbit_closure_score,
     sample_observations,
+    unique_feature_recovery,
 )
 
 
@@ -38,6 +39,35 @@ def test_metrics_recognize_ground_truth_dictionary() -> None:
     assert observations.shape == (5, config.ambient_dim)
     assert codes.shape == (5, config.n_features)
     mean_best, frac_090 = feature_recovery(dictionary, dictionary)
+    unique_mean, unique_frac = unique_feature_recovery(dictionary, dictionary)
     assert mean_best > 0.999
     assert frac_090 == 1.0
+    assert unique_mean > 0.999
+    assert unique_frac == 1.0
     assert orbit_closure_score(dictionary, config) > 0.99
+
+
+def test_unique_recovery_penalizes_duplicate_learned_atoms() -> None:
+    true_atoms = np.array(
+        [
+            [1.0, 0.0],
+            [0.95, 0.31],
+        ],
+        dtype=np.float64,
+    )
+    learned_atoms = np.array(
+        [
+            [1.0, 0.0],
+        ],
+        dtype=np.float64,
+    )
+
+    loose_mean, loose_frac = feature_recovery(learned_atoms, true_atoms)
+    unique_mean, unique_frac = unique_feature_recovery(
+        learned_atoms, true_atoms, threshold=0.90
+    )
+
+    assert loose_mean > 0.97
+    assert loose_frac == 1.0
+    assert unique_mean == 0.5
+    assert unique_frac == 0.5

@@ -36,31 +36,40 @@ Two fits are compared:
 
 Evaluation uses ground truth only after training:
 
-- `mean_best_cosine`: average best cosine match for each true atom.
-- `frac_recovered_090`: fraction of true atoms with best cosine at least `0.90`.
+- `unique_mean_cosine`: one-to-one optimal assignment cosine between learned and
+  true atoms. This is the headline metric because one learned atom cannot explain
+  multiple true atoms.
+- `unique_frac_recovered_090`: fraction of true atoms whose assigned learned atom
+  has cosine at least `0.90`.
+- `loose_frac_recovered_090`: loose best-match diagnostic. It can overstate
+  recovery because multiple true atoms may choose the same learned atom.
 - `orbit_closure`: label-free score measuring whether learned atoms are closed
   under the cyclic group.
 
 ## Result
 
 The run below used 6 data seeds and 4 fit seeds per sample size, for 24 trials per
-condition. Augmentation improved both feature recovery metrics at every sample
-size.
+condition. Augmentation improved the strict one-to-one recovery metric at every
+sample size, although the stricter metric also shows that the original loose
+best-match score substantially overstated absolute recovery.
 
-| Samples | Method | Mean best cosine | True atoms recovered ≥0.90 | Orbit closure | Reconstruction MSE |
-|---:|---|---:|---:|---:|---:|
-| 40 | baseline | 0.803 | 0.481 | 0.339 | 0.0917 |
-| 40 | cyclic augmented | **0.897** | **0.736** | **0.489** | 0.0958 |
-| 70 | baseline | 0.861 | 0.653 | 0.414 | 0.0930 |
-| 70 | cyclic augmented | **0.913** | **0.788** | **0.512** | 0.0919 |
-| 120 | baseline | 0.882 | 0.741 | 0.441 | 0.0927 |
-| 120 | cyclic augmented | **0.920** | **0.840** | **0.517** | 0.0899 |
+| Samples | Method | Unique mean cosine | Unique recovered >=0.90 | Loose recovered >=0.90 | Orbit closure | Reconstruction MSE |
+|---:|---|---:|---:|---:|---:|---:|
+| 40 | baseline | 0.410 | 0.373 | 0.481 | 0.339 | 0.0917 |
+| 40 | cyclic augmented | **0.506** | **0.486** | **0.736** | **0.489** | 0.0958 |
+| 70 | baseline | 0.464 | 0.448 | 0.653 | 0.414 | 0.0930 |
+| 70 | cyclic augmented | **0.529** | **0.509** | **0.788** | **0.512** | 0.0919 |
+| 120 | baseline | 0.491 | 0.488 | 0.741 | 0.441 | 0.0927 |
+| 120 | cyclic augmented | **0.532** | **0.510** | **0.840** | **0.517** | 0.0899 |
 
 The largest gain is in the lowest-data regime: with 40 observations, cyclic
-augmentation raises the recovered-feature fraction from `0.481` to `0.736`, a
-relative improvement of about 53%. Reconstruction loss alone is not a sufficient
-selection criterion: the 40-sample augmented run recovers many more true atoms
-while accepting slightly worse in-sample reconstruction MSE.
+augmentation raises the strict recovered-feature fraction from `0.373` to
+`0.486`, a relative improvement of about 30%. The loose metric reports a much
+larger improvement (`0.481` to `0.736`), which should be read as a diagnostic for
+cluster proximity rather than true atom recovery. Reconstruction loss alone is
+not a sufficient selection criterion: the 40-sample augmented run recovers more
+strictly assigned true atoms while accepting slightly worse in-sample
+reconstruction MSE.
 
 ## Interpretation
 
@@ -77,7 +86,7 @@ suggests a next experiment:
    transformer task;
 2. train matched SAEs with and without orbit augmentation;
 3. select and report features using reconstruction, sparsity, cross-seed
-   consistency, and orbit-closure metrics together.
+   consistency, unique recovery, and orbit-closure metrics together.
 
 ## Reproduction
 

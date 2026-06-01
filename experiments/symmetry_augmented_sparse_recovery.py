@@ -23,6 +23,7 @@ from ulm_ml.symmetry_sparse import (
     make_orbit_dictionary,
     orbit_closure_score,
     sample_observations,
+    unique_feature_recovery,
 )
 
 
@@ -32,8 +33,10 @@ class TrialResult:
     method: str
     data_seed: int
     fit_seed: int
-    mean_best_cosine: float
-    frac_recovered_090: float
+    loose_mean_best_cosine: float
+    loose_frac_recovered_090: float
+    unique_mean_cosine: float
+    unique_frac_recovered_090: float
     orbit_closure: float
     reconstruction_mse: float
     n_iter: int
@@ -53,14 +56,17 @@ def run_trial(
     learned, mse, n_iter = fit_nmf_dictionary(
         fit_observations, config.n_features, seed=fit_seed
     )
-    mean_best, frac_090 = feature_recovery(learned, true_dictionary)
+    loose_mean_best, loose_frac_090 = feature_recovery(learned, true_dictionary)
+    unique_mean, unique_frac_090 = unique_feature_recovery(learned, true_dictionary)
     return TrialResult(
         n_samples=n_samples,
         method="cyclic_augmented" if augment else "baseline",
         data_seed=data_seed,
         fit_seed=fit_seed,
-        mean_best_cosine=mean_best,
-        frac_recovered_090=frac_090,
+        loose_mean_best_cosine=loose_mean_best,
+        loose_frac_recovered_090=loose_frac_090,
+        unique_mean_cosine=unique_mean,
+        unique_frac_recovered_090=unique_frac_090,
         orbit_closure=orbit_closure_score(learned, config),
         reconstruction_mse=mse,
         n_iter=n_iter,
@@ -103,8 +109,16 @@ def summarize(results: list[TrialResult]) -> list[dict[str, float | int | str]]:
                 "n_samples": n_samples,
                 "method": method,
                 "trials": len(group),
-                "mean_best_cosine": float(np.mean([r.mean_best_cosine for r in group])),
-                "frac_recovered_090": float(np.mean([r.frac_recovered_090 for r in group])),
+                "loose_mean_best_cosine": float(
+                    np.mean([r.loose_mean_best_cosine for r in group])
+                ),
+                "loose_frac_recovered_090": float(
+                    np.mean([r.loose_frac_recovered_090 for r in group])
+                ),
+                "unique_mean_cosine": float(np.mean([r.unique_mean_cosine for r in group])),
+                "unique_frac_recovered_090": float(
+                    np.mean([r.unique_frac_recovered_090 for r in group])
+                ),
                 "orbit_closure": float(np.mean([r.orbit_closure for r in group])),
                 "reconstruction_mse": float(np.mean([r.reconstruction_mse for r in group])),
             }
@@ -132,8 +146,9 @@ def main() -> None:
     for row in rows:
         print(
             f"n={row['n_samples']:>3} {row['method']:<16} "
-            f"cos={row['mean_best_cosine']:.3f} "
-            f"frac90={row['frac_recovered_090']:.3f} "
+            f"unique_cos={row['unique_mean_cosine']:.3f} "
+            f"unique_frac90={row['unique_frac_recovered_090']:.3f} "
+            f"loose_frac90={row['loose_frac_recovered_090']:.3f} "
             f"closure={row['orbit_closure']:.3f} "
             f"mse={row['reconstruction_mse']:.4f}"
         )
