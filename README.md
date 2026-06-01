@@ -20,6 +20,10 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
 ```
 
+## Current Research Threads
+
+- Adaptive posterior self-consistency: a lightweight stopping rule for chain-of-thought self-consistency that spends fewer samples on converged prompts. See `docs/adaptive-posterior-self-consistency.md`, `src/ulm_ml/adaptive_consistency.py`, and `experiments/adaptive_consistency_synthetic.py`.
+
 ## Repository Layout
 
 ```text

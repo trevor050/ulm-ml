@@ -17,3 +17,4 @@ Use this as the compact source of truth for experiments that matter.
   (0.481 -> 0.736 of true atoms recovered at cosine >= 0.90). See
   `docs/symmetry-augmented-sparse-recovery.md` and
   `experiments/symmetry_augmented_sparse_recovery.py`.
+- Started the adaptive posterior self-consistency thread: a Dirichlet posterior early-stopping rule for answer-only self-consistency traces. Initial synthetic replay (`reports/adaptive-consistency.md`) matched fixed-32 accuracy with about half the samples; next step is replay on cached GSM8K/SVAMP traces from a small reasoning model.
