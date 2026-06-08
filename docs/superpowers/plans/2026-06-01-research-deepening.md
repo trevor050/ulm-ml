@@ -4,7 +4,7 @@
 
 **Goal:** Consolidate the eight cloud research PRs into one stronger research branch, fix the weak evidence paths, and add enough reproducible experiment scaffolding that future Codex cloud agents can push from real baselines instead of toy claims.
 
-**Architecture:** Keep each research thread as a small CPU-first module plus a runnable experiment and a short report. Add shared metrics only where they prevent inflated results or repeated mistakes. Prefer honest negative results over cosmetic wins.
+**Architecture:** Keep each research thread as a small module plus a runnable experiment and a short report. Add shared metrics only where they prevent inflated results or repeated mistakes. Prefer honest negative results over cosmetic wins.
 
 **Tech Stack:** Python 3.11, NumPy, pandas, SciPy, scikit-learn, pytest, ruff, GitHub Actions.
 
@@ -19,7 +19,7 @@
 - `src/ulm_ml/tta.py` and `src/ulm_ml/egpr.py`: lightweight test-time adaptation utilities.
 - `src/ulm_ml/adaptive_consistency.py`: self-consistency stopping policies.
 - `src/ulm_ml/state_tracking.py`: finite-state sequence tracking probes.
-- `experiments/`: runnable CPU-first experiments; generated outputs go to ignored `artifacts/` or `reports/`.
+- `experiments/`: runnable experiments; generated outputs go to ignored `artifacts/` or `reports/`.
 - `docs/research-synthesis.md`: final cross-thread synthesis, ranking, caveats, and next experiments.
 
 ## Task 1: Integrate Research Threads
@@ -83,13 +83,13 @@ Add a test where two learned atoms both match one true atom and another true ato
 
 - [ ] **Step 3: Update experiment and report**
 
-Have `experiments/symmetry_augmented_sparse_recovery.py` write both loose and unique recovery metrics. Rewrite the report to treat the unique metric as the headline and the loose metric as a diagnostic.
+Have `experiments/symmetry-sparse-recovery/symmetry_augmented_sparse_recovery.py` write both loose and unique recovery metrics. Rewrite the report to treat the unique metric as the headline and the loose metric as a diagnostic.
 
 Run:
 
 ```bash
 .venv/bin/pytest tests/test_symmetry_sparse.py
-PYTHONPATH=src .venv/bin/python experiments/symmetry_augmented_sparse_recovery.py --output artifacts/symmetry_sparse_summary.csv
+PYTHONPATH=src .venv/bin/python experiments/symmetry-sparse-recovery/symmetry_augmented_sparse_recovery.py --output artifacts/symmetry_sparse_summary.csv
 ```
 
 ## Task 3: Strengthen Modular Grokking Diagnostics
@@ -97,8 +97,8 @@ PYTHONPATH=src .venv/bin/python experiments/symmetry_augmented_sparse_recovery.p
 **Files:**
 - Modify: `src/ulm_ml/modular_arithmetic.py`
 - Modify: `src/ulm_ml/modular_spectral.py`
-- Modify: `experiments/modular_character_timescales.py`
-- Modify: `experiments/modular_spectral_probe.py`
+- Modify: `experiments/cyclic-representation-probes/modular_character_timescales.py`
+- Modify: `experiments/cyclic-representation-probes/modular_spectral_probe.py`
 - Modify: `docs/research-brief-character-timescales.md`
 - Modify: `docs/modular-spectral-probe.md`
 
@@ -118,15 +118,15 @@ Run:
 
 ```bash
 .venv/bin/pytest tests/test_modular_arithmetic.py tests/test_modular_spectral.py
-PYTHONPATH=src .venv/bin/python experiments/modular_character_timescales.py --moduli 31 --train-fractions 0.10 --seeds 0 1 --output artifacts/modular_character_smoke.csv
-PYTHONPATH=src .venv/bin/python experiments/modular_spectral_probe.py --modulus 31 --fractions 0.03 0.10 --seeds 0 1
+PYTHONPATH=src .venv/bin/python experiments/cyclic-representation-probes/modular_character_timescales.py --moduli 31 --train-fractions 0.10 --seeds 0 1 --output artifacts/modular_character_smoke.csv
+PYTHONPATH=src .venv/bin/python experiments/cyclic-representation-probes/modular_spectral_probe.py --modulus 31 --fractions 0.03 0.10 --seeds 0 1
 ```
 
 ## Task 4: Repair TTA Baselines
 
 **Files:**
 - Modify: `src/ulm_ml/egpr.py`
-- Modify: `experiments/egpr_digits_tta.py`
+- Modify: `experiments/egpr-prototype-replay/egpr_digits_tta.py`
 - Modify: `docs/egpr-brief.md`
 - Modify: `docs/pace-bias-tta-report.md`
 - Modify: `tests/test_egpr.py`
@@ -147,15 +147,15 @@ Run:
 
 ```bash
 .venv/bin/pytest tests/test_egpr.py tests/test_tta.py
-PYTHONPATH=src .venv/bin/python experiments/egpr_digits_tta.py --seeds 0 1 2 3 4 --output artifacts/egpr_digits_tta.csv
-PYTHONPATH=src .venv/bin/python experiments/pace_bias_tta.py --seeds 0 1 2 --out-dir artifacts/pace_bias_tta_smoke
+PYTHONPATH=src .venv/bin/python experiments/egpr-prototype-replay/egpr_digits_tta.py --seeds 0 1 2 3 4 --output artifacts/egpr_digits_tta.csv
+PYTHONPATH=src .venv/bin/python experiments/pace-bias-tta/pace_bias_tta.py --seeds 0 1 2 --out-dir artifacts/pace_bias_tta_smoke
 ```
 
 ## Task 5: Improve Fast-Weight Memory Baselines
 
 **Files:**
 - Modify: `src/ulm_ml/sequence_memory/models.py`
-- Modify: `experiments/sequence_memory/associative_recall_fast_weights.py`
+- Modify: `experiments/sequence-memory-interference/associative_recall_fast_weights.py`
 - Modify: `docs/sequence-memory-fast-weights.md`
 - Modify: `tests/sequence_memory/test_associative_recall.py`
 
@@ -175,7 +175,7 @@ Run:
 
 ```bash
 .venv/bin/pytest tests/sequence_memory/test_associative_recall.py
-PYTHONPATH=src .venv/bin/python experiments/sequence_memory/associative_recall_fast_weights.py --epochs 4 --train-size 1024 --test-size 512
+PYTHONPATH=src .venv/bin/python experiments/sequence-memory-interference/associative_recall_fast_weights.py --epochs 4 --train-size 1024 --test-size 512
 ```
 
 ## Task 6: Make Synthetic-Only Threads Honest and Actionable
@@ -202,8 +202,8 @@ Run:
 
 ```bash
 .venv/bin/pytest tests/test_adaptive_consistency.py tests/test_state_tracking.py
-PYTHONPATH=src .venv/bin/python experiments/adaptive_consistency_synthetic.py
-PYTHONPATH=src .venv/bin/python experiments/phase_state_tracking.py
+PYTHONPATH=src .venv/bin/python experiments/adaptive-self-consistency/adaptive_consistency_synthetic.py
+PYTHONPATH=src .venv/bin/python experiments/cyclic-representation-probes/phase_state_tracking.py
 ```
 
 ## Task 7: Verify and Publish

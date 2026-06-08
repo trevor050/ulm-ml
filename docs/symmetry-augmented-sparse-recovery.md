@@ -94,7 +94,7 @@ suggests a next experiment:
 ## Reproduction
 
 ```bash
-PYTHONPATH=src python experiments/symmetry_augmented_sparse_recovery.py --output /tmp/symmetry_sparse_summary.csv
+PYTHONPATH=src python experiments/symmetry-sparse-recovery/symmetry_augmented_sparse_recovery.py --output /tmp/symmetry_sparse_summary.csv
 ```
 
 The implementation lives in `src/ulm_ml/symmetry_sparse.py`; regression tests for

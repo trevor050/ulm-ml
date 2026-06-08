@@ -1,6 +1,6 @@
 """Run the modular-addition spectral split probe.
 
-This is a CPU-only experiment designed to finish in seconds. It writes a compact CSV
+This experiment writes a compact CSV
 that can guide whether a much more expensive grokking run is worth launching.
 """
 

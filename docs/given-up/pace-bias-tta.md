@@ -27,7 +27,7 @@ feature-damage batches.
 Baseline command:
 
 ```bash
-PYTHONPATH=src python experiments/pace_bias_tta.py --seeds 0 1 2 3 4 --out-dir artifacts/pace_bias_tta
+PYTHONPATH=src python experiments/pace-bias-tta/pace_bias_tta.py --seeds 0 1 2 3 4 --out-dir artifacts/pace_bias_tta
 ```
 
 It is publishable only if the method can say when bias adaptation is appropriate,

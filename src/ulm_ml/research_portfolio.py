@@ -34,9 +34,11 @@ PROJECTS: tuple[ResearchProject, ...] = (
             "Merged modular spectral diagnostics, modular character baselines, and "
             "phase-state tracking into one research track on cyclic representations."
         ),
-        primary_doc="docs/full-research/cyclic-representation-probes.md",
+        primary_doc="experiments/cyclic-representation-probes/README.md",
         representative_command=(
-            "python experiments/modular_spectral_probe.py --modulus 31 "
+            "python "
+            "experiments/cyclic-representation-probes/modular_spectral_probe.py "
+            "--modulus 31 "
             "--fractions 0.05 0.10 0.20 --seeds 0 1 2 3"
         ),
     ),
@@ -48,8 +50,11 @@ PROJECTS: tuple[ResearchProject, ...] = (
             "Strict one-to-one recovery improves under the correct cyclic action and "
             "fails under a size-matched shuffled-action control."
         ),
-        primary_doc="docs/full-research/symmetry-sparse-recovery.md",
-        representative_command="python experiments/symmetry_augmented_sparse_recovery.py",
+        primary_doc="experiments/symmetry-sparse-recovery/README.md",
+        representative_command=(
+            "python "
+            "experiments/symmetry-sparse-recovery/symmetry_augmented_sparse_recovery.py"
+        ),
     ),
     ResearchProject(
         slug="sequence-memory-interference",
@@ -59,9 +64,9 @@ PROJECTS: tuple[ResearchProject, ...] = (
             "Compact fast-weight memories are now framed as an interference benchmark "
             "with load curves against nearest-neighbor retrieval."
         ),
-        primary_doc="docs/full-research/sequence-memory-interference.md",
+        primary_doc="experiments/sequence-memory-interference/README.md",
         representative_command=(
-            "python experiments/sequence_memory/associative_recall_fast_weights.py "
+            "python experiments/sequence-memory-interference/associative_recall_fast_weights.py "
             "--epochs 8 --key-dims 16 32 64 --train-size 2048 --test-size 1024"
         ),
     ),
@@ -74,10 +79,10 @@ PROJECTS: tuple[ResearchProject, ...] = (
             "reliability-action framing has runnable route, source-selection, and "
             "verifier probes with explicit negative controls."
         ),
-        primary_doc="projects/doubt-tts/README.md",
+        primary_doc="experiments/doubt-tts/README.md",
         representative_command=(
-            "python projects/doubt-tts/scripts/doubt_probe.py "
-            "--data projects/doubt-tts/benchmarks/event_contrast_route_questions.jsonl "
+            "python experiments/doubt-tts/scripts/doubt_probe.py "
+            "--data experiments/doubt-tts/benchmarks/event_contrast_route_questions.jsonl "
             "--route-only --event-verifier-only "
             "--out /tmp/doubt_tts_table_event_results.jsonl "
             "--report /tmp/doubt_tts_table_event_report.md"
@@ -91,7 +96,7 @@ PROJECTS: tuple[ResearchProject, ...] = (
             "Given up as active research until cached real-model answer traces exist; "
             "current synthetic simulator remains only replay infrastructure."
         ),
-        primary_doc="docs/given-up/adaptive-self-consistency.md",
+        primary_doc="experiments/adaptive-self-consistency/README.md",
         representative_command=None,
     ),
     ResearchProject(
@@ -102,7 +107,7 @@ PROJECTS: tuple[ResearchProject, ...] = (
             "Given up as an adaptation method because true no-adapt baselines beat or "
             "match online prototype updates on the digits shifts."
         ),
-        primary_doc="docs/given-up/egpr-prototype-replay.md",
+        primary_doc="experiments/egpr-prototype-replay/README.md",
         representative_command=None,
     ),
     ResearchProject(
@@ -113,7 +118,7 @@ PROJECTS: tuple[ResearchProject, ...] = (
             "Given up as a standalone project; it survives only as a narrow "
             "label-prior-drift diagnostic baseline."
         ),
-        primary_doc="docs/given-up/pace-bias-tta.md",
+        primary_doc="experiments/pace-bias-tta/README.md",
         representative_command=None,
     ),
 )

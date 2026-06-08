@@ -27,7 +27,7 @@ The next acceptable command should evaluate safety prediction, not just replay
 accuracy:
 
 ```bash
-PYTHONPATH=src python experiments/egpr_digits_tta.py --seeds 0 1 2 3 4 --output artifacts/egpr_digits_tta.json
+PYTHONPATH=src python experiments/egpr-prototype-replay/egpr_digits_tta.py --seeds 0 1 2 3 4 --output artifacts/egpr_digits_tta.json
 ```
 
 The revival metric is whether fallback improves or preserves source-only

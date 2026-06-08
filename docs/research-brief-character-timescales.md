@@ -26,7 +26,7 @@ three factors that are otherwise entangled in neural training curves:
 
 ## Literature hook
 
-This project was selected because it is small enough to run on CPU but touches a current open
+This project was selected because it is tightly scoped but touches a current open
 question in grokking research.
 
 - Liu et al. (2022) describe grokking as delayed generalization and map phase diagrams over
@@ -65,7 +65,7 @@ All models are the same one-vs-all ridge classifier. The only moving part is the
 ## Reproducible command
 
 ```bash
-PYTHONPATH=src python experiments/modular_character_timescales.py \
+PYTHONPATH=src python experiments/cyclic-representation-probes/modular_character_timescales.py \
   --moduli 31 43 \
   --train-fractions 0.10 0.20 0.35 \
   --seeds 0 1 2 3 4 \

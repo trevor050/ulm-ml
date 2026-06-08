@@ -55,7 +55,7 @@ The reusable module `src/ulm_ml/modular_spectral.py` implements:
 - latent sum coverage diagnostics (`missing_sums`, coefficient of variation, Fourier
   design condition number);
 - a closed-form ridge probe over oracle real Fourier features of `(a + b) mod p`;
-- a sweep helper for reproducible CPU-only experiments.
+- a sweep helper for reproducible experiments.
 
 Important boundary: this probe explicitly computes the latent sum coordinate.
 It is a split/data-geometry diagnostic, not evidence that a neural model learned
@@ -63,12 +63,12 @@ the coordinate. The companion character-interaction baseline in
 `docs/research-brief-character-timescales.md` is the operand-derived
 representation control.
 
-The runnable script is `experiments/modular_spectral_probe.py`.
+The runnable script is `experiments/cyclic-representation-probes/modular_spectral_probe.py`.
 
 Command used for the first run:
 
 ```bash
-PYTHONPATH=src python experiments/modular_spectral_probe.py \
+PYTHONPATH=src python experiments/cyclic-representation-probes/modular_spectral_probe.py \
   --modulus 31 \
   --fractions 0.03 0.05 0.08 0.10 0.15 \
   --seeds 0 1 2 3 4 5 6 7 8 9

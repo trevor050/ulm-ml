@@ -1,6 +1,6 @@
 """Train a tiny MLP on modular-addition splits and log coverage diagnostics.
 
-This is deliberately not a grokking run. It is a CPU-scale learned-model sanity
+This is deliberately not a grokking run. It is a reproducible learned-model sanity
 check for the stronger oracle claim from ``modular_spectral_probe.py``: do split
 coverage cards predict when even a small nonlinear model has a path to
 generalization?

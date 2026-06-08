@@ -13,7 +13,7 @@ delta-rule variants try to make those memories more useful on long contexts.
 This repo now has a deliberately tiny probe for that theme. It asks whether a
 compact outer-product memory can recall values associated with random keys when
 we train on short sequences and evaluate on longer ones. The point is not to win
-a benchmark; it is to make memory failure modes visible in seconds on CPU.
+a benchmark; it is to make memory failure modes visible quickly.
 
 Useful starting references:
 
@@ -49,7 +49,7 @@ Implemented memories:
 Command run on 2026-06-01:
 
 ```bash
-python experiments/sequence_memory/associative_recall_fast_weights.py --epochs 12 --train-size 4096 --test-size 2048
+python experiments/sequence-memory-interference/associative_recall_fast_weights.py --epochs 12 --train-size 4096 --test-size 2048
 ```
 
 Cosine recall from the generated JSON artifact:

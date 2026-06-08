@@ -20,7 +20,7 @@ which update rules postpone interference as `pairs/key_dim` increases?
 Command:
 
 ```bash
-python experiments/sequence_memory/associative_recall_fast_weights.py --epochs 8 --key-dims 16 32 64 --train-size 2048 --test-size 1024 --output artifacts/hard_push_sequence_memory.json
+python experiments/sequence-memory-interference/associative_recall_fast_weights.py --epochs 8 --key-dims 16 32 64 --train-size 2048 --test-size 1024 --output artifacts/hard_push_sequence_memory.json
 ```
 
 Selected cosine accuracy:

@@ -33,7 +33,7 @@ The runnable scaffold uses `sklearn.datasets.load_digits` as a source task, crea
 Command:
 
 ```bash
-python experiments/egpr_digits_tta.py --seeds 0 1 2 3 4 --output artifacts/egpr_digits_tta.json
+python experiments/egpr-prototype-replay/egpr_digits_tta.py --seeds 0 1 2 3 4 --output artifacts/egpr_digits_tta.json
 ```
 
 Five-seed accuracy mean +/- std on 2026-06-01:

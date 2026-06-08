@@ -1,10 +1,33 @@
-# ULM ML Monorepo
+# ULM ML
 
-Public monorepo for Trevor's machine-learning research threads: small
-CPU-first experiments, reusable probes, blunt negative results, and project
-notes that are useful enough to survive contact with GitHub.
+Repo of machine-learning research experiments. Each experiment has its own
+folder, short verdict, runnable scripts, and notes.
 
-## Quick Start
+## Experiments
+
+| experiment | question | verdict | answer so far | interesting bit | open |
+| --- | --- | --- | --- | --- | --- |
+| Cyclic representation probes | Can modular arithmetic generalization be explained through cyclic representations and split coverage? | Yes, keep going. | Fourier/spectral probes expose when a split covers the latent sum coordinate; learned MLP sanity checks still memorize train splits and fail held-out addition. | Strong oracle-vs-learned gap, useful for deciding what a model actually discovered. | `experiments/cyclic-representation-probes/` |
+| Symmetry-augmented sparse recovery | Does the right cyclic symmetry help recover sparse features under a stricter one-to-one metric? | Yes, keep going. | Correct cyclic augmentation improves strict recovery; a shuffled false-symmetry control fails. | The strict metric matters, loose best-match recovery was too flattering. | `experiments/symmetry-sparse-recovery/` |
+| Sequence-memory interference | Where do compact fast-weight memory rules break under associative-recall load? | Yes, keep going. | Fast-weight, delta, gated, and orthogonalized memories show visible load/interference curves against retrieval baselines. | Useful as a failure benchmark, not just a toy success demo. | `experiments/sequence-memory-interference/` |
+| Doubt-TTS / reliability-action routing | Can selective-compute QA route uncertainty into the right action instead of generic self-doubt? | Yes, keep going. | Generic doubt prompts failed the neutral-control bar; route/action/source/verifier decomposition has runnable probes and sharp negative controls. | The negative controls are the point: directed challenge wording is weak, controller decomposition is measurable. | `experiments/doubt-tts/` |
+| Adaptive posterior self-consistency | Can posterior stopping beat fixed self-consistency without real answer traces? | No, parked. | Synthetic traces are only replay infrastructure; the idea needs cached real-model answer traces before it is research again. | Resurrection gate is concrete: real traces plus a win over fixed and oracle-ish baselines. | `experiments/adaptive-self-consistency/` |
+| EGPR prototype replay | Can entropy-gated prototype replay improve test-time adaptation without labels? | No, parked. | True no-adapt baselines beat or match online prototype replay on the shifted-digits suite. | The failure may still be useful for adaptation-risk prediction. | `experiments/egpr-prototype-replay/` |
+| PACE bias-only TTA | Is bias-only adaptation enough for a standalone TTA project? | No, parked. | It is only useful as a narrow label-prior-drift diagnostic, not as an independent method. | Good negative control for separating prior drift from feature corruption. | `experiments/pace-bias-tta/` |
+
+## Layout
+
+```text
+experiments/       one folder per research experiment
+src/ulm_ml/        shared reusable code used by experiments
+docs/              longer research notes, synthesis, and parked-project gates
+tests/             regression tests for shared code and portfolio rules
+artifacts/         generated outputs, ignored by git
+data/              local datasets, ignored by git
+models/            local checkpoints/weights, ignored by git
+```
+
+## Run
 
 ```bash
 bash scripts/bootstrap.sh
@@ -12,82 +35,15 @@ source .venv/bin/activate
 pytest
 ```
 
-The bootstrap script uses `uv` for Python 3.11 when available, then falls back to the system `python3`.
-Or install manually:
+Each experiment folder has its own README with representative commands.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -e ".[dev]"
-```
+## Add An Experiment
 
-## Research Portfolio
+Create a new folder under `experiments/`, add a short README, keep reusable
+logic in `src/ulm_ml/`, and update this table with:
 
-Every project is now forced into one of two buckets: `full_research` or
-`given_up`. See `docs/research-portfolio.md` for the binary verdict table and
-`src/ulm_ml/research_portfolio.py` for the machine-readable manifest.
-
-The repo is intentionally a monorepo. Shared implementation lives in
-`src/ulm_ml/`; each research track gets its own docs, experiments, and tests
-without becoming a separate package until it earns that complexity.
-
-## Project Index
-
-| status | project | code | experiment/docs |
-| --- | --- | --- | --- |
-| `full_research` | Cyclic representation probes | `src/ulm_ml/modular_*.py`, `src/ulm_ml/state_tracking.py` | `experiments/modular_*`, `experiments/phase_state_tracking.py`, `docs/full-research/cyclic-representation-probes.md` |
-| `full_research` | Symmetry-augmented sparse recovery | `src/ulm_ml/symmetry_sparse.py` | `experiments/symmetry_augmented_sparse_recovery.py`, `docs/full-research/symmetry-sparse-recovery.md` |
-| `full_research` | Sequence-memory interference | `src/ulm_ml/sequence_memory/` | `experiments/sequence_memory/`, `docs/full-research/sequence-memory-interference.md` |
-| `full_research` | Doubt-TTS / reliability-action routing | `projects/doubt-tts/scripts/` | `projects/doubt-tts/` |
-| `given_up` | Adaptive posterior self-consistency | `src/ulm_ml/adaptive_consistency.py` | `experiments/adaptive_consistency_*.py`, `docs/given-up/adaptive-self-consistency.md` |
-| `given_up` | EGPR prototype replay | `src/ulm_ml/egpr.py` | `experiments/egpr_digits_tta.py`, `docs/given-up/egpr-prototype-replay.md` |
-| `given_up` | PACE bias-only TTA | `src/ulm_ml/tta.py` | `experiments/pace_bias_tta.py`, `docs/given-up/pace-bias-tta.md` |
-
-### Full Research Tracks
-
-- Cyclic representation probes: modular spectral diagnostics, modular character
-  baselines, and phase-state tracking are one track about cyclic representations
-  and data-split geometry, now including a learned MLP memorization sanity
-  check. See `docs/full-research/cyclic-representation-probes.md`.
-- Symmetry-augmented sparse recovery: cyclic augmentation improves strict
-  one-to-one sparse feature recovery while a size-matched false-symmetry control
-  fails. See `docs/full-research/symmetry-sparse-recovery.md`.
-- Sequence-memory interference: associative-recall load curves expose where
-  compact fast-weight, delta, gated, and orthogonalized memories fail against
-  retrieval baselines. See `docs/full-research/sequence-memory-interference.md`.
-- Doubt-TTS / reliability-action routing: negative-controlled selective QA work
-  showing generic doubt prompts are weak, while validity/action/source/verifier
-  decomposition gives a sharper controller target. See `projects/doubt-tts/`.
-
-### Given Up As Active Projects
-
-- Adaptive posterior self-consistency: parked until cached real-model answer
-  traces exist. See `docs/given-up/adaptive-self-consistency.md`.
-- EGPR prototype replay: given up as an adaptation method after no-adapt
-  baselines beat online updates. See `docs/given-up/egpr-prototype-replay.md`.
-- PACE bias-only TTA: kept only as a narrow prior-drift diagnostic baseline.
-  See `docs/given-up/pace-bias-tta.md`.
-
-## Repository Layout
-
-```text
-src/ulm_ml/        reusable package code
-experiments/       runnable experiment scripts and configs
-notebooks/         exploratory notebooks
-data/              local datasets, ignored by git
-artifacts/         generated experiment outputs, ignored by git
-models/            local checkpoints/weights, ignored by git
-reports/figures/   generated figures, ignored by git
-docs/              research notes and decisions
-tests/             regression tests for reusable code
-```
-
-## Working Pattern
-
-Use notebooks for exploration, then promote repeatable pieces into `src/ulm_ml/` and cover them with tests. Keep large data, generated artifacts, checkpoints, and secrets out of git.
-
-When a new ML idea lands here, start it as a focused experiment plus a short
-doc. It graduates only when the portfolio can give it a binary verdict:
-`full_research` with a falsifiable question and a real control, or `given_up`
-with a clear resurrection gate.
+- question
+- verdict
+- answer so far
+- interesting bit
+- folder link

@@ -1,6 +1,6 @@
 """Run the cyclic symmetry augmentation sparse-recovery experiment.
 
-This script is intentionally CPU-light. It compares sparse dictionary recovery
+This script is intentionally lightweight. It compares sparse dictionary recovery
 from scarce observations against the same observations augmented by every known
 cyclic transform.
 """

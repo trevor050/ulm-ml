@@ -1,7 +1,7 @@
 """Probe phase-valued state channels for modular state tracking.
 
 Run with:
-    python experiments/phase_state_tracking.py
+    python experiments/cyclic-representation-probes/phase_state_tracking.py
 """
 
 from __future__ import annotations

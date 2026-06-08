@@ -161,7 +161,7 @@ Completed local-model evidence:
 - SRAG-E pattern-based local-index verifier: 42/48 joint, 42/48 validity, 42/48 compute, 12/12 retrieve-answer, 8/12 retrieval-premise joint. Evidence-assisted diagnostic only, not model-only or open-web retrieval evidence.
 - SRAG-E source-table verifier override: 46/48 joint, 46/48 validity, 46/48 compute, 12/12 retrieval-premise joint. Evidence-assisted diagnostic only, not model-only evidence.
 - Protocol verdict: both Qwen policies and cheap SRAG selectors are `mixed_fails_required_gates`; wiki-search/lexical/local-index/source-table SRAG-E verifier overrides are `evidence_assisted_passes_gates_not_model_only`.
-- CPU-only Llama3.2-1B overlap-guard: 6/48 joint, a negative smoke that routes every row to retrieval-premise.
+- Llama3.2-1B overlap-guard: 6/48 joint, a negative smoke that routes every row to retrieval-premise.
 
 Run a live model when the Ollama endpoint is stable:
 

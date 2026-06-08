@@ -1,7 +1,7 @@
 """Lightweight modular-arithmetic datasets and spectral baselines.
 
 The utilities here intentionally avoid heavyweight deep-learning dependencies so that
-small grokking-related hypotheses can be checked on CPU in seconds.
+small grokking-related hypotheses can be checked quickly.
 """
 
 from __future__ import annotations

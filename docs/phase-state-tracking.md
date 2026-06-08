@@ -47,7 +47,7 @@ implementation only needs two channels per modulus: cosine and sine. A linear
 prototype decoder recovers the residue by choosing the phase with the largest
 dot product.
 
-This is the `root-of-unity` method in `experiments/phase_state_tracking.py`.
+This is the `root-of-unity` method in `experiments/cyclic-representation-probes/phase_state_tracking.py`.
 Because it is given the correct cyclic transition, it should be read as an
 oracle side channel rather than a learned baseline.
 
@@ -69,7 +69,7 @@ Methods:
 Command:
 
 ```bash
-python experiments/phase_state_tracking.py
+python experiments/cyclic-representation-probes/phase_state_tracking.py
 ```
 
 Observed output on 2026-06-01:

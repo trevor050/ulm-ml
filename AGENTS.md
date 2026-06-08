@@ -5,10 +5,10 @@ Public monorepo for ULM machine-learning experiments. Keep this file tight: futu
 ## Shape
 
 - `src/ulm_ml/` is the importable Python package for reusable research code.
-- `experiments/` is for runnable experiment scripts and configs.
+- `experiments/` is the public shelf: one folder per research experiment, each with a README containing question, verdict, answer so far, interesting bit, commands, and deeper notes.
 - `notebooks/` is for exploratory notebooks. Move stable logic into `src/ulm_ml/`.
 - `data/`, `artifacts/`, `models/`, and `reports/figures/` are intentionally ignored except for `.gitkeep` placeholders.
-- This is a monorepo by policy: add new ML ideas as docs/experiments/tests under the shared package before creating separate packages.
+- This is a monorepo by policy: add new ML ideas as experiment folders plus shared code/tests before creating separate packages.
 - `docs/research-log.md` is the lightweight running log for decisions, datasets, and results worth remembering.
 - `docs/research-synthesis.md` is the current cross-thread ranking and caveat map.
 - `docs/research-portfolio.md` and `src/ulm_ml/research_portfolio.py` are the binary project map: every thread is either `full_research` or `given_up`.
@@ -29,5 +29,5 @@ Public monorepo for ULM machine-learning experiments. Keep this file tight: futu
 - Treat modular spectral features and phase channels as oracle/control probes unless a learned model actually discovers them.
 - For sparse recovery, use the unique one-to-one metric as the headline; loose best-match recovery is only diagnostic.
 - The active full-research tracks are cyclic representation probes, symmetry-augmented sparse recovery, sequence-memory interference, and Doubt-TTS / reliability-action routing.
-- Doubt-TTS / reliability-action routing now lives in `projects/doubt-tts/` as a full-research track; keep its claims negative-controlled and do not rebrand it as generic self-doubt prompting.
+- Doubt-TTS / reliability-action routing now lives in `experiments/doubt-tts/` as a full-research track; keep its claims negative-controlled and do not rebrand it as generic self-doubt prompting.
 - Adaptive self-consistency, EGPR prototype replay, and PACE bias-only TTA are given up as active standalone projects unless their `docs/given-up/` resurrection gates are satisfied.

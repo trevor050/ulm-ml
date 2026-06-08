@@ -7,22 +7,22 @@ scaffold" bucket is allowed.
 
 ## Binary Verdict Table
 
-| status | project | doc | verdict |
+| status | project | folder | verdict |
 | --- | --- | --- | --- |
-| full_research | Cyclic representation probes | docs/full-research/cyclic-representation-probes.md | Keep. Modular spectral, character, and phase probes become one track about cyclic representations and split coverage. |
-| full_research | Symmetry-augmented sparse recovery | docs/full-research/symmetry-sparse-recovery.md | Keep. Correct cyclic augmentation beats baseline under strict matching, while false shuffled augmentation fails. |
-| full_research | Sequence-memory interference | docs/full-research/sequence-memory-interference.md | Keep. Compact fast weights are useful as a negative benchmark for memory interference under load. |
-| full_research | Doubt-TTS / Reliability-Action Routing | projects/doubt-tts/README.md | Keep. Generic doubt prompting failed the neutral-control bar, but route/action/source/verifier decomposition has runnable probes and sharp negative controls. |
-| given_up | Adaptive posterior self-consistency | docs/given-up/adaptive-self-consistency.md | Give up as active research until real cached answer traces exist. |
-| given_up | EGPR prototype replay | docs/given-up/egpr-prototype-replay.md | Give up as an adaptation method; current online prototype updates mostly hurt. |
-| given_up | PACE bias-only TTA | docs/given-up/pace-bias-tta.md | Give up as a standalone project; keep only as a narrow prior-drift diagnostic baseline. |
+| full_research | Cyclic representation probes | experiments/cyclic-representation-probes/ | Keep. Modular spectral, character, and phase probes become one track about cyclic representations and split coverage. |
+| full_research | Symmetry-augmented sparse recovery | experiments/symmetry-sparse-recovery/ | Keep. Correct cyclic augmentation beats baseline under strict matching, while false shuffled augmentation fails. |
+| full_research | Sequence-memory interference | experiments/sequence-memory-interference/ | Keep. Compact fast weights are useful as a negative benchmark for memory interference under load. |
+| full_research | Doubt-TTS / reliability-action routing | experiments/doubt-tts/ | Keep. Generic doubt prompting failed the neutral-control bar, but route/action/source/verifier decomposition has runnable probes and sharp negative controls. |
+| given_up | Adaptive posterior self-consistency | experiments/adaptive-self-consistency/ | Give up as active research until real cached answer traces exist. |
+| given_up | EGPR prototype replay | experiments/egpr-prototype-replay/ | Give up as an adaptation method; current online prototype updates mostly hurt. |
+| given_up | PACE bias-only TTA | experiments/pace-bias-tta/ | Give up as a standalone project; keep only as a narrow prior-drift diagnostic baseline. |
 
 ## What "Full Research" Means Here
 
 A surviving project must have:
 
 - A falsifiable research question.
-- A reproducible CPU-scale command.
+- A reproducible command.
 - At least one honest baseline or negative control.
 - A primary metric that cannot be trivially gamed by the method.
 - A written failure condition that tells the next agent when to stop.
@@ -41,6 +41,7 @@ A surviving project must have:
 
 ## Enforcement
 
-`src/ulm_ml/research_portfolio.py` is the compact machine-readable portfolio.
+`README.md` is the public experiment list. `src/ulm_ml/research_portfolio.py`
+is the compact machine-readable portfolio.
 `tests/test_research_portfolio.py` makes the binary status explicit so a future
 agent cannot quietly re-add vague zombie projects.

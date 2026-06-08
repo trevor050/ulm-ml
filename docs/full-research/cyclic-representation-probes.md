@@ -28,7 +28,7 @@ for the cyclic solution?
 Oracle split command:
 
 ```bash
-python experiments/modular_spectral_probe.py --modulus 31 --fractions 0.05 0.10 0.20 --seeds 0 1 2 3 --output artifacts/hard_push_modular_spectral.csv
+python experiments/cyclic-representation-probes/modular_spectral_probe.py --modulus 31 --fractions 0.05 0.10 0.20 --seeds 0 1 2 3 --output artifacts/hard_push_modular_spectral.csv
 ```
 
 Oracle Fourier-probe result:
@@ -54,7 +54,7 @@ underdetermined.
 Learned-model sanity command:
 
 ```bash
-python experiments/modular_mlp_split_probe.py --modulus 31 --fractions 0.10 0.20 0.35 --seeds 0 1 2 --max-iter 400 --output artifacts/hard_push_modular_mlp_split_probe.csv
+python experiments/cyclic-representation-probes/modular_mlp_split_probe.py --modulus 31 --fractions 0.10 0.20 0.35 --seeds 0 1 2 --max-iter 400 --output artifacts/hard_push_modular_mlp_split_probe.csv
 ```
 
 Tiny ReLU MLP result:
@@ -79,7 +79,7 @@ features still find a memorizing solution.
 Phase-state command:
 
 ```bash
-python experiments/phase_state_tracking.py
+python experiments/cyclic-representation-probes/phase_state_tracking.py
 ```
 
 Root-of-unity channels get 1.000 extrapolation accuracy for count mod 2, 3, 5,
@@ -118,7 +118,7 @@ features. Oracle Fourier features and root-of-unity channels are controls.
 
 ## Next Full Experiment
 
-Turn `experiments/modular_mlp_split_probe.py` into a checkpointed dynamics
+Turn `experiments/cyclic-representation-probes/modular_mlp_split_probe.py` into a checkpointed dynamics
 study. Log Fourier readout alignment and slow-feature amplification during
 training, then compare ordinary training against Grokfast-style slow-gradient
 amplification. The question is now sharper: when the data split identifies the

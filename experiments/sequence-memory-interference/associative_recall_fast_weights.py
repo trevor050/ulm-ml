@@ -1,4 +1,4 @@
-"""Run a CPU-friendly associative-recall memory experiment.
+"""Run a associative-recall memory experiment.
 
 Research question
 -----------------

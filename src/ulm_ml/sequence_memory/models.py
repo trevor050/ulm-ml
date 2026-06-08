@@ -1,4 +1,4 @@
-"""Small CPU-friendly baselines for associative recall.
+"""Small baselines for associative recall.
 
 The goal is not to compete with full neural sequence models.  These baselines make
 one narrow question easy to test: how does the *memory update rule* affect length
@@ -113,7 +113,7 @@ class GatedFastWeightsMemory:
 
     Retrieval is ``q^T M_T``.  The gate is trained by finite-difference-free Adam on
     synthetic batches.  Because this class only learns a few scalar/vector
-    parameters, it is intentionally cheap enough for CPU experimentation.
+    parameters, it is intentionally small enough for quick experimentation.
     """
 
     key_dim: int

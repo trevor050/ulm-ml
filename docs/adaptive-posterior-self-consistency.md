@@ -53,7 +53,7 @@ policy mechanics, not benchmark performance.
 Command:
 
 ```bash
-python experiments/adaptive_consistency_synthetic.py
+python experiments/adaptive-self-consistency/adaptive_consistency_synthetic.py
 ```
 
 Observed behavior: on the synthetic suite, `posterior-0.95` matched fixed-32
@@ -97,7 +97,7 @@ gsm8k-0002,0,17,17,76
 Replay command:
 
 ```bash
-PYTHONPATH=src python experiments/adaptive_consistency_replay.py traces.csv \
+PYTHONPATH=src python experiments/adaptive-self-consistency/adaptive_consistency_replay.py traces.csv \
   --max-samples 32 \
   --output reports/adaptive-consistency-replay.csv
 ```

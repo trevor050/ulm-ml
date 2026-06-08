@@ -20,7 +20,7 @@ false-symmetry control?
 Command:
 
 ```bash
-python experiments/symmetry_augmented_sparse_recovery.py --output artifacts/hard_push_symmetry_sparse_with_control.csv
+python experiments/symmetry-sparse-recovery/symmetry_augmented_sparse_recovery.py --output artifacts/hard_push_symmetry_sparse_with_control.csv
 ```
 
 Result summary:

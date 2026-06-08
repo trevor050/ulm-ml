@@ -1,7 +1,7 @@
-"""CPU-only probe for memorization-vs-character generalization in modular tables.
+"""probe for memorization-vs-character generalization in modular tables.
 
 Run from the repository root without installing the package:
-    PYTHONPATH=src python experiments/modular_character_timescales.py
+    PYTHONPATH=src python experiments/cyclic-representation-probes/modular_character_timescales.py
 """
 
 from __future__ import annotations

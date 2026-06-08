@@ -36,8 +36,8 @@ and one-off scratch artifacts are intentionally not included.
 Run the deterministic event-verifier smoke test:
 
 ```bash
-python projects/doubt-tts/scripts/doubt_probe.py \
-  --data projects/doubt-tts/benchmarks/event_contrast_route_questions.jsonl \
+python experiments/doubt-tts/scripts/doubt_probe.py \
+  --data experiments/doubt-tts/benchmarks/event_contrast_route_questions.jsonl \
   --route-only --event-verifier-only \
   --out /tmp/doubt_tts_table_event_results.jsonl \
   --report /tmp/doubt_tts_table_event_report.md
@@ -48,8 +48,8 @@ Expected route accuracy: `72/72`.
 Run the held-out retrieval verifier with clean source inference:
 
 ```bash
-python projects/doubt-tts/scripts/doubt_probe.py \
-  --data projects/doubt-tts/benchmarks/heldout_event_retrieval_questions.jsonl \
+python experiments/doubt-tts/scripts/doubt_probe.py \
+  --data experiments/doubt-tts/benchmarks/heldout_event_retrieval_questions.jsonl \
   --route-only --retrieval-event-verifier-only --ignore-event-source-title \
   --out /tmp/doubt_tts_heldout_retrieval_results.jsonl \
   --report /tmp/doubt_tts_heldout_retrieval_report.md

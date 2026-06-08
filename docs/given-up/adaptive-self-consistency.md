@@ -31,7 +31,7 @@ task_id,sample_index,answer,correct_answer,token_count
 Then run:
 
 ```bash
-PYTHONPATH=src python experiments/adaptive_consistency_replay.py traces.csv --max-samples 32
+PYTHONPATH=src python experiments/adaptive-self-consistency/adaptive_consistency_replay.py traces.csv --max-samples 32
 ```
 
 The project becomes research again only if posterior stopping beats fixed and

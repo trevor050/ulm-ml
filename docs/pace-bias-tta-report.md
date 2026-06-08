@@ -45,13 +45,13 @@ Implementation details in this repo:
 
 Why this is interesting:
 
-1. It is cheap enough for CPU-only experimentation and constrained deployments.
+1. It is cheap enough for experimentation and constrained deployments.
 2. It is interpretable: the learned vector is a per-class calibration correction.
 3. It separates two shift types: label/logit-prior drift, where bias updates are plausible, from feature corruption, where they should not be expected to solve the problem.
 
 ## Experiment
 
-Script: `experiments/pace_bias_tta.py`
+Script: `experiments/pace-bias-tta/pace_bias_tta.py`
 
 Dataset and model:
 
@@ -74,7 +74,7 @@ Stream scenarios:
 Run command:
 
 ```bash
-PYTHONPATH=src python experiments/pace_bias_tta.py --seeds 0 1 2 3 4 --out-dir artifacts/pace_bias_tta
+PYTHONPATH=src python experiments/pace-bias-tta/pace_bias_tta.py --seeds 0 1 2 3 4 --out-dir artifacts/pace_bias_tta
 ```
 
 ## Results
