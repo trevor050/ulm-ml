@@ -21,6 +21,7 @@ def test_portfolio_covers_all_known_project_slugs() -> None:
         "symmetry-sparse-recovery",
         "sequence-memory-interference",
         "doubt-tts",
+        "consensus-stability-switching",
         "adaptive-self-consistency",
         "egpr-prototype-replay",
         "pace-bias-tta",

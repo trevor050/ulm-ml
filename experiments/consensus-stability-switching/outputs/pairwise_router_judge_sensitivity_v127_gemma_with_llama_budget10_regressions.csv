@@ -1,0 +1,5 @@
+heldout_seed,regression_budget,selected_model,selected_rule,source_rows,source_recoveries,source_regressions,target,other,seed,pid,trial,baseline_correct,raw_router_correct,pairwise_gated_correct,raw_accept,pairwise_accept,policy,packet_id,judge_model,judge_rule,judge_choice
+60601,10,qwen14b,B,158,54,2,MATH/Gemma,MATH/Llama,60601,88,0,True,False,False,True,True,union_rank_top3,pairwise_router_v125_budget2_all_0494_regression_s60601_p88_t0,qwen14b,B,B
+60602,10,qwen14b,B,204,53,2,MATH/Gemma,MATH/Llama,60602,63,6,True,False,False,True,True,union_rank_top3,pairwise_router_v125_budget2_all_0499_regression_s60602_p63_t6,qwen14b,B,B
+60603,10,qwen14b,B,93,35,0,MATH/Gemma,MATH/Llama,60603,82,7,True,False,False,True,True,union_rank_top3,pairwise_router_v125_budget2_all_0510_regression_s60603_p82_t7,qwen14b,B,B
+60603,10,qwen14b,B,93,35,0,MATH/Gemma,MATH/Llama,60603,88,4,True,False,False,True,True,union_rank_top3,pairwise_router_v125_budget2_all_0511_regression_s60603_p88_t4,qwen14b,B,B

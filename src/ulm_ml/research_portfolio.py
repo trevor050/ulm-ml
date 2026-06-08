@@ -89,6 +89,22 @@ PROJECTS: tuple[ResearchProject, ...] = (
         ),
     ),
     ResearchProject(
+        slug="consensus-stability-switching",
+        title="Consensus-Stability Switching",
+        status="full_research",
+        verdict=(
+            "Hard math repeated-sampling traces expose a robust answer-cluster "
+            "selectability gap, with pairwise baseline-vs-candidate adjudication "
+            "as the first measured local-verifier route that has held-out "
+            "natural-rate gain and regression accounting."
+        ),
+        primary_doc="experiments/consensus-stability-switching/README.md",
+        representative_command=(
+            "python experiments/consensus-stability-switching/work/"
+            "summarize_pairwise_rich_probe.py"
+        ),
+    ),
+    ResearchProject(
         slug="adaptive-self-consistency",
         title="Adaptive Posterior Self-Consistency",
         status="given_up",

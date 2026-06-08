@@ -1,0 +1,5 @@
+category,rows,choice_accuracy,pred_A,pred_B,pred_BOTH,pred_NEITHER,pred_INVALID
+both_correct,36,0.6666666666666666,1,7,24,0,4
+neither_correct,213,0.29107981220657275,6,28,0,62,117
+recovery,240,0.5541666666666667,22,133,0,23,62
+regression,30,0.7666666666666667,23,2,0,1,4

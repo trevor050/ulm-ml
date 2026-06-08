@@ -13,6 +13,7 @@ scaffold" bucket is allowed.
 | full_research | Symmetry-augmented sparse recovery | experiments/symmetry-sparse-recovery/ | Keep. Correct cyclic augmentation beats baseline under strict matching, while false shuffled augmentation fails. |
 | full_research | Sequence-memory interference | experiments/sequence-memory-interference/ | Keep. Compact fast weights are useful as a negative benchmark for memory interference under load. |
 | full_research | Doubt-TTS / reliability-action routing | experiments/doubt-tts/ | Keep. Generic doubt prompting failed the neutral-control bar, but route/action/source/verifier decomposition has runnable probes and sharp negative controls. |
+| full_research | Consensus-Stability Switching | experiments/consensus-stability-switching/ | Keep. Hard math traces show a robust answer-cluster selectability gap, and pairwise baseline-vs-candidate adjudication is the first measured local-verifier route with held-out natural-rate gain and regression accounting. |
 | given_up | Adaptive posterior self-consistency | experiments/adaptive-self-consistency/ | Give up as active research until real cached answer traces exist. |
 | given_up | EGPR prototype replay | experiments/egpr-prototype-replay/ | Give up as an adaptation method; current online prototype updates mostly hurt. |
 | given_up | PACE bias-only TTA | experiments/pace-bias-tta/ | Give up as a standalone project; keep only as a narrow prior-drift diagnostic baseline. |

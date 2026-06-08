@@ -9,6 +9,7 @@ the scripts or deeper docs from there.
 | `symmetry-sparse-recovery/` | yes, keep going | `experiments/symmetry-sparse-recovery/README.md` |
 | `sequence-memory-interference/` | yes, keep going | `experiments/sequence-memory-interference/README.md` |
 | `doubt-tts/` | yes, keep going | `experiments/doubt-tts/README.md` |
+| `consensus-stability-switching/` | yes, keep going | `experiments/consensus-stability-switching/README.md` |
 | `adaptive-self-consistency/` | no, parked | `experiments/adaptive-self-consistency/README.md` |
 | `egpr-prototype-replay/` | no, parked | `experiments/egpr-prototype-replay/README.md` |
 | `pace-bias-tta/` | no, parked | `experiments/pace-bias-tta/README.md` |

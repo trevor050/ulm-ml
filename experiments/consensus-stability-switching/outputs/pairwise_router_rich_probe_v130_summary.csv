@@ -1,0 +1,7 @@
+model,prompt_variant,rows,choice_accuracy,accepts,recoveries,regressions,pred_A,pred_B,pred_BOTH,pred_NEITHER,pred_INVALID
+gemma4,solve_first,12,0.0,0,0,0,0,0,0,0,12
+gemma4,type_check,12,0.0,0,0,0,0,0,0,0,12
+mathstral,solve_first,12,0.4166666666666667,3,0,3,0,1,2,9,0
+mathstral,type_check,12,0.4166666666666667,1,0,1,0,1,0,11,0
+qwen14b,solve_first,12,0.25,6,2,4,6,5,1,0,0
+qwen14b,type_check,12,0.4166666666666667,4,2,2,8,4,0,0,0

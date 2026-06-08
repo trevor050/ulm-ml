@@ -1,0 +1,4 @@
+category,rows,choice_accuracy,pred_A,pred_B,pred_BOTH,pred_NEITHER,pred_INVALID
+neither_correct,10,0.0,0,0,0,0,10
+recovery,4,0.0,0,0,0,0,4
+regression,10,0.0,0,0,0,0,10

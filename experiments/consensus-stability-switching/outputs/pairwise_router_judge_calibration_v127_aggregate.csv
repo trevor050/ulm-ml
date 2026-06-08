@@ -1,0 +1,9 @@
+regression_budget,heldout_seeds,total_trials,mean_delta,pooled_delta,min_delta,max_delta,positive_seeds,total_accepts,total_recoveries,total_regressions,total_upstream_accepts,total_upstream_recoveries,total_upstream_regressions,mean_upstream_delta,selected
+0,3,377,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0,0.0,60601:mathstral/never; 60602:mathstral/never; 60603:mathstral/never
+1,3,377,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0,0.0,60601:mathstral/never; 60602:mathstral/never; 60603:mathstral/never
+2,3,377,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0,0.0,60601:mathstral/never; 60602:mathstral/never; 60603:mathstral/never
+5,3,377,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0,0.0,60601:mathstral/never; 60602:mathstral/never; 60603:mathstral/never
+10,3,377,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0,0.0,60601:mathstral/never; 60602:mathstral/never; 60603:mathstral/never
+20,3,377,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0,0.0,60601:mathstral/never; 60602:mathstral/never; 60603:mathstral/never
+40,3,377,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0,0.0,60601:mathstral/never; 60602:mathstral/never; 60603:mathstral/never
+80,3,377,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0,0.0,60601:mathstral/never; 60602:mathstral/never; 60603:mathstral/never
