@@ -1,6 +1,6 @@
 # ULM ML Notes
 
-Research staging repo for ULM machine-learning experiments. Keep this file tight: future agents need fast orientation, not a diary.
+Public monorepo for ULM machine-learning experiments. Keep this file tight: future agents need fast orientation, not a diary.
 
 ## Shape
 
@@ -8,6 +8,7 @@ Research staging repo for ULM machine-learning experiments. Keep this file tight
 - `experiments/` is for runnable experiment scripts and configs.
 - `notebooks/` is for exploratory notebooks. Move stable logic into `src/ulm_ml/`.
 - `data/`, `artifacts/`, `models/`, and `reports/figures/` are intentionally ignored except for `.gitkeep` placeholders.
+- This is a monorepo by policy: add new ML ideas as docs/experiments/tests under the shared package before creating separate packages.
 - `docs/research-log.md` is the lightweight running log for decisions, datasets, and results worth remembering.
 - `docs/research-synthesis.md` is the current cross-thread ranking and caveat map.
 - `docs/research-portfolio.md` and `src/ulm_ml/research_portfolio.py` are the binary project map: every thread is either `full_research` or `given_up`.

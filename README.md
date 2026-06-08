@@ -1,6 +1,8 @@
-# ULM ML
+# ULM ML Monorepo
 
-Research staging ground for ULM machine-learning experiments, notes, and reusable analysis code.
+Public monorepo for Trevor's machine-learning research threads: small
+CPU-first experiments, reusable probes, blunt negative results, and project
+notes that are useful enough to survive contact with GitHub.
 
 ## Quick Start
 
@@ -25,6 +27,21 @@ python -m pip install -e ".[dev]"
 Every project is now forced into one of two buckets: `full_research` or
 `given_up`. See `docs/research-portfolio.md` for the binary verdict table and
 `src/ulm_ml/research_portfolio.py` for the machine-readable manifest.
+
+The repo is intentionally a monorepo. Shared implementation lives in
+`src/ulm_ml/`; each research track gets its own docs, experiments, and tests
+without becoming a separate package until it earns that complexity.
+
+## Project Index
+
+| status | project | code | experiment/docs |
+| --- | --- | --- | --- |
+| `full_research` | Cyclic representation probes | `src/ulm_ml/modular_*.py`, `src/ulm_ml/state_tracking.py` | `experiments/modular_*`, `experiments/phase_state_tracking.py`, `docs/full-research/cyclic-representation-probes.md` |
+| `full_research` | Symmetry-augmented sparse recovery | `src/ulm_ml/symmetry_sparse.py` | `experiments/symmetry_augmented_sparse_recovery.py`, `docs/full-research/symmetry-sparse-recovery.md` |
+| `full_research` | Sequence-memory interference | `src/ulm_ml/sequence_memory/` | `experiments/sequence_memory/`, `docs/full-research/sequence-memory-interference.md` |
+| `given_up` | Adaptive posterior self-consistency | `src/ulm_ml/adaptive_consistency.py` | `experiments/adaptive_consistency_*.py`, `docs/given-up/adaptive-self-consistency.md` |
+| `given_up` | EGPR prototype replay | `src/ulm_ml/egpr.py` | `experiments/egpr_digits_tta.py`, `docs/given-up/egpr-prototype-replay.md` |
+| `given_up` | PACE bias-only TTA | `src/ulm_ml/tta.py` | `experiments/pace_bias_tta.py`, `docs/given-up/pace-bias-tta.md` |
 
 ### Full Research Tracks
 
@@ -65,3 +82,8 @@ tests/             regression tests for reusable code
 ## Working Pattern
 
 Use notebooks for exploration, then promote repeatable pieces into `src/ulm_ml/` and cover them with tests. Keep large data, generated artifacts, checkpoints, and secrets out of git.
+
+When a new ML idea lands here, start it as a focused experiment plus a short
+doc. It graduates only when the portfolio can give it a binary verdict:
+`full_research` with a falsifiable question and a real control, or `given_up`
+with a clear resurrection gate.
