@@ -1,0 +1,152 @@
+{
+  "methods": {
+    "qwen3.5:9b:overlap_guard": {
+      "compute": {
+        "clarify": {
+          "accuracy": 0.9833333333333333,
+          "correct": 59,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "accuracy": 0.5111111111111111,
+          "correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "accuracy": 0.9111111111111111,
+          "correct": 41,
+          "n": 45
+        },
+        "premise_check": {
+          "accuracy": 0.8,
+          "correct": 36,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "accuracy": 0.4888888888888889,
+          "correct": 22,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "accuracy": 0.4166666666666667,
+          "correct": 25,
+          "n": 60
+        }
+      },
+      "compute_accuracy": 0.6866666666666666,
+      "compute_confusion": {
+        "columns": [
+          "direct_answer",
+          "premise_check",
+          "retrieve_then_answer",
+          "retrieve_then_premise_check",
+          "deterministic_verify",
+          "clarify"
+        ],
+        "matrix": {
+          "clarify": {
+            "clarify": 59,
+            "deterministic_verify": 0,
+            "direct_answer": 0,
+            "premise_check": 0,
+            "retrieve_then_answer": 1,
+            "retrieve_then_premise_check": 0
+          },
+          "deterministic_verify": {
+            "clarify": 21,
+            "deterministic_verify": 23,
+            "direct_answer": 1,
+            "premise_check": 0,
+            "retrieve_then_answer": 0,
+            "retrieve_then_premise_check": 0
+          },
+          "direct_answer": {
+            "clarify": 0,
+            "deterministic_verify": 3,
+            "direct_answer": 41,
+            "premise_check": 0,
+            "retrieve_then_answer": 1,
+            "retrieve_then_premise_check": 0
+          },
+          "premise_check": {
+            "clarify": 0,
+            "deterministic_verify": 0,
+            "direct_answer": 3,
+            "premise_check": 36,
+            "retrieve_then_answer": 3,
+            "retrieve_then_premise_check": 3
+          },
+          "retrieve_then_answer": {
+            "clarify": 0,
+            "deterministic_verify": 4,
+            "direct_answer": 8,
+            "premise_check": 0,
+            "retrieve_then_answer": 22,
+            "retrieve_then_premise_check": 11
+          },
+          "retrieve_then_premise_check": {
+            "clarify": 6,
+            "deterministic_verify": 5,
+            "direct_answer": 6,
+            "premise_check": 13,
+            "retrieve_then_answer": 5,
+            "retrieve_then_premise_check": 25
+          }
+        }
+      },
+      "compute_correct": 206,
+      "errors": {},
+      "joint_accuracy": 0.64,
+      "joint_correct": 192,
+      "macro_compute_accuracy": 0.6851851851851851,
+      "macro_validity_accuracy": 0.8092592592592592,
+      "n": 300,
+      "validity": {
+        "ambiguous": {
+          "accuracy": 0.9833333333333333,
+          "correct": 59,
+          "n": 60
+        },
+        "answerable": {
+          "accuracy": 0.8444444444444444,
+          "correct": 114,
+          "n": 135
+        },
+        "false_premise": {
+          "accuracy": 0.6,
+          "correct": 63,
+          "n": 105
+        }
+      },
+      "validity_accuracy": 0.7866666666666666,
+      "validity_confusion": {
+        "columns": [
+          "answerable",
+          "false_premise",
+          "ambiguous"
+        ],
+        "matrix": {
+          "ambiguous": {
+            "ambiguous": 59,
+            "answerable": 1,
+            "false_premise": 0
+          },
+          "answerable": {
+            "ambiguous": 21,
+            "answerable": 114,
+            "false_premise": 0
+          },
+          "false_premise": {
+            "ambiguous": 6,
+            "answerable": 36,
+            "false_premise": 63
+          }
+        }
+      },
+      "validity_correct": 236
+    }
+  },
+  "model": "qwen3.5:9b",
+  "policy": "overlap_guard",
+  "source": "work/probe/reliability_action_cue_balanced_candidate_v3_blind_inputs.jsonl"
+}

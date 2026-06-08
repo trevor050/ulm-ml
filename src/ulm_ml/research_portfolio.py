@@ -66,6 +66,24 @@ PROJECTS: tuple[ResearchProject, ...] = (
         ),
     ),
     ResearchProject(
+        slug="doubt-tts",
+        title="Doubt-TTS / Reliability-Action Routing",
+        status="full_research",
+        verdict=(
+            "Generic doubt prompting failed the neutral-control bar, but the "
+            "reliability-action framing has runnable route, source-selection, and "
+            "verifier probes with explicit negative controls."
+        ),
+        primary_doc="projects/doubt-tts/README.md",
+        representative_command=(
+            "python projects/doubt-tts/scripts/doubt_probe.py "
+            "--data projects/doubt-tts/benchmarks/event_contrast_route_questions.jsonl "
+            "--route-only --event-verifier-only "
+            "--out /tmp/doubt_tts_table_event_results.jsonl "
+            "--report /tmp/doubt_tts_table_event_report.md"
+        ),
+    ),
+    ResearchProject(
         slug="adaptive-self-consistency",
         title="Adaptive Posterior Self-Consistency",
         status="given_up",
@@ -111,4 +129,3 @@ def project_slugs() -> set[str]:
     """Return all registered portfolio slugs."""
 
     return {project.slug for project in PROJECTS}
-

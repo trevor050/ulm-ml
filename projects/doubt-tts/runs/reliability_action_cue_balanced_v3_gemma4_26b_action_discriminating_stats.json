@@ -1,0 +1,156 @@
+{
+  "methods": {
+    "gemma4:26b:action_discriminating": {
+      "compute": {
+        "clarify": {
+          "accuracy": 1.0,
+          "correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "accuracy": 0.5111111111111111,
+          "correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "accuracy": 1.0,
+          "correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "accuracy": 1.0,
+          "correct": 45,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "accuracy": 0.4888888888888889,
+          "correct": 22,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "accuracy": 0.31666666666666665,
+          "correct": 19,
+          "n": 60
+        }
+      },
+      "compute_accuracy": 0.7133333333333334,
+      "compute_confusion": {
+        "columns": [
+          "direct_answer",
+          "premise_check",
+          "retrieve_then_answer",
+          "retrieve_then_premise_check",
+          "deterministic_verify",
+          "clarify"
+        ],
+        "matrix": {
+          "clarify": {
+            "clarify": 60,
+            "deterministic_verify": 0,
+            "direct_answer": 0,
+            "premise_check": 0,
+            "retrieve_then_answer": 0,
+            "retrieve_then_premise_check": 0
+          },
+          "deterministic_verify": {
+            "clarify": 20,
+            "deterministic_verify": 23,
+            "direct_answer": 1,
+            "premise_check": 1,
+            "retrieve_then_answer": 0,
+            "retrieve_then_premise_check": 0
+          },
+          "direct_answer": {
+            "clarify": 0,
+            "deterministic_verify": 0,
+            "direct_answer": 45,
+            "premise_check": 0,
+            "retrieve_then_answer": 0,
+            "retrieve_then_premise_check": 0
+          },
+          "premise_check": {
+            "clarify": 0,
+            "deterministic_verify": 0,
+            "direct_answer": 0,
+            "premise_check": 45,
+            "retrieve_then_answer": 0,
+            "retrieve_then_premise_check": 0
+          },
+          "retrieve_then_answer": {
+            "clarify": 0,
+            "deterministic_verify": 0,
+            "direct_answer": 10,
+            "premise_check": 3,
+            "retrieve_then_answer": 22,
+            "retrieve_then_premise_check": 10
+          },
+          "retrieve_then_premise_check": {
+            "clarify": 0,
+            "deterministic_verify": 0,
+            "direct_answer": 4,
+            "premise_check": 37,
+            "retrieve_then_answer": 0,
+            "retrieve_then_premise_check": 19
+          }
+        }
+      },
+      "compute_correct": 214,
+      "errors": {},
+      "joint_accuracy": 0.67,
+      "joint_correct": 201,
+      "macro_compute_accuracy": 0.7194444444444444,
+      "macro_validity_accuracy": 0.854673721340388,
+      "n": 300,
+      "validity": {
+        "ambiguous": {
+          "accuracy": 1.0,
+          "correct": 60,
+          "n": 60
+        },
+        "answerable": {
+          "accuracy": 0.725925925925926,
+          "correct": 98,
+          "n": 135
+        },
+        "false_premise": {
+          "accuracy": 0.8380952380952381,
+          "correct": 88,
+          "n": 105
+        }
+      },
+      "validity_accuracy": 0.82,
+      "validity_confusion": {
+        "columns": [
+          "answerable",
+          "false_premise",
+          "ambiguous",
+          "__invalid__"
+        ],
+        "matrix": {
+          "ambiguous": {
+            "__invalid__": 0,
+            "ambiguous": 60,
+            "answerable": 0,
+            "false_premise": 0
+          },
+          "answerable": {
+            "__invalid__": 10,
+            "ambiguous": 20,
+            "answerable": 98,
+            "false_premise": 7
+          },
+          "false_premise": {
+            "__invalid__": 13,
+            "ambiguous": 0,
+            "answerable": 4,
+            "false_premise": 88
+          }
+        }
+      },
+      "validity_correct": 246
+    }
+  },
+  "model": "gemma4:26b",
+  "policy": "action_discriminating",
+  "source": "work/probe/reliability_action_cue_balanced_candidate_v3_blind_inputs.jsonl"
+}

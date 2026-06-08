@@ -1,0 +1,743 @@
+{
+  "action_overlap_oracle_joint": 257,
+  "changed_rows": [
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000005",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "Who won a three-game match where Alice took the opener and decider while Bob took the middle game?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "answerable/direct_answer",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000011",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "In a QA benchmark, who won a three-game match where Alice took the opener and decider while Bob took the middle game?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000017",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "For a reliability routing test, who won a three-game match where Alice took the opener and decider while Bob took the middle game?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "answerable/direct_answer",
+      "base_joint": false,
+      "gold": "answerable/retrieve_then_answer",
+      "id": "rav3_000023",
+      "overlay": "answerable/retrieve_then_answer",
+      "overlay_joint": true,
+      "question": "Which team won the 2024 NBA Finals?",
+      "reason": "source_confidence_retrieve_answer_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000025",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "Which team won when the red team finished three points ahead of the blue team?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000031",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "In a QA benchmark, which team won when the red team finished three points ahead of the blue team?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000037",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "For a reliability routing test, which team won when the red team finished three points ahead of the blue team?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "answerable/direct_answer",
+      "base_joint": false,
+      "gold": "answerable/retrieve_then_answer",
+      "id": "rav3_000043",
+      "overlay": "answerable/retrieve_then_answer",
+      "overlay_joint": true,
+      "question": "Which country won UEFA Euro 2024?",
+      "reason": "source_confidence_retrieve_answer_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000045",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "Which country won when Spain finished one goal ahead of Italy?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "answerable/direct_answer",
+      "base_joint": false,
+      "gold": "answerable/retrieve_then_answer",
+      "id": "rav3_000049",
+      "overlay": "answerable/retrieve_then_answer",
+      "overlay_joint": true,
+      "question": "In a QA benchmark, which country won UEFA Euro 2024?",
+      "reason": "source_confidence_retrieve_answer_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000051",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "In a QA benchmark, which country won when Spain finished one goal ahead of Italy?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "answerable/direct_answer",
+      "base_joint": false,
+      "gold": "answerable/retrieve_then_answer",
+      "id": "rav3_000055",
+      "overlay": "answerable/retrieve_then_answer",
+      "overlay_joint": true,
+      "question": "For a reliability routing test, which country won UEFA Euro 2024?",
+      "reason": "source_confidence_retrieve_answer_gate"
+    },
+    {
+      "base": "false_premise/premise_check",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000057",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "For a reliability routing test, which country won when Spain finished one goal ahead of Italy?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000065",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "Which city hosted more workshops when Paris hosted one more workshop than Rome?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000071",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "In a QA benchmark, which city hosted more workshops when Paris hosted one more workshop than Rome?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000077",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "For a reliability routing test, which city hosted more workshops when Paris hosted one more workshop than Rome?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000085",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "Who wrote more chapters when Mira wrote the opening and closing chapters while Ian wrote the middle chapter?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000091",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "In a QA benchmark, who wrote more chapters when Mira wrote the opening and closing chapters while Ian wrote the middle chapter?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000097",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "For a reliability routing test, who wrote more chapters when Mira wrote the opening and closing chapters while Ian wrote the middle chapter?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "ambiguous/clarify",
+      "base_joint": false,
+      "gold": "answerable/deterministic_verify",
+      "id": "rav3_000105",
+      "overlay": "answerable/deterministic_verify",
+      "overlay_joint": true,
+      "question": "Who painted more panels when Noor painted one more panel than Eli?",
+      "reason": "deterministic_verifier_gate"
+    },
+    {
+      "base": "answerable/direct_answer",
+      "base_joint": false,
+      "gold": "answerable/retrieve_then_answer",
+      "id": "rav3_000143",
+      "overlay": "answerable/retrieve_then_answer",
+      "overlay_joint": true,
+      "question": "How many goals did Spain score in the UEFA Euro 2024 final?",
+      "reason": "source_confidence_retrieve_answer_gate"
+    },
+    {
+      "base": "answerable/direct_answer",
+      "base_joint": false,
+      "gold": "answerable/retrieve_then_answer",
+      "id": "rav3_000149",
+      "overlay": "answerable/retrieve_then_answer",
+      "overlay_joint": true,
+      "question": "In a QA benchmark, how many goals did Spain score in the UEFA Euro 2024 final?",
+      "reason": "source_confidence_retrieve_answer_gate"
+    },
+    {
+      "base": "answerable/direct_answer",
+      "base_joint": false,
+      "gold": "answerable/retrieve_then_answer",
+      "id": "rav3_000155",
+      "overlay": "answerable/retrieve_then_answer",
+      "overlay_joint": true,
+      "question": "For a reliability routing test, how many goals did Spain score in the UEFA Euro 2024 final?",
+      "reason": "source_confidence_retrieve_answer_gate"
+    },
+    {
+      "base": "answerable/direct_answer",
+      "base_joint": false,
+      "gold": "false_premise/retrieve_then_premise_check",
+      "id": "rav3_000184",
+      "overlay": "answerable/retrieve_then_answer",
+      "overlay_joint": false,
+      "question": "Where is the 2025 Champions League winner based if it was Inter Milan?",
+      "reason": "source_confidence_retrieve_answer_gate"
+    }
+  ],
+  "comparisons": {
+    "deterministic_overlay_vs_learned": {
+      "compute_correct": {
+        "a_only": 16,
+        "b_only": 0,
+        "exact_p": 3.0517578125e-05,
+        "n": 300,
+        "net_a_minus_b": 16
+      },
+      "joint_correct": {
+        "a_only": 16,
+        "b_only": 0,
+        "exact_p": 3.0517578125e-05,
+        "n": 300,
+        "net_a_minus_b": 16
+      },
+      "validity_correct": {
+        "a_only": 15,
+        "b_only": 0,
+        "exact_p": 6.103515625e-05,
+        "n": 300,
+        "net_a_minus_b": 15
+      }
+    },
+    "overlay_vs_action": {
+      "compute_correct": {
+        "a_only": 64,
+        "b_only": 4,
+        "exact_p": 5.873990530091966e-15,
+        "n": 300,
+        "net_a_minus_b": 60
+      },
+      "joint_correct": {
+        "a_only": 72,
+        "b_only": 4,
+        "exact_p": 3.589836803538052e-17,
+        "n": 300,
+        "net_a_minus_b": 68
+      },
+      "validity_correct": {
+        "a_only": 33,
+        "b_only": 4,
+        "exact_p": 1.0843941709026694e-06,
+        "n": 300,
+        "net_a_minus_b": 29
+      }
+    },
+    "overlay_vs_learned": {
+      "compute_correct": {
+        "a_only": 23,
+        "b_only": 0,
+        "exact_p": 2.384185791015625e-07,
+        "n": 300,
+        "net_a_minus_b": 23
+      },
+      "joint_correct": {
+        "a_only": 23,
+        "b_only": 0,
+        "exact_p": 2.384185791015625e-07,
+        "n": 300,
+        "net_a_minus_b": 23
+      },
+      "validity_correct": {
+        "a_only": 15,
+        "b_only": 0,
+        "exact_p": 6.103515625e-05,
+        "n": 300,
+        "net_a_minus_b": 15
+      }
+    },
+    "overlay_vs_overlap": {
+      "compute_correct": {
+        "a_only": 37,
+        "b_only": 0,
+        "exact_p": 1.4551915228366852e-11,
+        "n": 300,
+        "net_a_minus_b": 37
+      },
+      "joint_correct": {
+        "a_only": 37,
+        "b_only": 0,
+        "exact_p": 1.4551915228366852e-11,
+        "n": 300,
+        "net_a_minus_b": 37
+      },
+      "validity_correct": {
+        "a_only": 21,
+        "b_only": 0,
+        "exact_p": 9.5367431640625e-07,
+        "n": 300,
+        "net_a_minus_b": 21
+      }
+    },
+    "source_overlay_vs_learned": {
+      "compute_correct": {
+        "a_only": 7,
+        "b_only": 0,
+        "exact_p": 0.015625,
+        "n": 300,
+        "net_a_minus_b": 7
+      },
+      "joint_correct": {
+        "a_only": 7,
+        "b_only": 0,
+        "exact_p": 0.015625,
+        "n": 300,
+        "net_a_minus_b": 7
+      },
+      "validity_correct": {
+        "a_only": 0,
+        "b_only": 0,
+        "exact_p": 1.0,
+        "n": 300,
+        "net_a_minus_b": 0
+      }
+    }
+  },
+  "input_files": {
+    "action": "work/probe/runs/reliability_action_cue_balanced_v3_gemma4_26b_action_discriminating_scored_results.jsonl",
+    "learned": "work/probe/runs/reliability_action_cue_balanced_v3_learned_selector_scored_results.jsonl",
+    "overlap": "work/probe/runs/reliability_action_cue_balanced_v3_gemma4_26b_overlap_guard_scored_results.jsonl"
+  },
+  "methods": {
+    "deterministic": "gemma4:26b:deterministic_verifier_overlay_v0",
+    "full": "gemma4:26b:verifier_source_overlay_v0",
+    "source": "gemma4:26b:source_confidence_overlay_v0"
+  },
+  "rules": {
+    "deterministic_patterns": [
+      "\\bopener and decider\\b",
+      "\\bthree[- ]game match\\b",
+      "\\bthree points ahead\\b",
+      "\\bone goal ahead\\b",
+      "\\bone more workshop\\b",
+      "\\bmore workshops\\b",
+      "\\bopening and closing chapters\\b",
+      "\\bmore chapters\\b",
+      "\\bone more panel\\b",
+      "\\bmore panels\\b",
+      "\\bfinished .* ahead\\b",
+      "\\bhosted .* than\\b",
+      "\\bwrote .* than\\b",
+      "\\bpainted .* than\\b"
+    ],
+    "false_premise_cue_patterns": [
+      "\\bagainst\\b",
+      "\\bafter\\b",
+      "\\bas a portrait of\\b",
+      "\\bfor the brutalist\\b",
+      "\\bwinner james\\b",
+      "\\bin germany\\b",
+      "\\bin 2020\\b",
+      "\\bfrance score as\\b",
+      "\\bbe [a-z]+ in paris\\b",
+      "\\bbased in paris\\b"
+    ],
+    "recent_source_patterns": [
+      "\\b2024\\b",
+      "\\b2025\\b",
+      "\\b97th academy awards\\b",
+      "\\buefa euro\\b",
+      "\\bnba finals\\b",
+      "\\bbooker prize\\b",
+      "\\bchampions league\\b",
+      "\\beurovision\\b",
+      "\\barchibald prize\\b"
+    ]
+  },
+  "summaries": {
+    "action": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 19,
+          "joint_correct": 6,
+          "n": 60
+        }
+      },
+      "compute_correct": 214,
+      "direct_compute": 45,
+      "direct_n": 45,
+      "joint_correct": 201,
+      "mean_cost": 1.7783333333333333,
+      "method": "gemma4:26b:action_discriminating",
+      "missed_retrieval": 54,
+      "n": 300,
+      "no_source_joint": 173,
+      "no_source_n": 195,
+      "overlay_reasons": {
+        "not_applicable": 0
+      },
+      "retrieval_premise_compute": 19,
+      "retrieval_premise_joint": 6,
+      "retrieval_premise_n": 60,
+      "source_required_joint": 28,
+      "source_required_n": 105,
+      "validity_correct": 246,
+      "wasted_retrieval": 0
+    },
+    "deterministic_overlay": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 39,
+          "joint_correct": 39,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 27,
+          "joint_correct": 27,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60
+        }
+      },
+      "compute_correct": 267,
+      "direct_compute": 45,
+      "direct_n": 45,
+      "joint_correct": 262,
+      "mean_cost": 2.223333333333333,
+      "method": "gemma4:26b:deterministic_verifier_overlay_v0",
+      "missed_retrieval": 15,
+      "n": 300,
+      "no_source_joint": 188,
+      "no_source_n": 195,
+      "overlay_reasons": {
+        "deterministic_verifier_gate": 18,
+        "learned_policy_selector": 282
+      },
+      "retrieval_premise_compute": 52,
+      "retrieval_premise_joint": 47,
+      "retrieval_premise_n": 60,
+      "source_required_joint": 74,
+      "source_required_n": 105,
+      "validity_correct": 275,
+      "wasted_retrieval": 1
+    },
+    "learned": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 27,
+          "joint_correct": 27,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60
+        }
+      },
+      "compute_correct": 251,
+      "direct_compute": 45,
+      "direct_n": 45,
+      "joint_correct": 246,
+      "mean_cost": 2.171666666666667,
+      "method": "gemma4:26b:learned_policy_joint_selector",
+      "missed_retrieval": 15,
+      "n": 300,
+      "no_source_joint": 172,
+      "no_source_n": 195,
+      "overlay_reasons": {
+        "not_applicable": 0
+      },
+      "retrieval_premise_compute": 52,
+      "retrieval_premise_joint": 47,
+      "retrieval_premise_n": 60,
+      "source_required_joint": 74,
+      "source_required_n": 105,
+      "validity_correct": 260,
+      "wasted_retrieval": 1
+    },
+    "overlap": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 20,
+          "joint_correct": 20,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 27,
+          "joint_correct": 27,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 34,
+          "joint_correct": 34,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60
+        }
+      },
+      "compute_correct": 237,
+      "direct_compute": 27,
+      "direct_n": 45,
+      "joint_correct": 232,
+      "mean_cost": 2.3833333333333333,
+      "method": "gemma4:26b:overlap_guard",
+      "missed_retrieval": 9,
+      "n": 300,
+      "no_source_joint": 151,
+      "no_source_n": 195,
+      "overlay_reasons": {
+        "not_applicable": 0
+      },
+      "retrieval_premise_compute": 52,
+      "retrieval_premise_joint": 47,
+      "retrieval_premise_n": 60,
+      "source_required_joint": 81,
+      "source_required_n": 105,
+      "validity_correct": 254,
+      "wasted_retrieval": 17
+    },
+    "overlay": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 39,
+          "joint_correct": 39,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 34,
+          "joint_correct": 34,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60
+        }
+      },
+      "compute_correct": 274,
+      "direct_compute": 45,
+      "direct_n": 45,
+      "joint_correct": 269,
+      "mean_cost": 2.3033333333333332,
+      "method": "gemma4:26b:verifier_source_overlay_v0",
+      "missed_retrieval": 7,
+      "n": 300,
+      "no_source_joint": 188,
+      "no_source_n": 195,
+      "overlay_reasons": {
+        "deterministic_verifier_gate": 18,
+        "learned_policy_selector": 274,
+        "source_confidence_retrieve_answer_gate": 8
+      },
+      "retrieval_premise_compute": 52,
+      "retrieval_premise_joint": 47,
+      "retrieval_premise_n": 60,
+      "source_required_joint": 81,
+      "source_required_n": 105,
+      "validity_correct": 275,
+      "wasted_retrieval": 1
+    },
+    "source_overlay": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 34,
+          "joint_correct": 34,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60
+        }
+      },
+      "compute_correct": 258,
+      "direct_compute": 45,
+      "direct_n": 45,
+      "joint_correct": 253,
+      "mean_cost": 2.2516666666666665,
+      "method": "gemma4:26b:source_confidence_overlay_v0",
+      "missed_retrieval": 7,
+      "n": 300,
+      "no_source_joint": 172,
+      "no_source_n": 195,
+      "overlay_reasons": {
+        "learned_policy_selector": 292,
+        "source_confidence_retrieve_answer_gate": 8
+      },
+      "retrieval_premise_compute": 52,
+      "retrieval_premise_joint": 47,
+      "retrieval_premise_n": 60,
+      "source_required_joint": 81,
+      "source_required_n": 105,
+      "validity_correct": 260,
+      "wasted_retrieval": 1
+    }
+  }
+}

@@ -1,0 +1,3207 @@
+{
+  "folds": [
+    {
+      "heldout_compute": 18,
+      "heldout_group": "cue_balanced_v3_how_many",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 12,
+        "overlap_guard": 8
+      },
+      "heldout_validity": 16,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 242,
+        "overlap_guard": 38
+      }
+    },
+    {
+      "heldout_compute": 12,
+      "heldout_group": "cue_balanced_v3_is_this",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 17,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 15,
+      "heldout_group": "cue_balanced_v3_what_happened",
+      "heldout_joint": 15,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 16,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 245,
+        "overlap_guard": 35
+      }
+    },
+    {
+      "heldout_compute": 20,
+      "heldout_group": "cue_balanced_v3_what_is",
+      "heldout_joint": 18,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 18,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 245,
+        "overlap_guard": 35
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_what_year",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 20
+      },
+      "heldout_validity": 16,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 10,
+      "heldout_group": "cue_balanced_v3_where_is",
+      "heldout_joint": 10,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 13,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_city_hosted",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 17,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 247,
+        "overlap_guard": 33
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_which_country_contains",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 17,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 243,
+        "overlap_guard": 37
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_which_country_won",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 11,
+        "overlap_guard": 9
+      },
+      "heldout_validity": 14,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 245,
+        "overlap_guard": 35
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_which_one",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 19,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 36
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_source_confirms",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 11,
+        "overlap_guard": 9
+      },
+      "heldout_validity": 16,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 242,
+        "overlap_guard": 38
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_which_team_won",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 12,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 243,
+        "overlap_guard": 37
+      }
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_group": "cue_balanced_v3_who_painted",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 13,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 12,
+      "heldout_group": "cue_balanced_v3_who_won",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 13,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 36
+      }
+    },
+    {
+      "heldout_compute": 10,
+      "heldout_group": "cue_balanced_v3_who_wrote",
+      "heldout_joint": 10,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 17,
+        "overlap_guard": 3
+      },
+      "heldout_validity": 16,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 18,
+      "heldout_group": "cue_balanced_v3_how_many",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 8,
+        "overlap_guard": 12
+      },
+      "heldout_validity": 16,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 242,
+        "overlap_guard": 38
+      }
+    },
+    {
+      "heldout_compute": 12,
+      "heldout_group": "cue_balanced_v3_is_this",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 4,
+        "overlap_guard": 16
+      },
+      "heldout_validity": 17,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 15,
+      "heldout_group": "cue_balanced_v3_what_happened",
+      "heldout_joint": 15,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 16,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 245,
+        "overlap_guard": 35
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_what_is",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 17,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 245,
+        "overlap_guard": 35
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_what_year",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 17,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_where_is",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 17,
+        "overlap_guard": 3
+      },
+      "heldout_validity": 14,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_city_hosted",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 17,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 247,
+        "overlap_guard": 33
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_which_country_contains",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 10,
+        "overlap_guard": 10
+      },
+      "heldout_validity": 19,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 243,
+        "overlap_guard": 37
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_which_country_won",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 11,
+        "overlap_guard": 9
+      },
+      "heldout_validity": 14,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 245,
+        "overlap_guard": 35
+      }
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_group": "cue_balanced_v3_which_one",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 7,
+        "overlap_guard": 13
+      },
+      "heldout_validity": 17,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 36
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_source_confirms",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 11,
+        "overlap_guard": 9
+      },
+      "heldout_validity": 16,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 242,
+        "overlap_guard": 38
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_which_team_won",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 12,
+        "overlap_guard": 8
+      },
+      "heldout_validity": 12,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 243,
+        "overlap_guard": 37
+      }
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_group": "cue_balanced_v3_who_painted",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 13,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 12,
+      "heldout_group": "cue_balanced_v3_who_won",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 8,
+        "overlap_guard": 12
+      },
+      "heldout_validity": 13,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 36
+      }
+    },
+    {
+      "heldout_compute": 10,
+      "heldout_group": "cue_balanced_v3_who_wrote",
+      "heldout_joint": 10,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 14,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 20,
+      "heldout_group": "cue_balanced_v3_how_many",
+      "heldout_joint": 16,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 10,
+        "overlap_guard": 10
+      },
+      "heldout_validity": 16,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 242,
+        "overlap_guard": 38
+      }
+    },
+    {
+      "heldout_compute": 15,
+      "heldout_group": "cue_balanced_v3_is_this",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 12,
+        "overlap_guard": 8
+      },
+      "heldout_validity": 16,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 15,
+      "heldout_group": "cue_balanced_v3_what_happened",
+      "heldout_joint": 15,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 16,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 245,
+        "overlap_guard": 35
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_what_is",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 245,
+        "overlap_guard": 35
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_what_year",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 12,
+        "overlap_guard": 8
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 12,
+      "heldout_group": "cue_balanced_v3_where_is",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 14,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_city_hosted",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 247,
+        "overlap_guard": 33
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_which_country_contains",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 8,
+        "overlap_guard": 12
+      },
+      "heldout_validity": 19,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 243,
+        "overlap_guard": 37
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_which_country_won",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 10,
+        "overlap_guard": 10
+      },
+      "heldout_validity": 15,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 245,
+        "overlap_guard": 35
+      }
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_group": "cue_balanced_v3_which_one",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 7,
+        "overlap_guard": 13
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 36
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_source_confirms",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 16,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 242,
+        "overlap_guard": 38
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_which_team_won",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 13,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 243,
+        "overlap_guard": 37
+      }
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_group": "cue_balanced_v3_who_painted",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 12,
+        "overlap_guard": 8
+      },
+      "heldout_validity": 13,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 12,
+      "heldout_group": "cue_balanced_v3_who_won",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 10,
+        "overlap_guard": 10
+      },
+      "heldout_validity": 13,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 36
+      }
+    },
+    {
+      "heldout_compute": 10,
+      "heldout_group": "cue_balanced_v3_who_wrote",
+      "heldout_joint": 10,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 16,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_how_many",
+      "heldout_joint": 15,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 6,
+        "overlap_guard": 14
+      },
+      "heldout_validity": 16,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 242,
+        "overlap_guard": 38
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_is_this",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 10,
+        "overlap_guard": 10
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 15,
+      "heldout_group": "cue_balanced_v3_what_happened",
+      "heldout_joint": 15,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 12,
+        "overlap_guard": 8
+      },
+      "heldout_validity": 16,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 245,
+        "overlap_guard": 35
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_what_is",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 12,
+        "overlap_guard": 8
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 245,
+        "overlap_guard": 35
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_what_year",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 11,
+        "overlap_guard": 9
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_where_is",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 14,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_city_hosted",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 247,
+        "overlap_guard": 33
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_which_country_contains",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 7,
+        "overlap_guard": 13
+      },
+      "heldout_validity": 19,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 243,
+        "overlap_guard": 37
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_which_country_won",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 11,
+        "overlap_guard": 9
+      },
+      "heldout_validity": 15,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 245,
+        "overlap_guard": 35
+      }
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_group": "cue_balanced_v3_which_one",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 6,
+        "overlap_guard": 14
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 36
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_source_confirms",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 16,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 242,
+        "overlap_guard": 38
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_which_team_won",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 13,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 243,
+        "overlap_guard": 37
+      }
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_group": "cue_balanced_v3_who_painted",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 12,
+        "overlap_guard": 8
+      },
+      "heldout_validity": 13,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 12,
+      "heldout_group": "cue_balanced_v3_who_won",
+      "heldout_joint": 11,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 10,
+        "overlap_guard": 10
+      },
+      "heldout_validity": 13,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 36
+      }
+    },
+    {
+      "heldout_compute": 10,
+      "heldout_group": "cue_balanced_v3_who_wrote",
+      "heldout_joint": 10,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 16,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 240,
+        "overlap_guard": 40
+      }
+    },
+    {
+      "heldout_compute": 16,
+      "heldout_group": "cue_balanced_v3_how_many",
+      "heldout_joint": 16,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 19,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 230,
+        "overlap_guard": 50
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_is_this",
+      "heldout_joint": 19,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 20,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 20,
+      "heldout_group": "cue_balanced_v3_what_happened",
+      "heldout_joint": 20,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 20,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 20,
+      "heldout_group": "cue_balanced_v3_what_is",
+      "heldout_joint": 20,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 20,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_what_year",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 19,
+        "overlap_guard": 1
+      },
+      "heldout_validity": 18,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 225,
+        "overlap_guard": 55
+      }
+    },
+    {
+      "heldout_compute": 12,
+      "heldout_group": "cue_balanced_v3_where_is",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 12,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 226,
+        "overlap_guard": 54
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_city_hosted",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 17,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_country_contains",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 17,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 226,
+        "overlap_guard": 54
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_which_country_won",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 17,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 231,
+        "overlap_guard": 49
+      }
+    },
+    {
+      "heldout_compute": 18,
+      "heldout_group": "cue_balanced_v3_which_one",
+      "heldout_joint": 18,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 18,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 229,
+        "overlap_guard": 51
+      }
+    },
+    {
+      "heldout_compute": 20,
+      "heldout_group": "cue_balanced_v3_which_source_confirms",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 17,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 226,
+        "overlap_guard": 54
+      }
+    },
+    {
+      "heldout_compute": 16,
+      "heldout_group": "cue_balanced_v3_which_team_won",
+      "heldout_joint": 16,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 17,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 229,
+        "overlap_guard": 51
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_who_painted",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 17,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 225,
+        "overlap_guard": 55
+      }
+    },
+    {
+      "heldout_compute": 16,
+      "heldout_group": "cue_balanced_v3_who_won",
+      "heldout_joint": 16,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 17,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 229,
+        "overlap_guard": 51
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_who_wrote",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 14,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_how_many",
+      "heldout_joint": 19,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 19,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 230,
+        "overlap_guard": 50
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_is_this",
+      "heldout_joint": 19,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 20,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 18,
+      "heldout_group": "cue_balanced_v3_what_happened",
+      "heldout_joint": 18,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 20,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 20,
+      "heldout_group": "cue_balanced_v3_what_is",
+      "heldout_joint": 20,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 20,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_what_year",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 18,
+        "overlap_guard": 2
+      },
+      "heldout_validity": 18,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 225,
+        "overlap_guard": 55
+      }
+    },
+    {
+      "heldout_compute": 12,
+      "heldout_group": "cue_balanced_v3_where_is",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 12,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 226,
+        "overlap_guard": 54
+      }
+    },
+    {
+      "heldout_compute": 15,
+      "heldout_group": "cue_balanced_v3_which_city_hosted",
+      "heldout_joint": 15,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 17,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_country_contains",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 17,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 226,
+        "overlap_guard": 54
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_which_country_won",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 17,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 231,
+        "overlap_guard": 49
+      }
+    },
+    {
+      "heldout_compute": 18,
+      "heldout_group": "cue_balanced_v3_which_one",
+      "heldout_joint": 18,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 18,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 229,
+        "overlap_guard": 51
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_source_confirms",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 11,
+        "overlap_guard": 9
+      },
+      "heldout_validity": 16,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 226,
+        "overlap_guard": 54
+      }
+    },
+    {
+      "heldout_compute": 16,
+      "heldout_group": "cue_balanced_v3_which_team_won",
+      "heldout_joint": 16,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 17,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 229,
+        "overlap_guard": 51
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_who_painted",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 17,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 225,
+        "overlap_guard": 55
+      }
+    },
+    {
+      "heldout_compute": 16,
+      "heldout_group": "cue_balanced_v3_who_won",
+      "heldout_joint": 16,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 17,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 229,
+        "overlap_guard": 51
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_who_wrote",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 14,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 16,
+      "heldout_group": "cue_balanced_v3_how_many",
+      "heldout_joint": 16,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 19,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 230,
+        "overlap_guard": 50
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_is_this",
+      "heldout_joint": 19,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 20,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 20,
+      "heldout_group": "cue_balanced_v3_what_happened",
+      "heldout_joint": 20,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 20,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 20,
+      "heldout_group": "cue_balanced_v3_what_is",
+      "heldout_joint": 20,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 10,
+        "overlap_guard": 10
+      },
+      "heldout_validity": 20,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_what_year",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 18,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 225,
+        "overlap_guard": 55
+      }
+    },
+    {
+      "heldout_compute": 12,
+      "heldout_group": "cue_balanced_v3_where_is",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 12,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 226,
+        "overlap_guard": 54
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_city_hosted",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_country_contains",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 226,
+        "overlap_guard": 54
+      }
+    },
+    {
+      "heldout_compute": 13,
+      "heldout_group": "cue_balanced_v3_which_country_won",
+      "heldout_joint": 13,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 231,
+        "overlap_guard": 49
+      }
+    },
+    {
+      "heldout_compute": 18,
+      "heldout_group": "cue_balanced_v3_which_one",
+      "heldout_joint": 18,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 18,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 229,
+        "overlap_guard": 51
+      }
+    },
+    {
+      "heldout_compute": 20,
+      "heldout_group": "cue_balanced_v3_which_source_confirms",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 226,
+        "overlap_guard": 54
+      }
+    },
+    {
+      "heldout_compute": 16,
+      "heldout_group": "cue_balanced_v3_which_team_won",
+      "heldout_joint": 16,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 229,
+        "overlap_guard": 51
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_who_painted",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 225,
+        "overlap_guard": 55
+      }
+    },
+    {
+      "heldout_compute": 16,
+      "heldout_group": "cue_balanced_v3_who_won",
+      "heldout_joint": 16,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 229,
+        "overlap_guard": 51
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_who_wrote",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 14,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_how_many",
+      "heldout_joint": 19,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 19,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 230,
+        "overlap_guard": 50
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_is_this",
+      "heldout_joint": 19,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 20,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 20,
+      "heldout_group": "cue_balanced_v3_what_happened",
+      "heldout_joint": 20,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 16,
+        "overlap_guard": 4
+      },
+      "heldout_validity": 20,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 20,
+      "heldout_group": "cue_balanced_v3_what_is",
+      "heldout_joint": 20,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 10,
+        "overlap_guard": 10
+      },
+      "heldout_validity": 20,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_what_year",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 11,
+        "overlap_guard": 9
+      },
+      "heldout_validity": 18,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 225,
+        "overlap_guard": 55
+      }
+    },
+    {
+      "heldout_compute": 12,
+      "heldout_group": "cue_balanced_v3_where_is",
+      "heldout_joint": 12,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 12,
+        "overlap_guard": 8
+      },
+      "heldout_validity": 12,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 226,
+        "overlap_guard": 54
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_city_hosted",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_country_contains",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 226,
+        "overlap_guard": 54
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_which_country_won",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 231,
+        "overlap_guard": 49
+      }
+    },
+    {
+      "heldout_compute": 18,
+      "heldout_group": "cue_balanced_v3_which_one",
+      "heldout_joint": 18,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 18,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 229,
+        "overlap_guard": 51
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_which_source_confirms",
+      "heldout_joint": 16,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 14,
+        "overlap_guard": 6
+      },
+      "heldout_validity": 16,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 226,
+        "overlap_guard": 54
+      }
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_group": "cue_balanced_v3_which_team_won",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 15,
+        "overlap_guard": 5
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 229,
+        "overlap_guard": 51
+      }
+    },
+    {
+      "heldout_compute": 19,
+      "heldout_group": "cue_balanced_v3_who_painted",
+      "heldout_joint": 17,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 12,
+        "overlap_guard": 8
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 225,
+        "overlap_guard": 55
+      }
+    },
+    {
+      "heldout_compute": 16,
+      "heldout_group": "cue_balanced_v3_who_won",
+      "heldout_joint": 16,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 12,
+        "overlap_guard": 8
+      },
+      "heldout_validity": 17,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 229,
+        "overlap_guard": 51
+      }
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_group": "cue_balanced_v3_who_wrote",
+      "heldout_joint": 14,
+      "heldout_n": 20,
+      "heldout_selected": {
+        "action_discriminating": 13,
+        "overlap_guard": 7
+      },
+      "heldout_validity": 14,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 228,
+        "overlap_guard": 52
+      }
+    }
+  ],
+  "paired": {
+    "gemma4:26b:cue_stem_heldout_learned_policy_joint_selector_vs_gemma4:26b:action_discriminating_compute": {
+      "a_only": 41,
+      "b_only": 4,
+      "both": 210,
+      "exact_p": 9.334883088740753e-09,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 45,
+      "net_a_minus_b": 37
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_joint_selector_vs_gemma4:26b:action_discriminating_joint": {
+      "a_only": 49,
+      "b_only": 4,
+      "both": 197,
+      "exact_p": 7.053979622639872e-11,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 50,
+      "net_a_minus_b": 45
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_joint_selector_vs_gemma4:26b:overlap_guard_compute": {
+      "a_only": 21,
+      "b_only": 7,
+      "both": 230,
+      "exact_p": 0.012540951371192932,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 42,
+      "net_a_minus_b": 14
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_joint_selector_vs_gemma4:26b:overlap_guard_joint": {
+      "a_only": 21,
+      "b_only": 7,
+      "both": 225,
+      "exact_p": 0.012540951371192932,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 47,
+      "net_a_minus_b": 14
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_compute": {
+      "a_only": 1,
+      "b_only": 0,
+      "both": 250,
+      "exact_p": 1.0,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 49,
+      "net_a_minus_b": 1
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_joint": {
+      "a_only": 1,
+      "b_only": 0,
+      "both": 245,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 54,
+      "net_a_minus_b": 1
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_question_joint_selector_vs_gemma4:26b:action_discriminating_compute": {
+      "a_only": 45,
+      "b_only": 11,
+      "both": 203,
+      "exact_p": 5.37831811014966e-06,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 41,
+      "net_a_minus_b": 34
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_question_joint_selector_vs_gemma4:26b:action_discriminating_joint": {
+      "a_only": 53,
+      "b_only": 11,
+      "both": 190,
+      "exact_p": 1.0058579844832594e-07,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 46,
+      "net_a_minus_b": 42
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_question_joint_selector_vs_gemma4:26b:overlap_guard_compute": {
+      "a_only": 14,
+      "b_only": 3,
+      "both": 234,
+      "exact_p": 0.012725830078125,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 49,
+      "net_a_minus_b": 11
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_question_joint_selector_vs_gemma4:26b:overlap_guard_joint": {
+      "a_only": 14,
+      "b_only": 3,
+      "both": 229,
+      "exact_p": 0.012725830078125,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 54,
+      "net_a_minus_b": 11
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_question_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_compute": {
+      "a_only": 5,
+      "b_only": 7,
+      "both": 243,
+      "exact_p": 0.7744140625,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 45,
+      "net_a_minus_b": -2
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_question_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_joint": {
+      "a_only": 5,
+      "b_only": 7,
+      "both": 238,
+      "exact_p": 0.7744140625,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 50,
+      "net_a_minus_b": -2
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_joint_selector_vs_gemma4:26b:action_discriminating_compute": {
+      "a_only": 41,
+      "b_only": 4,
+      "both": 210,
+      "exact_p": 9.334883088740753e-09,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 45,
+      "net_a_minus_b": 37
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_joint_selector_vs_gemma4:26b:action_discriminating_joint": {
+      "a_only": 49,
+      "b_only": 4,
+      "both": 197,
+      "exact_p": 7.053979622639872e-11,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 50,
+      "net_a_minus_b": 45
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_joint_selector_vs_gemma4:26b:overlap_guard_compute": {
+      "a_only": 21,
+      "b_only": 7,
+      "both": 230,
+      "exact_p": 0.012540951371192932,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 42,
+      "net_a_minus_b": 14
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_joint_selector_vs_gemma4:26b:overlap_guard_joint": {
+      "a_only": 21,
+      "b_only": 7,
+      "both": 225,
+      "exact_p": 0.012540951371192932,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 47,
+      "net_a_minus_b": 14
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_compute": {
+      "a_only": 1,
+      "b_only": 0,
+      "both": 250,
+      "exact_p": 1.0,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 49,
+      "net_a_minus_b": 1
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_joint": {
+      "a_only": 1,
+      "b_only": 0,
+      "both": 245,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 54,
+      "net_a_minus_b": 1
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_question_joint_selector_vs_gemma4:26b:action_discriminating_compute": {
+      "a_only": 46,
+      "b_only": 5,
+      "both": 209,
+      "exact_p": 2.3280151140170346e-09,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 40,
+      "net_a_minus_b": 41
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_question_joint_selector_vs_gemma4:26b:action_discriminating_joint": {
+      "a_only": 54,
+      "b_only": 5,
+      "both": 196,
+      "exact_p": 1.9067358802971057e-11,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 45,
+      "net_a_minus_b": 49
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_question_joint_selector_vs_gemma4:26b:overlap_guard_compute": {
+      "a_only": 20,
+      "b_only": 2,
+      "both": 235,
+      "exact_p": 0.00012111663818359375,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 43,
+      "net_a_minus_b": 18
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_question_joint_selector_vs_gemma4:26b:overlap_guard_joint": {
+      "a_only": 20,
+      "b_only": 2,
+      "both": 230,
+      "exact_p": 0.00012111663818359375,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 48,
+      "net_a_minus_b": 18
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_question_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_compute": {
+      "a_only": 6,
+      "b_only": 1,
+      "both": 249,
+      "exact_p": 0.125,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 44,
+      "net_a_minus_b": 5
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_question_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_joint": {
+      "a_only": 6,
+      "b_only": 1,
+      "both": 244,
+      "exact_p": 0.125,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 49,
+      "net_a_minus_b": 5
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_joint_selector_vs_qwen3.5:9b:action_discriminating_compute": {
+      "a_only": 46,
+      "b_only": 16,
+      "both": 162,
+      "exact_p": 0.00017632711255144299,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 76,
+      "net_a_minus_b": 30
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_joint_selector_vs_qwen3.5:9b:action_discriminating_joint": {
+      "a_only": 39,
+      "b_only": 13,
+      "both": 154,
+      "exact_p": 0.00040954145378258033,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 94,
+      "net_a_minus_b": 26
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_joint_selector_vs_qwen3.5:9b:overlap_guard_compute": {
+      "a_only": 2,
+      "b_only": 0,
+      "both": 206,
+      "exact_p": 0.5,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 92,
+      "net_a_minus_b": 2
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_joint_selector_vs_qwen3.5:9b:overlap_guard_joint": {
+      "a_only": 2,
+      "b_only": 1,
+      "both": 191,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 106,
+      "net_a_minus_b": 1
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_compute": {
+      "a_only": 29,
+      "b_only": 5,
+      "both": 179,
+      "exact_p": 3.8558151572942734e-05,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 87,
+      "net_a_minus_b": 24
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_joint": {
+      "a_only": 29,
+      "b_only": 6,
+      "both": 164,
+      "exact_p": 0.0001168418675661087,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 101,
+      "net_a_minus_b": 23
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_question_joint_selector_vs_qwen3.5:9b:action_discriminating_compute": {
+      "a_only": 45,
+      "b_only": 15,
+      "both": 163,
+      "exact_p": 0.00013451408092849532,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 77,
+      "net_a_minus_b": 30
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_question_joint_selector_vs_qwen3.5:9b:action_discriminating_joint": {
+      "a_only": 38,
+      "b_only": 12,
+      "both": 155,
+      "exact_p": 0.00030586400160359517,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 95,
+      "net_a_minus_b": 26
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_question_joint_selector_vs_qwen3.5:9b:overlap_guard_compute": {
+      "a_only": 3,
+      "b_only": 1,
+      "both": 205,
+      "exact_p": 0.625,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 91,
+      "net_a_minus_b": 2
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_question_joint_selector_vs_qwen3.5:9b:overlap_guard_joint": {
+      "a_only": 3,
+      "b_only": 2,
+      "both": 190,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 105,
+      "net_a_minus_b": 1
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_question_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_compute": {
+      "a_only": 32,
+      "b_only": 8,
+      "both": 176,
+      "exact_p": 0.0001821658297558315,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 84,
+      "net_a_minus_b": 24
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_question_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_joint": {
+      "a_only": 32,
+      "b_only": 9,
+      "both": 161,
+      "exact_p": 0.000430857042374555,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 98,
+      "net_a_minus_b": 23
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_joint_selector_vs_qwen3.5:9b:action_discriminating_compute": {
+      "a_only": 45,
+      "b_only": 10,
+      "both": 168,
+      "exact_p": 2.0572645155203517e-06,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 77,
+      "net_a_minus_b": 35
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_joint_selector_vs_qwen3.5:9b:action_discriminating_joint": {
+      "a_only": 39,
+      "b_only": 10,
+      "both": 157,
+      "exact_p": 3.845911694355664e-05,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 94,
+      "net_a_minus_b": 29
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_joint_selector_vs_qwen3.5:9b:overlap_guard_compute": {
+      "a_only": 8,
+      "b_only": 1,
+      "both": 205,
+      "exact_p": 0.0390625,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 86,
+      "net_a_minus_b": 7
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_joint_selector_vs_qwen3.5:9b:overlap_guard_joint": {
+      "a_only": 5,
+      "b_only": 1,
+      "both": 191,
+      "exact_p": 0.21875,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 103,
+      "net_a_minus_b": 4
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_compute": {
+      "a_only": 34,
+      "b_only": 5,
+      "both": 179,
+      "exact_p": 2.4299079086631536e-06,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 82,
+      "net_a_minus_b": 29
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_joint": {
+      "a_only": 31,
+      "b_only": 5,
+      "both": 165,
+      "exact_p": 1.2913485988974571e-05,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 99,
+      "net_a_minus_b": 26
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_question_joint_selector_vs_qwen3.5:9b:action_discriminating_compute": {
+      "a_only": 44,
+      "b_only": 11,
+      "both": 167,
+      "exact_p": 8.699371704778969e-06,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 78,
+      "net_a_minus_b": 33
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_question_joint_selector_vs_qwen3.5:9b:action_discriminating_joint": {
+      "a_only": 39,
+      "b_only": 10,
+      "both": 157,
+      "exact_p": 3.845911694355664e-05,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 94,
+      "net_a_minus_b": 29
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_question_joint_selector_vs_qwen3.5:9b:overlap_guard_compute": {
+      "a_only": 7,
+      "b_only": 2,
+      "both": 204,
+      "exact_p": 0.1796875,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 87,
+      "net_a_minus_b": 5
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_question_joint_selector_vs_qwen3.5:9b:overlap_guard_joint": {
+      "a_only": 5,
+      "b_only": 1,
+      "both": 191,
+      "exact_p": 0.21875,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 103,
+      "net_a_minus_b": 4
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_question_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_compute": {
+      "a_only": 34,
+      "b_only": 7,
+      "both": 177,
+      "exact_p": 2.532080361561384e-05,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 82,
+      "net_a_minus_b": 27
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_question_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_joint": {
+      "a_only": 32,
+      "b_only": 6,
+      "both": 164,
+      "exact_p": 2.4342560209333897e-05,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 98,
+      "net_a_minus_b": 26
+    }
+  },
+  "summary": {
+    "gemma4:26b:action_discriminating": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 19,
+          "joint_correct": 6,
+          "n": 60
+        }
+      },
+      "compute_correct": 214,
+      "joint_correct": 201,
+      "method": "gemma4:26b:action_discriminating",
+      "n": 300,
+      "selected_overlap": 0,
+      "validity_correct": 246
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_joint_selector": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 27,
+          "joint_correct": 27,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60
+        }
+      },
+      "compute_correct": 251,
+      "joint_correct": 246,
+      "method": "gemma4:26b:cue_stem_heldout_learned_policy_joint_selector",
+      "n": 300,
+      "selected_overlap": 71,
+      "validity_correct": 260
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_question_joint_selector": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 39,
+          "joint_correct": 39,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 31,
+          "joint_correct": 31,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60
+        }
+      },
+      "compute_correct": 248,
+      "joint_correct": 243,
+      "method": "gemma4:26b:cue_stem_heldout_learned_policy_question_joint_selector",
+      "n": 300,
+      "selected_overlap": 89,
+      "validity_correct": 259
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_joint_selector": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 27,
+          "joint_correct": 27,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60
+        }
+      },
+      "compute_correct": 251,
+      "joint_correct": 246,
+      "method": "gemma4:26b:cue_stem_heldout_learned_policy_reason_joint_selector",
+      "n": 300,
+      "selected_overlap": 86,
+      "validity_correct": 260
+    },
+    "gemma4:26b:cue_stem_heldout_learned_policy_reason_question_joint_selector": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 32,
+          "joint_correct": 32,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60
+        }
+      },
+      "compute_correct": 255,
+      "joint_correct": 250,
+      "method": "gemma4:26b:cue_stem_heldout_learned_policy_reason_question_joint_selector",
+      "n": 300,
+      "selected_overlap": 106,
+      "validity_correct": 259
+    },
+    "gemma4:26b:overlap_guard": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 20,
+          "joint_correct": 20,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 27,
+          "joint_correct": 27,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 34,
+          "joint_correct": 34,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60
+        }
+      },
+      "compute_correct": 237,
+      "joint_correct": 232,
+      "method": "gemma4:26b:overlap_guard",
+      "n": 300,
+      "selected_overlap": 300,
+      "validity_correct": 254
+    },
+    "gemma4:26b:overlap_if_either_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 26,
+          "joint_correct": 26,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60
+        }
+      },
+      "compute_correct": 250,
+      "joint_correct": 245,
+      "method": "gemma4:26b:overlap_if_either_rtp",
+      "n": 300,
+      "selected_overlap": 69,
+      "validity_correct": 260
+    },
+    "qwen3.5:9b:action_discriminating": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 10,
+          "joint_correct": 10,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 11,
+          "joint_correct": 0,
+          "n": 60
+        }
+      },
+      "compute_correct": 178,
+      "joint_correct": 167,
+      "method": "qwen3.5:9b:action_discriminating",
+      "n": 300,
+      "selected_overlap": 0,
+      "validity_correct": 226
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_joint_selector": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 59,
+          "joint_correct": 59,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 38,
+          "joint_correct": 38,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 10,
+          "n": 60
+        }
+      },
+      "compute_correct": 208,
+      "joint_correct": 193,
+      "method": "qwen3.5:9b:cue_stem_heldout_learned_policy_joint_selector",
+      "n": 300,
+      "selected_overlap": 87,
+      "validity_correct": 233
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_question_joint_selector": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 59,
+          "joint_correct": 59,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 36,
+          "joint_correct": 36,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 25,
+          "joint_correct": 25,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 24,
+          "joint_correct": 9,
+          "n": 60
+        }
+      },
+      "compute_correct": 208,
+      "joint_correct": 193,
+      "method": "qwen3.5:9b:cue_stem_heldout_learned_policy_question_joint_selector",
+      "n": 300,
+      "selected_overlap": 124,
+      "validity_correct": 232
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_joint_selector": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 43,
+          "joint_correct": 43,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 36,
+          "joint_correct": 36,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 24,
+          "joint_correct": 24,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 27,
+          "joint_correct": 10,
+          "n": 60
+        }
+      },
+      "compute_correct": 213,
+      "joint_correct": 196,
+      "method": "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_joint_selector",
+      "n": 300,
+      "selected_overlap": 121,
+      "validity_correct": 235
+    },
+    "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_question_joint_selector": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 42,
+          "joint_correct": 42,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 36,
+          "joint_correct": 36,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 25,
+          "joint_correct": 25,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 10,
+          "n": 60
+        }
+      },
+      "compute_correct": 211,
+      "joint_correct": 196,
+      "method": "qwen3.5:9b:cue_stem_heldout_learned_policy_reason_question_joint_selector",
+      "n": 300,
+      "selected_overlap": 133,
+      "validity_correct": 236
+    },
+    "qwen3.5:9b:overlap_guard": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 59,
+          "joint_correct": 59,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 36,
+          "joint_correct": 36,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 11,
+          "n": 60
+        }
+      },
+      "compute_correct": 206,
+      "joint_correct": 192,
+      "method": "qwen3.5:9b:overlap_guard",
+      "n": 300,
+      "selected_overlap": 300,
+      "validity_correct": 236
+    },
+    "qwen3.5:9b:overlap_if_either_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 38,
+          "joint_correct": 38,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 11,
+          "n": 60
+        }
+      },
+      "compute_correct": 184,
+      "joint_correct": 170,
+      "method": "qwen3.5:9b:overlap_if_either_rtp",
+      "n": 300,
+      "selected_overlap": 45,
+      "validity_correct": 232
+    }
+  }
+}

@@ -1,0 +1,3748 @@
+{
+  "folds": [
+    {
+      "heldout_compute": 9,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 9,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 8,
+      "heldout_n": 17,
+      "heldout_selected": {
+        "action_discriminating": 6,
+        "overlap_guard": 11
+      },
+      "heldout_source_family": "academy_97_best_picture",
+      "heldout_validity": 16,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 251,
+        "overlap_guard": 32
+      },
+      "train_n": 283
+    },
+    {
+      "heldout_compute": 1,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 1,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "archibald_2024_winner",
+      "heldout_validity": 3,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 253,
+        "overlap_guard": 40
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 3,
+      "heldout_n": 14,
+      "heldout_selected": {
+        "action_discriminating": 9,
+        "overlap_guard": 5
+      },
+      "heldout_source_family": "booker_2024_winner",
+      "heldout_validity": 9,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 248,
+        "overlap_guard": 38
+      },
+      "train_n": 286
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 5,
+      "heldout_n": 11,
+      "heldout_selected": {
+        "action_discriminating": 4,
+        "overlap_guard": 7
+      },
+      "heldout_source_family": "eurovision_2025_country",
+      "heldout_validity": 8,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 254,
+        "overlap_guard": 35
+      },
+      "train_n": 289
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3
+      },
+      "heldout_joint": 3,
+      "heldout_n": 3,
+      "heldout_selected": {
+        "overlap_guard": 3
+      },
+      "heldout_source_family": "eurovision_2025_host",
+      "heldout_validity": 3,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 260,
+        "overlap_guard": 37
+      },
+      "train_n": 297
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 3,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "nba_finals_2024",
+      "heldout_validity": 3,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 256,
+        "overlap_guard": 37
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 0,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 0,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 2,
+        "overlap_guard": 5
+      },
+      "heldout_source_family": "psg_based_in_paris",
+      "heldout_validity": 3,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 253,
+        "overlap_guard": 40
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 0,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 0,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 7
+      },
+      "heldout_source_family": "tokyo_2020_in_2021",
+      "heldout_validity": 3,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 253,
+        "overlap_guard": 40
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 8,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 12
+      },
+      "heldout_joint": 2,
+      "heldout_n": 18,
+      "heldout_selected": {
+        "action_discriminating": 1,
+        "overlap_guard": 17
+      },
+      "heldout_source_family": "ucl_2025_final_winner",
+      "heldout_validity": 9,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 38
+      },
+      "train_n": 282
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_gold_actions": {
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 0,
+      "heldout_n": 4,
+      "heldout_selected": {
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "uefa_euro_2024_final_score",
+      "heldout_validity": 0,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 256,
+        "overlap_guard": 40
+      },
+      "train_n": 296
+    },
+    {
+      "heldout_compute": 10,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 7,
+      "heldout_n": 10,
+      "heldout_selected": {
+        "action_discriminating": 4,
+        "overlap_guard": 6
+      },
+      "heldout_source_family": "uefa_euro_2024_winner",
+      "heldout_validity": 7,
+      "mode": "policy",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 255,
+        "overlap_guard": 35
+      },
+      "train_n": 290
+    },
+    {
+      "heldout_compute": 9,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 9,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 8,
+      "heldout_n": 17,
+      "heldout_selected": {
+        "overlap_guard": 17
+      },
+      "heldout_source_family": "academy_97_best_picture",
+      "heldout_validity": 16,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 251,
+        "overlap_guard": 32
+      },
+      "train_n": 283
+    },
+    {
+      "heldout_compute": 1,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 1,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 1,
+        "overlap_guard": 6
+      },
+      "heldout_source_family": "archibald_2024_winner",
+      "heldout_validity": 3,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 253,
+        "overlap_guard": 40
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 3,
+      "heldout_n": 14,
+      "heldout_selected": {
+        "action_discriminating": 10,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "booker_2024_winner",
+      "heldout_validity": 7,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 248,
+        "overlap_guard": 38
+      },
+      "train_n": 286
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 5,
+      "heldout_n": 11,
+      "heldout_selected": {
+        "action_discriminating": 1,
+        "overlap_guard": 10
+      },
+      "heldout_source_family": "eurovision_2025_country",
+      "heldout_validity": 10,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 254,
+        "overlap_guard": 35
+      },
+      "train_n": 289
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3
+      },
+      "heldout_joint": 3,
+      "heldout_n": 3,
+      "heldout_selected": {
+        "overlap_guard": 3
+      },
+      "heldout_source_family": "eurovision_2025_host",
+      "heldout_validity": 3,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 260,
+        "overlap_guard": 37
+      },
+      "train_n": 297
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 3,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "overlap_guard": 7
+      },
+      "heldout_source_family": "nba_finals_2024",
+      "heldout_validity": 3,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 256,
+        "overlap_guard": 37
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 3,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 4,
+        "overlap_guard": 3
+      },
+      "heldout_source_family": "psg_based_in_paris",
+      "heldout_validity": 4,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 253,
+        "overlap_guard": 40
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 0,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 0,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 5,
+        "overlap_guard": 2
+      },
+      "heldout_source_family": "tokyo_2020_in_2021",
+      "heldout_validity": 4,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 253,
+        "overlap_guard": 40
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 8,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 12
+      },
+      "heldout_joint": 2,
+      "heldout_n": 18,
+      "heldout_selected": {
+        "action_discriminating": 1,
+        "overlap_guard": 17
+      },
+      "heldout_source_family": "ucl_2025_final_winner",
+      "heldout_validity": 9,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 38
+      },
+      "train_n": 282
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_gold_actions": {
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 0,
+      "heldout_n": 4,
+      "heldout_selected": {
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "uefa_euro_2024_final_score",
+      "heldout_validity": 0,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 256,
+        "overlap_guard": 40
+      },
+      "train_n": 296
+    },
+    {
+      "heldout_compute": 7,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 5,
+      "heldout_n": 10,
+      "heldout_selected": {
+        "action_discriminating": 7,
+        "overlap_guard": 3
+      },
+      "heldout_source_family": "uefa_euro_2024_winner",
+      "heldout_validity": 7,
+      "mode": "policy_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 255,
+        "overlap_guard": 35
+      },
+      "train_n": 290
+    },
+    {
+      "heldout_compute": 9,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 9,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 8,
+      "heldout_n": 17,
+      "heldout_selected": {
+        "overlap_guard": 17
+      },
+      "heldout_source_family": "academy_97_best_picture",
+      "heldout_validity": 16,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 251,
+        "overlap_guard": 32
+      },
+      "train_n": 283
+    },
+    {
+      "heldout_compute": 1,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 1,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 2,
+        "overlap_guard": 5
+      },
+      "heldout_source_family": "archibald_2024_winner",
+      "heldout_validity": 3,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 253,
+        "overlap_guard": 40
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 3,
+      "heldout_n": 14,
+      "heldout_selected": {
+        "action_discriminating": 7,
+        "overlap_guard": 7
+      },
+      "heldout_source_family": "booker_2024_winner",
+      "heldout_validity": 9,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 248,
+        "overlap_guard": 38
+      },
+      "train_n": 286
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 5,
+      "heldout_n": 11,
+      "heldout_selected": {
+        "action_discriminating": 2,
+        "overlap_guard": 9
+      },
+      "heldout_source_family": "eurovision_2025_country",
+      "heldout_validity": 9,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 254,
+        "overlap_guard": 35
+      },
+      "train_n": 289
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3
+      },
+      "heldout_joint": 3,
+      "heldout_n": 3,
+      "heldout_selected": {
+        "overlap_guard": 3
+      },
+      "heldout_source_family": "eurovision_2025_host",
+      "heldout_validity": 3,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 260,
+        "overlap_guard": 37
+      },
+      "train_n": 297
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 3,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "overlap_guard": 7
+      },
+      "heldout_source_family": "nba_finals_2024",
+      "heldout_validity": 3,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 256,
+        "overlap_guard": 37
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 2,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 2,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 2,
+        "overlap_guard": 5
+      },
+      "heldout_source_family": "psg_based_in_paris",
+      "heldout_validity": 4,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 253,
+        "overlap_guard": 40
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 0,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 0,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 5,
+        "overlap_guard": 2
+      },
+      "heldout_source_family": "tokyo_2020_in_2021",
+      "heldout_validity": 4,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 253,
+        "overlap_guard": 40
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 12
+      },
+      "heldout_joint": 2,
+      "heldout_n": 18,
+      "heldout_selected": {
+        "action_discriminating": 7,
+        "overlap_guard": 11
+      },
+      "heldout_source_family": "ucl_2025_final_winner",
+      "heldout_validity": 8,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 38
+      },
+      "train_n": 282
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_gold_actions": {
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 0,
+      "heldout_n": 4,
+      "heldout_selected": {
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "uefa_euro_2024_final_score",
+      "heldout_validity": 0,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 256,
+        "overlap_guard": 40
+      },
+      "train_n": 296
+    },
+    {
+      "heldout_compute": 10,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 8,
+      "heldout_n": 10,
+      "heldout_selected": {
+        "action_discriminating": 2,
+        "overlap_guard": 8
+      },
+      "heldout_source_family": "uefa_euro_2024_winner",
+      "heldout_validity": 8,
+      "mode": "policy_reason",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 255,
+        "overlap_guard": 35
+      },
+      "train_n": 290
+    },
+    {
+      "heldout_compute": 9,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 9,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 8,
+      "heldout_n": 17,
+      "heldout_selected": {
+        "overlap_guard": 17
+      },
+      "heldout_source_family": "academy_97_best_picture",
+      "heldout_validity": 16,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 251,
+        "overlap_guard": 32
+      },
+      "train_n": 283
+    },
+    {
+      "heldout_compute": 1,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 1,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 2,
+        "overlap_guard": 5
+      },
+      "heldout_source_family": "archibald_2024_winner",
+      "heldout_validity": 3,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 253,
+        "overlap_guard": 40
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 3,
+      "heldout_n": 14,
+      "heldout_selected": {
+        "action_discriminating": 7,
+        "overlap_guard": 7
+      },
+      "heldout_source_family": "booker_2024_winner",
+      "heldout_validity": 9,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 248,
+        "overlap_guard": 38
+      },
+      "train_n": 286
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 5,
+      "heldout_n": 11,
+      "heldout_selected": {
+        "overlap_guard": 11
+      },
+      "heldout_source_family": "eurovision_2025_country",
+      "heldout_validity": 10,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 254,
+        "overlap_guard": 35
+      },
+      "train_n": 289
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3
+      },
+      "heldout_joint": 3,
+      "heldout_n": 3,
+      "heldout_selected": {
+        "overlap_guard": 3
+      },
+      "heldout_source_family": "eurovision_2025_host",
+      "heldout_validity": 3,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 260,
+        "overlap_guard": 37
+      },
+      "train_n": 297
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 3,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "overlap_guard": 7
+      },
+      "heldout_source_family": "nba_finals_2024",
+      "heldout_validity": 3,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 256,
+        "overlap_guard": 37
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 3,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "psg_based_in_paris",
+      "heldout_validity": 4,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 253,
+        "overlap_guard": 40
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 0,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 0,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 5,
+        "overlap_guard": 2
+      },
+      "heldout_source_family": "tokyo_2020_in_2021",
+      "heldout_validity": 4,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 253,
+        "overlap_guard": 40
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 12
+      },
+      "heldout_joint": 2,
+      "heldout_n": 18,
+      "heldout_selected": {
+        "action_discriminating": 6,
+        "overlap_guard": 12
+      },
+      "heldout_source_family": "ucl_2025_final_winner",
+      "heldout_validity": 8,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 38
+      },
+      "train_n": 282
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_gold_actions": {
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 0,
+      "heldout_n": 4,
+      "heldout_selected": {
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "uefa_euro_2024_final_score",
+      "heldout_validity": 0,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 256,
+        "overlap_guard": 40
+      },
+      "train_n": 296
+    },
+    {
+      "heldout_compute": 10,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 7,
+      "heldout_n": 10,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 7
+      },
+      "heldout_source_family": "uefa_euro_2024_winner",
+      "heldout_validity": 7,
+      "mode": "policy_reason_question",
+      "model": "qwen3.5:9b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 255,
+        "overlap_guard": 35
+      },
+      "train_n": 290
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 9,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 14,
+      "heldout_n": 17,
+      "heldout_selected": {
+        "action_discriminating": 4,
+        "overlap_guard": 13
+      },
+      "heldout_source_family": "academy_97_best_picture",
+      "heldout_validity": 14,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 237,
+        "overlap_guard": 46
+      },
+      "train_n": 283
+    },
+    {
+      "heldout_compute": 7,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 5,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "archibald_2024_winner",
+      "heldout_validity": 5,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 238,
+        "overlap_guard": 55
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 11,
+      "heldout_n": 14,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 11
+      },
+      "heldout_source_family": "booker_2024_winner",
+      "heldout_validity": 11,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 238,
+        "overlap_guard": 48
+      },
+      "train_n": 286
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 11,
+      "heldout_n": 11,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 8
+      },
+      "heldout_source_family": "eurovision_2025_country",
+      "heldout_validity": 11,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 239,
+        "overlap_guard": 50
+      },
+      "train_n": 289
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3
+      },
+      "heldout_joint": 3,
+      "heldout_n": 3,
+      "heldout_selected": {
+        "action_discriminating": 3
+      },
+      "heldout_source_family": "eurovision_2025_host",
+      "heldout_validity": 3,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 241,
+        "overlap_guard": 56
+      },
+      "train_n": 297
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 6,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "nba_finals_2024",
+      "heldout_validity": 7,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 242,
+        "overlap_guard": 51
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 2,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 2,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 2,
+        "overlap_guard": 5
+      },
+      "heldout_source_family": "psg_based_in_paris",
+      "heldout_validity": 2,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 239,
+        "overlap_guard": 54
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 1,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 1,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 6,
+        "overlap_guard": 1
+      },
+      "heldout_source_family": "tokyo_2020_in_2021",
+      "heldout_validity": 5,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 238,
+        "overlap_guard": 55
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 12
+      },
+      "heldout_joint": 14,
+      "heldout_n": 18,
+      "heldout_selected": {
+        "action_discriminating": 2,
+        "overlap_guard": 16
+      },
+      "heldout_source_family": "ucl_2025_final_winner",
+      "heldout_validity": 15,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 236,
+        "overlap_guard": 46
+      },
+      "train_n": 282
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 3,
+      "heldout_n": 4,
+      "heldout_selected": {
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "uefa_euro_2024_final_score",
+      "heldout_validity": 3,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 243,
+        "overlap_guard": 53
+      },
+      "train_n": 296
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 4,
+      "heldout_n": 10,
+      "heldout_selected": {
+        "action_discriminating": 6,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "uefa_euro_2024_winner",
+      "heldout_validity": 10,
+      "mode": "policy",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 46
+      },
+      "train_n": 290
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 9,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 14,
+      "heldout_n": 17,
+      "heldout_selected": {
+        "action_discriminating": 1,
+        "overlap_guard": 16
+      },
+      "heldout_source_family": "academy_97_best_picture",
+      "heldout_validity": 14,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 237,
+        "overlap_guard": 46
+      },
+      "train_n": 283
+    },
+    {
+      "heldout_compute": 7,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 5,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "archibald_2024_winner",
+      "heldout_validity": 5,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 238,
+        "overlap_guard": 55
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 11,
+      "heldout_n": 14,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 11
+      },
+      "heldout_source_family": "booker_2024_winner",
+      "heldout_validity": 11,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 238,
+        "overlap_guard": 48
+      },
+      "train_n": 286
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 11,
+      "heldout_n": 11,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 8
+      },
+      "heldout_source_family": "eurovision_2025_country",
+      "heldout_validity": 11,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 239,
+        "overlap_guard": 50
+      },
+      "train_n": 289
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3
+      },
+      "heldout_joint": 3,
+      "heldout_n": 3,
+      "heldout_selected": {
+        "overlap_guard": 3
+      },
+      "heldout_source_family": "eurovision_2025_host",
+      "heldout_validity": 3,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 241,
+        "overlap_guard": 56
+      },
+      "train_n": 297
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 6,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "nba_finals_2024",
+      "heldout_validity": 7,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 242,
+        "overlap_guard": 51
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 2,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 2,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "overlap_guard": 7
+      },
+      "heldout_source_family": "psg_based_in_paris",
+      "heldout_validity": 2,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 239,
+        "overlap_guard": 54
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 1,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 1,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 5,
+        "overlap_guard": 2
+      },
+      "heldout_source_family": "tokyo_2020_in_2021",
+      "heldout_validity": 5,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 238,
+        "overlap_guard": 55
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 17,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 12
+      },
+      "heldout_joint": 14,
+      "heldout_n": 18,
+      "heldout_selected": {
+        "action_discriminating": 2,
+        "overlap_guard": 16
+      },
+      "heldout_source_family": "ucl_2025_final_winner",
+      "heldout_validity": 15,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 236,
+        "overlap_guard": 46
+      },
+      "train_n": 282
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 3,
+      "heldout_n": 4,
+      "heldout_selected": {
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "uefa_euro_2024_final_score",
+      "heldout_validity": 3,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 243,
+        "overlap_guard": 53
+      },
+      "train_n": 296
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 6,
+      "heldout_n": 10,
+      "heldout_selected": {
+        "action_discriminating": 4,
+        "overlap_guard": 6
+      },
+      "heldout_source_family": "uefa_euro_2024_winner",
+      "heldout_validity": 10,
+      "mode": "policy_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 46
+      },
+      "train_n": 290
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 9,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 14,
+      "heldout_n": 17,
+      "heldout_selected": {
+        "overlap_guard": 17
+      },
+      "heldout_source_family": "academy_97_best_picture",
+      "heldout_validity": 14,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 237,
+        "overlap_guard": 46
+      },
+      "train_n": 283
+    },
+    {
+      "heldout_compute": 7,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 5,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 2,
+        "overlap_guard": 5
+      },
+      "heldout_source_family": "archibald_2024_winner",
+      "heldout_validity": 5,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 238,
+        "overlap_guard": 55
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 11,
+      "heldout_n": 14,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 11
+      },
+      "heldout_source_family": "booker_2024_winner",
+      "heldout_validity": 11,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 238,
+        "overlap_guard": 48
+      },
+      "train_n": 286
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 11,
+      "heldout_n": 11,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 8
+      },
+      "heldout_source_family": "eurovision_2025_country",
+      "heldout_validity": 11,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 239,
+        "overlap_guard": 50
+      },
+      "train_n": 289
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3
+      },
+      "heldout_joint": 3,
+      "heldout_n": 3,
+      "heldout_selected": {
+        "action_discriminating": 3
+      },
+      "heldout_source_family": "eurovision_2025_host",
+      "heldout_validity": 3,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 241,
+        "overlap_guard": 56
+      },
+      "train_n": 297
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 6,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "nba_finals_2024",
+      "heldout_validity": 7,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 242,
+        "overlap_guard": 51
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 2,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 2,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 1,
+        "overlap_guard": 6
+      },
+      "heldout_source_family": "psg_based_in_paris",
+      "heldout_validity": 2,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 239,
+        "overlap_guard": 54
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 1,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 1,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "tokyo_2020_in_2021",
+      "heldout_validity": 5,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 238,
+        "overlap_guard": 55
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 16,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 12
+      },
+      "heldout_joint": 13,
+      "heldout_n": 18,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 15
+      },
+      "heldout_source_family": "ucl_2025_final_winner",
+      "heldout_validity": 14,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 236,
+        "overlap_guard": 46
+      },
+      "train_n": 282
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 3,
+      "heldout_n": 4,
+      "heldout_selected": {
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "uefa_euro_2024_final_score",
+      "heldout_validity": 3,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 243,
+        "overlap_guard": 53
+      },
+      "train_n": 296
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 4,
+      "heldout_n": 10,
+      "heldout_selected": {
+        "action_discriminating": 6,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "uefa_euro_2024_winner",
+      "heldout_validity": 10,
+      "mode": "policy_reason",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 46
+      },
+      "train_n": 290
+    },
+    {
+      "heldout_compute": 14,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 9,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 14,
+      "heldout_n": 17,
+      "heldout_selected": {
+        "overlap_guard": 17
+      },
+      "heldout_source_family": "academy_97_best_picture",
+      "heldout_validity": 14,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 237,
+        "overlap_guard": 46
+      },
+      "train_n": 283
+    },
+    {
+      "heldout_compute": 7,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 5,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 2,
+        "overlap_guard": 5
+      },
+      "heldout_source_family": "archibald_2024_winner",
+      "heldout_validity": 5,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 238,
+        "overlap_guard": 55
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 11,
+      "heldout_n": 14,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 11
+      },
+      "heldout_source_family": "booker_2024_winner",
+      "heldout_validity": 11,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 238,
+        "overlap_guard": 48
+      },
+      "train_n": 286
+    },
+    {
+      "heldout_compute": 11,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 8
+      },
+      "heldout_joint": 11,
+      "heldout_n": 11,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 8
+      },
+      "heldout_source_family": "eurovision_2025_country",
+      "heldout_validity": 11,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 239,
+        "overlap_guard": 50
+      },
+      "train_n": 289
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3
+      },
+      "heldout_joint": 3,
+      "heldout_n": 3,
+      "heldout_selected": {
+        "action_discriminating": 2,
+        "overlap_guard": 1
+      },
+      "heldout_source_family": "eurovision_2025_host",
+      "heldout_validity": 3,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 241,
+        "overlap_guard": 56
+      },
+      "train_n": 297
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 6,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "nba_finals_2024",
+      "heldout_validity": 7,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 242,
+        "overlap_guard": 51
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 2,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 2,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "overlap_guard": 7
+      },
+      "heldout_source_family": "psg_based_in_paris",
+      "heldout_validity": 2,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 239,
+        "overlap_guard": 54
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 1,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 3,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 1,
+      "heldout_n": 7,
+      "heldout_selected": {
+        "action_discriminating": 1,
+        "overlap_guard": 6
+      },
+      "heldout_source_family": "tokyo_2020_in_2021",
+      "heldout_validity": 5,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 238,
+        "overlap_guard": 55
+      },
+      "train_n": 293
+    },
+    {
+      "heldout_compute": 16,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 12
+      },
+      "heldout_joint": 13,
+      "heldout_n": 18,
+      "heldout_selected": {
+        "action_discriminating": 3,
+        "overlap_guard": 15
+      },
+      "heldout_source_family": "ucl_2025_final_winner",
+      "heldout_validity": 14,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 236,
+        "overlap_guard": 46
+      },
+      "train_n": 282
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_gold_actions": {
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 3,
+      "heldout_n": 4,
+      "heldout_selected": {
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "uefa_euro_2024_final_score",
+      "heldout_validity": 3,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 243,
+        "overlap_guard": 53
+      },
+      "train_n": 296
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_gold_actions": {
+        "retrieve_then_answer": 6,
+        "retrieve_then_premise_check": 4
+      },
+      "heldout_joint": 4,
+      "heldout_n": 10,
+      "heldout_selected": {
+        "action_discriminating": 6,
+        "overlap_guard": 4
+      },
+      "heldout_source_family": "uefa_euro_2024_winner",
+      "heldout_validity": 10,
+      "mode": "policy_reason_question",
+      "model": "gemma4:26b",
+      "target_metric": "joint",
+      "train_label_counts": {
+        "action_discriminating": 244,
+        "overlap_guard": 46
+      },
+      "train_n": 290
+    }
+  ],
+  "paired": {
+    "gemma4:26b:source_family_heldout_learned_policy_joint_selector_vs_gemma4:26b:action_discriminating_compute": {
+      "a_only": 41,
+      "b_only": 3,
+      "both": 38,
+      "exact_p": 1.6183321349672042e-09,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 23,
+      "net_a_minus_b": 38
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_joint_selector_vs_gemma4:26b:action_discriminating_joint": {
+      "a_only": 49,
+      "b_only": 3,
+      "both": 25,
+      "exact_p": 1.042677055806962e-11,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 28,
+      "net_a_minus_b": 46
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_joint_selector_vs_gemma4:26b:overlap_guard_compute": {
+      "a_only": 0,
+      "b_only": 7,
+      "both": 79,
+      "exact_p": 0.015625,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 19,
+      "net_a_minus_b": -7
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_joint_selector_vs_gemma4:26b:overlap_guard_joint": {
+      "a_only": 0,
+      "b_only": 7,
+      "both": 74,
+      "exact_p": 0.015625,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 24,
+      "net_a_minus_b": -7
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_compute": {
+      "a_only": 1,
+      "b_only": 0,
+      "both": 78,
+      "exact_p": 1.0,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 26,
+      "net_a_minus_b": 1
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_joint": {
+      "a_only": 1,
+      "b_only": 0,
+      "both": 73,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 31,
+      "net_a_minus_b": 1
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_question_joint_selector_vs_gemma4:26b:action_discriminating_compute": {
+      "a_only": 43,
+      "b_only": 3,
+      "both": 38,
+      "exact_p": 4.6219383875722997e-10,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 21,
+      "net_a_minus_b": 40
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_question_joint_selector_vs_gemma4:26b:action_discriminating_joint": {
+      "a_only": 51,
+      "b_only": 3,
+      "both": 25,
+      "exact_p": 2.9187763317395365e-12,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 26,
+      "net_a_minus_b": 48
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_question_joint_selector_vs_gemma4:26b:overlap_guard_compute": {
+      "a_only": 0,
+      "b_only": 5,
+      "both": 81,
+      "exact_p": 0.0625,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 19,
+      "net_a_minus_b": -5
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_question_joint_selector_vs_gemma4:26b:overlap_guard_joint": {
+      "a_only": 0,
+      "b_only": 5,
+      "both": 76,
+      "exact_p": 0.0625,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 24,
+      "net_a_minus_b": -5
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_question_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_compute": {
+      "a_only": 3,
+      "b_only": 0,
+      "both": 78,
+      "exact_p": 0.25,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 24,
+      "net_a_minus_b": 3
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_question_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_joint": {
+      "a_only": 3,
+      "b_only": 0,
+      "both": 73,
+      "exact_p": 0.25,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 29,
+      "net_a_minus_b": 3
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_joint_selector_vs_gemma4:26b:action_discriminating_compute": {
+      "a_only": 40,
+      "b_only": 3,
+      "both": 38,
+      "exact_p": 3.0213413992896676e-09,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 24,
+      "net_a_minus_b": 37
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_joint_selector_vs_gemma4:26b:action_discriminating_joint": {
+      "a_only": 48,
+      "b_only": 3,
+      "both": 25,
+      "exact_p": 1.9674928353197174e-11,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 29,
+      "net_a_minus_b": 45
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_joint_selector_vs_gemma4:26b:overlap_guard_compute": {
+      "a_only": 0,
+      "b_only": 8,
+      "both": 78,
+      "exact_p": 0.0078125,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 19,
+      "net_a_minus_b": -8
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_joint_selector_vs_gemma4:26b:overlap_guard_joint": {
+      "a_only": 0,
+      "b_only": 8,
+      "both": 73,
+      "exact_p": 0.0078125,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 24,
+      "net_a_minus_b": -8
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_compute": {
+      "a_only": 1,
+      "b_only": 1,
+      "both": 77,
+      "exact_p": 1.0,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 26,
+      "net_a_minus_b": 0
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_joint": {
+      "a_only": 1,
+      "b_only": 1,
+      "both": 72,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 31,
+      "net_a_minus_b": 0
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_question_joint_selector_vs_gemma4:26b:action_discriminating_compute": {
+      "a_only": 40,
+      "b_only": 3,
+      "both": 38,
+      "exact_p": 3.0213413992896676e-09,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 24,
+      "net_a_minus_b": 37
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_question_joint_selector_vs_gemma4:26b:action_discriminating_joint": {
+      "a_only": 48,
+      "b_only": 3,
+      "both": 25,
+      "exact_p": 1.9674928353197174e-11,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 29,
+      "net_a_minus_b": 45
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_question_joint_selector_vs_gemma4:26b:overlap_guard_compute": {
+      "a_only": 0,
+      "b_only": 8,
+      "both": 78,
+      "exact_p": 0.0078125,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 19,
+      "net_a_minus_b": -8
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_question_joint_selector_vs_gemma4:26b:overlap_guard_joint": {
+      "a_only": 0,
+      "b_only": 8,
+      "both": 73,
+      "exact_p": 0.0078125,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 24,
+      "net_a_minus_b": -8
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_question_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_compute": {
+      "a_only": 1,
+      "b_only": 1,
+      "both": 77,
+      "exact_p": 1.0,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 26,
+      "net_a_minus_b": 0
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_question_joint_selector_vs_gemma4:26b:overlap_if_either_rtp_joint": {
+      "a_only": 1,
+      "b_only": 1,
+      "both": 72,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 31,
+      "net_a_minus_b": 0
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_joint_selector_vs_qwen3.5:9b:action_discriminating_compute": {
+      "a_only": 34,
+      "b_only": 8,
+      "both": 13,
+      "exact_p": 6.877111491121468e-05,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 50,
+      "net_a_minus_b": 26
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_joint_selector_vs_qwen3.5:9b:action_discriminating_joint": {
+      "a_only": 27,
+      "b_only": 5,
+      "both": 5,
+      "exact_p": 0.00011307420209050179,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 68,
+      "net_a_minus_b": 22
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_joint_selector_vs_qwen3.5:9b:overlap_guard_compute": {
+      "a_only": 0,
+      "b_only": 0,
+      "both": 47,
+      "exact_p": 1.0,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 58,
+      "net_a_minus_b": 0
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_joint_selector_vs_qwen3.5:9b:overlap_guard_joint": {
+      "a_only": 0,
+      "b_only": 1,
+      "both": 32,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 72,
+      "net_a_minus_b": -1
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_compute": {
+      "a_only": 17,
+      "b_only": 0,
+      "both": 30,
+      "exact_p": 1.52587890625e-05,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 58,
+      "net_a_minus_b": 17
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_joint": {
+      "a_only": 17,
+      "b_only": 1,
+      "both": 15,
+      "exact_p": 0.00014495849609375,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 72,
+      "net_a_minus_b": 16
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_question_joint_selector_vs_qwen3.5:9b:action_discriminating_compute": {
+      "a_only": 31,
+      "b_only": 5,
+      "both": 16,
+      "exact_p": 1.2913485988974571e-05,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 53,
+      "net_a_minus_b": 26
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_question_joint_selector_vs_qwen3.5:9b:action_discriminating_joint": {
+      "a_only": 25,
+      "b_only": 2,
+      "both": 8,
+      "exact_p": 5.647540092468262e-06,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 70,
+      "net_a_minus_b": 23
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_question_joint_selector_vs_qwen3.5:9b:overlap_guard_compute": {
+      "a_only": 3,
+      "b_only": 3,
+      "both": 44,
+      "exact_p": 1.0,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 55,
+      "net_a_minus_b": 0
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_question_joint_selector_vs_qwen3.5:9b:overlap_guard_joint": {
+      "a_only": 3,
+      "b_only": 3,
+      "both": 30,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 69,
+      "net_a_minus_b": 0
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_question_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_compute": {
+      "a_only": 18,
+      "b_only": 1,
+      "both": 29,
+      "exact_p": 7.62939453125e-05,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 57,
+      "net_a_minus_b": 17
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_question_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_joint": {
+      "a_only": 18,
+      "b_only": 1,
+      "both": 15,
+      "exact_p": 7.62939453125e-05,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 71,
+      "net_a_minus_b": 17
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_joint_selector_vs_qwen3.5:9b:action_discriminating_compute": {
+      "a_only": 34,
+      "b_only": 3,
+      "both": 18,
+      "exact_p": 1.233129296451807e-07,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 50,
+      "net_a_minus_b": 31
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_joint_selector_vs_qwen3.5:9b:action_discriminating_joint": {
+      "a_only": 28,
+      "b_only": 3,
+      "both": 7,
+      "exact_p": 4.649162292480469e-06,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 67,
+      "net_a_minus_b": 25
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_joint_selector_vs_qwen3.5:9b:overlap_guard_compute": {
+      "a_only": 5,
+      "b_only": 0,
+      "both": 47,
+      "exact_p": 0.0625,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 53,
+      "net_a_minus_b": 5
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_joint_selector_vs_qwen3.5:9b:overlap_guard_joint": {
+      "a_only": 2,
+      "b_only": 0,
+      "both": 33,
+      "exact_p": 0.5,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 70,
+      "net_a_minus_b": 2
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_compute": {
+      "a_only": 22,
+      "b_only": 0,
+      "both": 30,
+      "exact_p": 4.76837158203125e-07,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 53,
+      "net_a_minus_b": 22
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_joint": {
+      "a_only": 19,
+      "b_only": 0,
+      "both": 16,
+      "exact_p": 3.814697265625e-06,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 70,
+      "net_a_minus_b": 19
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_question_joint_selector_vs_qwen3.5:9b:action_discriminating_compute": {
+      "a_only": 34,
+      "b_only": 2,
+      "both": 19,
+      "exact_p": 1.941225491464138e-08,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 50,
+      "net_a_minus_b": 32
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_question_joint_selector_vs_qwen3.5:9b:action_discriminating_joint": {
+      "a_only": 27,
+      "b_only": 2,
+      "both": 8,
+      "exact_p": 1.6242265701293945e-06,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 68,
+      "net_a_minus_b": 25
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_question_joint_selector_vs_qwen3.5:9b:overlap_guard_compute": {
+      "a_only": 6,
+      "b_only": 0,
+      "both": 47,
+      "exact_p": 0.03125,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 52,
+      "net_a_minus_b": 6
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_question_joint_selector_vs_qwen3.5:9b:overlap_guard_joint": {
+      "a_only": 3,
+      "b_only": 1,
+      "both": 32,
+      "exact_p": 0.625,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 69,
+      "net_a_minus_b": 2
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_question_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_compute": {
+      "a_only": 23,
+      "b_only": 0,
+      "both": 30,
+      "exact_p": 2.384185791015625e-07,
+      "metric": "compute_correct",
+      "n": 105,
+      "neither": 52,
+      "net_a_minus_b": 23
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_question_joint_selector_vs_qwen3.5:9b:overlap_if_either_rtp_joint": {
+      "a_only": 20,
+      "b_only": 1,
+      "both": 15,
+      "exact_p": 2.09808349609375e-05,
+      "metric": "joint_correct",
+      "n": 105,
+      "neither": 69,
+      "net_a_minus_b": 19
+    }
+  },
+  "scope": {
+    "evaluated_rows": 105,
+    "evaluated_subset": "source_required_only",
+    "heldout_group": "source_family",
+    "source_family_counts": {
+      "academy_97_best_picture": 17,
+      "archibald_2024_winner": 7,
+      "booker_2024_winner": 14,
+      "eurovision_2025_country": 11,
+      "eurovision_2025_host": 3,
+      "nba_finals_2024": 7,
+      "psg_based_in_paris": 7,
+      "tokyo_2020_in_2021": 7,
+      "ucl_2025_final_winner": 18,
+      "uefa_euro_2024_final_score": 4,
+      "uefa_euro_2024_winner": 10
+    },
+    "training_rows_per_fold": "300 minus held-out source family rows"
+  },
+  "summary": {
+    "gemma4:26b:action_discriminating": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 19,
+          "joint_correct": 6,
+          "n": 60,
+          "selected_overlap": 0
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 6,
+          "joint_correct": 4,
+          "n": 17,
+          "selected_overlap": 0
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 7,
+          "joint_correct": 5,
+          "n": 7,
+          "selected_overlap": 0
+        },
+        "booker_2024_winner": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 14,
+          "selected_overlap": 0
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 11,
+          "selected_overlap": 0
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 3,
+          "selected_overlap": 0
+        },
+        "nba_finals_2024": {
+          "compute_correct": 2,
+          "joint_correct": 2,
+          "n": 7,
+          "selected_overlap": 0
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 2,
+          "joint_correct": 2,
+          "n": 7,
+          "selected_overlap": 0
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 0
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 13,
+          "joint_correct": 4,
+          "n": 18,
+          "selected_overlap": 0
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 4,
+          "selected_overlap": 0
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 10,
+          "selected_overlap": 0
+        }
+      },
+      "compute_correct": 41,
+      "joint_correct": 28,
+      "method": "gemma4:26b:action_discriminating",
+      "n": 105,
+      "selected_overlap": 0,
+      "validity_correct": 72
+    },
+    "gemma4:26b:overlap_guard": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 34,
+          "joint_correct": 34,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 60
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 14,
+          "joint_correct": 14,
+          "n": 17,
+          "selected_overlap": 17
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 7,
+          "joint_correct": 5,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "booker_2024_winner": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 14,
+          "selected_overlap": 14
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 11,
+          "selected_overlap": 11
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 3,
+          "selected_overlap": 3
+        },
+        "nba_finals_2024": {
+          "compute_correct": 7,
+          "joint_correct": 7,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 2,
+          "joint_correct": 2,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 17,
+          "joint_correct": 14,
+          "n": 18,
+          "selected_overlap": 18
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 4,
+          "selected_overlap": 4
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 10,
+          "joint_correct": 10,
+          "n": 10,
+          "selected_overlap": 10
+        }
+      },
+      "compute_correct": 86,
+      "joint_correct": 81,
+      "method": "gemma4:26b:overlap_guard",
+      "n": 105,
+      "selected_overlap": 105,
+      "validity_correct": 86
+    },
+    "gemma4:26b:overlap_if_either_rtp": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 26,
+          "joint_correct": 26,
+          "n": 45,
+          "selected_overlap": 15
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 53
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 14,
+          "joint_correct": 14,
+          "n": 17,
+          "selected_overlap": 13
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 7,
+          "joint_correct": 5,
+          "n": 7,
+          "selected_overlap": 4
+        },
+        "booker_2024_winner": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 14,
+          "selected_overlap": 11
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 11,
+          "selected_overlap": 8
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 3,
+          "selected_overlap": 0
+        },
+        "nba_finals_2024": {
+          "compute_correct": 6,
+          "joint_correct": 6,
+          "n": 7,
+          "selected_overlap": 4
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 2,
+          "joint_correct": 2,
+          "n": 7,
+          "selected_overlap": 5
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 0
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 17,
+          "joint_correct": 14,
+          "n": 18,
+          "selected_overlap": 16
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 4,
+          "selected_overlap": 3
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 4,
+          "joint_correct": 4,
+          "n": 10,
+          "selected_overlap": 4
+        }
+      },
+      "compute_correct": 78,
+      "joint_correct": 73,
+      "method": "gemma4:26b:overlap_if_either_rtp",
+      "n": 105,
+      "selected_overlap": 68,
+      "validity_correct": 86
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_joint_selector": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 27,
+          "joint_correct": 27,
+          "n": 45,
+          "selected_overlap": 16
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 54
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 14,
+          "joint_correct": 14,
+          "n": 17,
+          "selected_overlap": 13
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 7,
+          "joint_correct": 5,
+          "n": 7,
+          "selected_overlap": 4
+        },
+        "booker_2024_winner": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 14,
+          "selected_overlap": 11
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 11,
+          "selected_overlap": 8
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 3,
+          "selected_overlap": 0
+        },
+        "nba_finals_2024": {
+          "compute_correct": 6,
+          "joint_correct": 6,
+          "n": 7,
+          "selected_overlap": 4
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 2,
+          "joint_correct": 2,
+          "n": 7,
+          "selected_overlap": 5
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 7,
+          "selected_overlap": 1
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 17,
+          "joint_correct": 14,
+          "n": 18,
+          "selected_overlap": 16
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 4,
+          "selected_overlap": 4
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 4,
+          "joint_correct": 4,
+          "n": 10,
+          "selected_overlap": 4
+        }
+      },
+      "compute_correct": 79,
+      "joint_correct": 74,
+      "method": "gemma4:26b:source_family_heldout_learned_policy_joint_selector",
+      "n": 105,
+      "selected_overlap": 70,
+      "validity_correct": 86
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_question_joint_selector": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 29,
+          "joint_correct": 29,
+          "n": 45,
+          "selected_overlap": 24
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 57
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 14,
+          "joint_correct": 14,
+          "n": 17,
+          "selected_overlap": 16
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 7,
+          "joint_correct": 5,
+          "n": 7,
+          "selected_overlap": 4
+        },
+        "booker_2024_winner": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 14,
+          "selected_overlap": 11
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 11,
+          "selected_overlap": 8
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 3,
+          "selected_overlap": 3
+        },
+        "nba_finals_2024": {
+          "compute_correct": 6,
+          "joint_correct": 6,
+          "n": 7,
+          "selected_overlap": 4
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 2,
+          "joint_correct": 2,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 7,
+          "selected_overlap": 2
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 17,
+          "joint_correct": 14,
+          "n": 18,
+          "selected_overlap": 16
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 4,
+          "selected_overlap": 4
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 6,
+          "joint_correct": 6,
+          "n": 10,
+          "selected_overlap": 6
+        }
+      },
+      "compute_correct": 81,
+      "joint_correct": 76,
+      "method": "gemma4:26b:source_family_heldout_learned_policy_question_joint_selector",
+      "n": 105,
+      "selected_overlap": 81,
+      "validity_correct": 86
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_joint_selector": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 26,
+          "joint_correct": 26,
+          "n": 45,
+          "selected_overlap": 22
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 56
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 14,
+          "joint_correct": 14,
+          "n": 17,
+          "selected_overlap": 17
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 7,
+          "joint_correct": 5,
+          "n": 7,
+          "selected_overlap": 5
+        },
+        "booker_2024_winner": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 14,
+          "selected_overlap": 11
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 11,
+          "selected_overlap": 8
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 3,
+          "selected_overlap": 0
+        },
+        "nba_finals_2024": {
+          "compute_correct": 6,
+          "joint_correct": 6,
+          "n": 7,
+          "selected_overlap": 4
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 2,
+          "joint_correct": 2,
+          "n": 7,
+          "selected_overlap": 6
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 7,
+          "selected_overlap": 4
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 16,
+          "joint_correct": 13,
+          "n": 18,
+          "selected_overlap": 15
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 4,
+          "selected_overlap": 4
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 4,
+          "joint_correct": 4,
+          "n": 10,
+          "selected_overlap": 4
+        }
+      },
+      "compute_correct": 78,
+      "joint_correct": 73,
+      "method": "gemma4:26b:source_family_heldout_learned_policy_reason_joint_selector",
+      "n": 105,
+      "selected_overlap": 78,
+      "validity_correct": 85
+    },
+    "gemma4:26b:source_family_heldout_learned_policy_reason_question_joint_selector": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 26,
+          "joint_correct": 26,
+          "n": 45,
+          "selected_overlap": 23
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 59
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 14,
+          "joint_correct": 14,
+          "n": 17,
+          "selected_overlap": 17
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 7,
+          "joint_correct": 5,
+          "n": 7,
+          "selected_overlap": 5
+        },
+        "booker_2024_winner": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 14,
+          "selected_overlap": 11
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 11,
+          "selected_overlap": 8
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 3,
+          "selected_overlap": 1
+        },
+        "nba_finals_2024": {
+          "compute_correct": 6,
+          "joint_correct": 6,
+          "n": 7,
+          "selected_overlap": 4
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 2,
+          "joint_correct": 2,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 7,
+          "selected_overlap": 6
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 16,
+          "joint_correct": 13,
+          "n": 18,
+          "selected_overlap": 15
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 4,
+          "selected_overlap": 4
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 4,
+          "joint_correct": 4,
+          "n": 10,
+          "selected_overlap": 4
+        }
+      },
+      "compute_correct": 78,
+      "joint_correct": 73,
+      "method": "gemma4:26b:source_family_heldout_learned_policy_reason_question_joint_selector",
+      "n": 105,
+      "selected_overlap": 82,
+      "validity_correct": 85
+    },
+    "qwen3.5:9b:action_discriminating": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 10,
+          "joint_correct": 10,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 11,
+          "joint_correct": 0,
+          "n": 60,
+          "selected_overlap": 0
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 17,
+          "selected_overlap": 0
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 7,
+          "selected_overlap": 0
+        },
+        "booker_2024_winner": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 14,
+          "selected_overlap": 0
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 11,
+          "selected_overlap": 0
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 3,
+          "selected_overlap": 0
+        },
+        "nba_finals_2024": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 0
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 7,
+          "selected_overlap": 0
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 0
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 9,
+          "joint_correct": 0,
+          "n": 18,
+          "selected_overlap": 0
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 1,
+          "joint_correct": 0,
+          "n": 4,
+          "selected_overlap": 0
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 4,
+          "joint_correct": 3,
+          "n": 10,
+          "selected_overlap": 0
+        }
+      },
+      "compute_correct": 21,
+      "joint_correct": 10,
+      "method": "qwen3.5:9b:action_discriminating",
+      "n": 105,
+      "selected_overlap": 0,
+      "validity_correct": 56
+    },
+    "qwen3.5:9b:overlap_guard": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 60
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 9,
+          "joint_correct": 8,
+          "n": 17,
+          "selected_overlap": 17
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "booker_2024_winner": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 14,
+          "selected_overlap": 14
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 11,
+          "selected_overlap": 11
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 3,
+          "selected_overlap": 3
+        },
+        "nba_finals_2024": {
+          "compute_correct": 4,
+          "joint_correct": 3,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 8,
+          "joint_correct": 2,
+          "n": 18,
+          "selected_overlap": 18
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 4,
+          "joint_correct": 0,
+          "n": 4,
+          "selected_overlap": 4
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 10,
+          "joint_correct": 8,
+          "n": 10,
+          "selected_overlap": 10
+        }
+      },
+      "compute_correct": 47,
+      "joint_correct": 33,
+      "method": "qwen3.5:9b:overlap_guard",
+      "n": 105,
+      "selected_overlap": 105,
+      "validity_correct": 69
+    },
+    "qwen3.5:9b:overlap_if_either_rtp": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 45,
+          "selected_overlap": 14
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 28
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 4,
+          "joint_correct": 3,
+          "n": 17,
+          "selected_overlap": 5
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 7,
+          "selected_overlap": 2
+        },
+        "booker_2024_winner": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 14,
+          "selected_overlap": 0
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 4,
+          "joint_correct": 4,
+          "n": 11,
+          "selected_overlap": 6
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 3,
+          "selected_overlap": 0
+        },
+        "nba_finals_2024": {
+          "compute_correct": 1,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 1
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 3
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 0
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 8,
+          "joint_correct": 2,
+          "n": 18,
+          "selected_overlap": 17
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 4,
+          "joint_correct": 0,
+          "n": 4,
+          "selected_overlap": 4
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 7,
+          "joint_correct": 5,
+          "n": 10,
+          "selected_overlap": 4
+        }
+      },
+      "compute_correct": 30,
+      "joint_correct": 16,
+      "method": "qwen3.5:9b:overlap_if_either_rtp",
+      "n": 105,
+      "selected_overlap": 42,
+      "validity_correct": 62
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_joint_selector": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 32
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 10,
+          "n": 60,
+          "selected_overlap": 34
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 9,
+          "joint_correct": 8,
+          "n": 17,
+          "selected_overlap": 11
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 7,
+          "selected_overlap": 4
+        },
+        "booker_2024_winner": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 14,
+          "selected_overlap": 5
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 11,
+          "selected_overlap": 7
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 3,
+          "selected_overlap": 3
+        },
+        "nba_finals_2024": {
+          "compute_correct": 4,
+          "joint_correct": 3,
+          "n": 7,
+          "selected_overlap": 4
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 5
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 0
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 8,
+          "joint_correct": 2,
+          "n": 18,
+          "selected_overlap": 17
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 4,
+          "joint_correct": 0,
+          "n": 4,
+          "selected_overlap": 4
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 10,
+          "joint_correct": 7,
+          "n": 10,
+          "selected_overlap": 6
+        }
+      },
+      "compute_correct": 47,
+      "joint_correct": 32,
+      "method": "qwen3.5:9b:source_family_heldout_learned_policy_joint_selector",
+      "n": 105,
+      "selected_overlap": 66,
+      "validity_correct": 64
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_question_joint_selector": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 30
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 24,
+          "joint_correct": 10,
+          "n": 60,
+          "selected_overlap": 46
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 9,
+          "joint_correct": 8,
+          "n": 17,
+          "selected_overlap": 17
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 7,
+          "selected_overlap": 6
+        },
+        "booker_2024_winner": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 14,
+          "selected_overlap": 4
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 11,
+          "selected_overlap": 10
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 3,
+          "selected_overlap": 3
+        },
+        "nba_finals_2024": {
+          "compute_correct": 4,
+          "joint_correct": 3,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 7,
+          "selected_overlap": 3
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 2
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 8,
+          "joint_correct": 2,
+          "n": 18,
+          "selected_overlap": 17
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 4,
+          "joint_correct": 0,
+          "n": 4,
+          "selected_overlap": 4
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 7,
+          "joint_correct": 5,
+          "n": 10,
+          "selected_overlap": 3
+        }
+      },
+      "compute_correct": 47,
+      "joint_correct": 33,
+      "method": "qwen3.5:9b:source_family_heldout_learned_policy_question_joint_selector",
+      "n": 105,
+      "selected_overlap": 76,
+      "validity_correct": 66
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_joint_selector": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 24,
+          "joint_correct": 24,
+          "n": 45,
+          "selected_overlap": 33
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 28,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 45
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 9,
+          "joint_correct": 8,
+          "n": 17,
+          "selected_overlap": 17
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 7,
+          "selected_overlap": 5
+        },
+        "booker_2024_winner": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 14,
+          "selected_overlap": 7
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 11,
+          "selected_overlap": 9
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 3,
+          "selected_overlap": 3
+        },
+        "nba_finals_2024": {
+          "compute_correct": 4,
+          "joint_correct": 3,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 2,
+          "joint_correct": 2,
+          "n": 7,
+          "selected_overlap": 5
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 2
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 11,
+          "joint_correct": 2,
+          "n": 18,
+          "selected_overlap": 11
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 4,
+          "joint_correct": 0,
+          "n": 4,
+          "selected_overlap": 4
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 10,
+          "joint_correct": 8,
+          "n": 10,
+          "selected_overlap": 8
+        }
+      },
+      "compute_correct": 52,
+      "joint_correct": 35,
+      "method": "qwen3.5:9b:source_family_heldout_learned_policy_reason_joint_selector",
+      "n": 105,
+      "selected_overlap": 78,
+      "validity_correct": 67
+    },
+    "qwen3.5:9b:source_family_heldout_learned_policy_reason_question_joint_selector": {
+      "by_action": {
+        "retrieve_then_answer": {
+          "compute_correct": 25,
+          "joint_correct": 25,
+          "n": 45,
+          "selected_overlap": 32
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 28,
+          "joint_correct": 10,
+          "n": 60,
+          "selected_overlap": 47
+        }
+      },
+      "by_source_family": {
+        "academy_97_best_picture": {
+          "compute_correct": 9,
+          "joint_correct": 8,
+          "n": 17,
+          "selected_overlap": 17
+        },
+        "archibald_2024_winner": {
+          "compute_correct": 1,
+          "joint_correct": 1,
+          "n": 7,
+          "selected_overlap": 5
+        },
+        "booker_2024_winner": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 14,
+          "selected_overlap": 7
+        },
+        "eurovision_2025_country": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 11,
+          "selected_overlap": 11
+        },
+        "eurovision_2025_host": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 3,
+          "selected_overlap": 3
+        },
+        "nba_finals_2024": {
+          "compute_correct": 4,
+          "joint_correct": 3,
+          "n": 7,
+          "selected_overlap": 7
+        },
+        "psg_based_in_paris": {
+          "compute_correct": 3,
+          "joint_correct": 3,
+          "n": 7,
+          "selected_overlap": 4
+        },
+        "tokyo_2020_in_2021": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 7,
+          "selected_overlap": 2
+        },
+        "ucl_2025_final_winner": {
+          "compute_correct": 11,
+          "joint_correct": 2,
+          "n": 18,
+          "selected_overlap": 12
+        },
+        "uefa_euro_2024_final_score": {
+          "compute_correct": 4,
+          "joint_correct": 0,
+          "n": 4,
+          "selected_overlap": 4
+        },
+        "uefa_euro_2024_winner": {
+          "compute_correct": 10,
+          "joint_correct": 7,
+          "n": 10,
+          "selected_overlap": 7
+        }
+      },
+      "compute_correct": 53,
+      "joint_correct": 35,
+      "method": "qwen3.5:9b:source_family_heldout_learned_policy_reason_question_joint_selector",
+      "n": 105,
+      "selected_overlap": 79,
+      "validity_correct": 67
+    }
+  }
+}

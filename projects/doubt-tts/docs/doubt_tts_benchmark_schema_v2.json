@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reliability-Action Routing Benchmark Item v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "question",
+    "split",
+    "as_of_date",
+    "validity",
+    "compute_action",
+    "subtype",
+    "source_required",
+    "template_family",
+    "semantic_family",
+    "labels",
+    "evaluation"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_\\-]+$"
+    },
+    "question": {
+      "type": "string",
+      "minLength": 10
+    },
+    "split": {
+      "type": "string",
+      "enum": [
+        "dev",
+        "locked"
+      ]
+    },
+    "as_of_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "validity": {
+      "type": "string",
+      "enum": [
+        "answerable",
+        "false_premise",
+        "ambiguous"
+      ]
+    },
+    "compute_action": {
+      "type": "string",
+      "enum": [
+        "direct_answer",
+        "premise_check",
+        "retrieve_then_answer",
+        "retrieve_then_premise_check",
+        "deterministic_verify",
+        "clarify"
+      ]
+    },
+    "subtype": {
+      "type": "string",
+      "enum": [
+        "ordinary_stable_fact",
+        "ordinary_event_control",
+        "recent_completed_event",
+        "future_scheduled_event",
+        "false_event_year",
+        "wrong_winner_opponent_host",
+        "wrong_date_or_framing",
+        "false_relation_real_entity",
+        "sport_mismatch",
+        "nonexistent_award_category_office",
+        "nonexistent_entity",
+        "category_error",
+        "physical_impossibility",
+        "multi_hop_false_premise",
+        "ambiguous_underspecified",
+        "math_calendar_logic",
+        "messy_event_reference",
+        "no_source_retrieval_decline",
+        "other"
+      ]
+    },
+    "source_required": {
+      "type": "boolean"
+    },
+    "template_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "semantic_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_status": {
+      "type": "string",
+      "enum": [
+        "none",
+        "historical_completed",
+        "recent_completed",
+        "future_scheduled",
+        "future_completed_false",
+        "nonexistent",
+        "relation_false"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "expected_title": {
+          "type": "string"
+        },
+        "expected_url": {
+          "type": "string"
+        },
+        "acceptable_titles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "acceptable_urls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "retrieval_query_fixture": {
+          "type": "string"
+        },
+        "no_source_expected": {
+          "type": "boolean"
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "facts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "negative_facts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string"
+        },
+        "source_timestamp": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "labels": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "should_answer",
+        "should_abstain",
+        "should_correct_premise",
+        "should_clarify"
+      ],
+      "properties": {
+        "should_answer": {
+          "type": "boolean"
+        },
+        "should_abstain": {
+          "type": "boolean"
+        },
+        "should_correct_premise": {
+          "type": "boolean"
+        },
+        "should_clarify": {
+          "type": "boolean"
+        },
+        "accepted_answer_aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "required_correction_facts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "forbidden_false_premise_facts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "success_criteria",
+        "failure_criteria",
+        "manual_audit_required"
+      ],
+      "properties": {
+        "success_criteria": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "failure_criteria": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "manual_audit_required": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "source_required": {
+            "const": true
+          }
+        },
+        "required": [
+          "source_required"
+        ]
+      },
+      "then": {
+        "required": [
+          "source"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "compute_action": {
+            "enum": [
+              "retrieve_then_answer",
+              "retrieve_then_premise_check"
+            ]
+          }
+        },
+        "required": [
+          "compute_action"
+        ]
+      },
+      "then": {
+        "properties": {
+          "source_required": {
+            "const": true
+          }
+        }
+      }
+    }
+  ]
+}

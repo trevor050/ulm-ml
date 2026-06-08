@@ -30,3 +30,13 @@ Use this as the compact source of truth for experiments that matter.
 - Second push added adaptive self-consistency CSV trace replay, an orthogonalized fast-weight memory baseline, and a first crude EGPR no-label adaptation-risk score. The new results sharpen the next targets: real answer traces, learned whitening/projection for compact memory, and calibrated adaptation-safety fallback.
 - Added a binary research portfolio. The surviving full-research tracks are cyclic representation probes, symmetry-augmented sparse recovery, and sequence-memory interference. Adaptive self-consistency, EGPR, and PACE are given up as active standalone projects unless their documented gates are satisfied. The hardening pass added a false-symmetry sparse-recovery control and a learned modular MLP split probe; the latter memorizes train splits but fails held-out modular addition, sharpening the oracle-vs-learned gap.
 - Converted the repository presentation from a private staging repo into a public ML monorepo: PRs #1-#11 are merged, the README now indexes the project tracks, and GitHub visibility is public.
+
+## 2026-06-07
+
+- Added `projects/doubt-tts/` as a self-contained full-research folder for the
+  Doubt-TTS / reliability-action routing thread. The package includes current
+  paper/pitch docs, claim ledger, benchmark schemas, locked/blind/key JSONL
+  exports, runnable probe/scoring scripts, and selected route/source/verifier
+  result summaries. The active claim is negative-controlled: generic doubt
+  prompts failed the neutral-control bar, while validity/action/source/verifier
+  decomposition remains worth pursuing.

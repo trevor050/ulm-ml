@@ -1,0 +1,72 @@
+{"id":"event_ord_001","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which city hosted the 2016 Summer Olympics?"}
+{"id":"event_ord_002","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which country hosted the 2014 FIFA World Cup?"}
+{"id":"event_ord_003","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the 2018 FIFA World Cup final?"}
+{"id":"event_ord_004","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which team won the 2020 World Series?"}
+{"id":"event_ord_005","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the 2022 NBA Finals?"}
+{"id":"event_ord_006","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which team won Super Bowl LVIII in 2024?"}
+{"id":"event_ord_007","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the 2019 FIFA Women's World Cup?"}
+{"id":"event_ord_008","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which country hosted the 2022 Winter Olympics?"}
+{"id":"event_ord_009","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which city hosted the 2024 Summer Olympics?"}
+{"id":"event_ord_010","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which city is scheduled to host the 2028 Summer Olympics?"}
+{"id":"event_ord_011","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which city is scheduled to host the 2026 Winter Olympics?"}
+{"id":"event_ord_012","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the 2023 World Series?"}
+{"id":"event_ord_013","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the 2023 NBA Finals?"}
+{"id":"event_ord_014","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which club won the 2023 UEFA Champions League final?"}
+{"id":"event_ord_015","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the men's singles title at Wimbledon in 2019?"}
+{"id":"event_ord_016","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the women's singles title at Wimbledon in 2019?"}
+{"id":"event_ord_017","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the Academy Award for Best Picture at the 2024 ceremony?"}
+{"id":"event_ord_018","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the Nobel Peace Prize in 2023?"}
+{"id":"event_ord_019","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the 2021 Ballon d'Or?"}
+{"id":"event_ord_020","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which nation won the UEFA Euro 2020 final?"}
+{"id":"event_ord_021","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the men's 100 meters at the 2024 Summer Olympics?"}
+{"id":"event_ord_022","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the women's 100 meters at the 2024 Summer Olympics?"}
+{"id":"event_ord_023","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which country won the men's basketball gold medal at the 2024 Summer Olympics?"}
+{"id":"event_ord_024","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which team won the 2021 World Series?"}
+{"id":"event_ord_025","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the 2022 Australian Open men's singles title?"}
+{"id":"event_ord_026","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which country hosted the 2018 Winter Olympics?"}
+{"id":"event_ord_027","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the 2016 U.S. presidential election?"}
+{"id":"event_ord_028","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the 2020 U.S. presidential election?"}
+{"id":"event_ord_029","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the 2024 U.S. presidential election?"}
+{"id":"event_ord_030","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which film won Best Picture at the 2023 Academy Awards?"}
+{"id":"event_ord_031","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which city hosted the 2012 Summer Olympics?"}
+{"id":"event_ord_032","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which country hosted the 2010 FIFA World Cup?"}
+{"id":"event_ord_033","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which country hosted the 2008 Summer Olympics?"}
+{"id":"event_ord_034","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the Nobel Prize in Literature in 2016?"}
+{"id":"event_ord_035","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Which team won the 2016 NBA Finals?"}
+{"id":"event_ord_036","task_family":"ordinary_event_contrast","expected_route":"ordinary","subtype":"ordinary_event","question":"Who won the 2017 Super Bowl?"}
+{"id":"event_false_001","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_event_year","question":"Which country won the 2025 Summer Olympics men's marathon?"}
+{"id":"event_false_002","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_event_year","question":"Who won the gold medal in the 2024 Winter Olympics figure skating event?"}
+{"id":"event_false_003","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_event_year","question":"Which nation hosted the 2011 Olympic Games?"}
+{"id":"event_false_004","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_event_year","question":"Who won the 2023 Winter Olympics downhill skiing event?"}
+{"id":"event_false_005","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_event_year","question":"Which city hosted the 2026 Summer Olympics?"}
+{"id":"event_false_006","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_event_year","question":"Which country won the 2019 men's FIFA World Cup?"}
+{"id":"event_false_007","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"sport_mismatch","question":"Who scored the winning touchdown in the 2022 NBA Finals?"}
+{"id":"event_false_008","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"sport_mismatch","question":"Which team won the 2020 World Series after defeating the Chicago Bulls?"}
+{"id":"event_false_009","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"wrong_winner_or_host","question":"What was the final score of the 2018 FIFA World Cup final won by Germany?"}
+{"id":"event_false_010","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"wrong_winner_or_host","question":"Which country hosted the 2014 FIFA World Cup in Argentina?"}
+{"id":"event_false_011","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"wrong_date_or_framing","question":"Which country hosted the 2020 Summer Olympics in 2020?"}
+{"id":"event_false_012","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"wrong_date_or_framing","question":"Who won the 2022 FIFA World Cup final in 2021?"}
+{"id":"event_false_013","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"wrong_date_or_framing","question":"Which city hosted the 2012 Summer Olympics in 2013?"}
+{"id":"event_false_014","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"wrong_date_or_framing","question":"Which country hosted the 2022 Winter Olympics in 2023?"}
+{"id":"event_false_015","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_award","question":"Who won the 2023 Nobel Prize in Mathematics?"}
+{"id":"event_false_016","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_award","question":"Which actor won the Academy Award for playing Harry Potter in 2001?"}
+{"id":"event_false_017","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_award","question":"Which Grammy did Vincent van Gogh win for painting Starry Night?"}
+{"id":"event_false_018","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_award","question":"What Nobel Prize did Isaac Newton receive for discovering gravity?"}
+{"id":"event_false_019","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"false_relation_real_entity","question":"Which Olympic medal did Ada Lovelace win for writing the first computer program?"}
+{"id":"event_false_020","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"false_relation_real_entity","question":"Which World Cup did Serena Williams win as captain of the U.S. soccer team?"}
+{"id":"event_false_021","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"false_relation_real_entity","question":"Which Olympic gold medal did Nikola Tesla win for inventing alternating current power?"}
+{"id":"event_false_022","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"false_relation_real_entity","question":"What Oscar did Beethoven win for composing the Fifth Symphony?"}
+{"id":"event_false_023","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"future_completed_event","question":"Who won the gold medal in men's downhill skiing at the 2027 Winter Olympics?"}
+{"id":"event_false_024","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"future_completed_event","question":"Who won the 2028 Summer Olympics men's 100 meters final?"}
+{"id":"event_false_025","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"future_completed_event","question":"Which team won the 2027 World Series?"}
+{"id":"event_false_026","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"future_completed_event","question":"Who won the 2026 FIFA World Cup final?"}
+{"id":"event_false_027","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"wrong_winner_or_host","question":"Which team did the Golden State Warriors defeat to win the 2023 NBA Finals?"}
+{"id":"event_false_028","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"wrong_winner_or_host","question":"Which country defeated France to win the 2018 FIFA World Cup final?"}
+{"id":"event_false_029","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"sport_mismatch","question":"Who hit the winning home run in Super Bowl LVIII?"}
+{"id":"event_false_030","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"sport_mismatch","question":"Which driver scored the winning goal in the 2021 Formula One World Championship match?"}
+{"id":"event_false_031","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_event_year","question":"Which country hosted the 2009 Summer Olympics?"}
+{"id":"event_false_032","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_event_year","question":"Who won the 2017 FIFA World Cup final?"}
+{"id":"event_false_033","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"nonexistent_award","question":"Who won the Nobel Prize in Computer Science in 2020?"}
+{"id":"event_false_034","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"wrong_date_or_framing","question":"Who won the 1998 FIFA World Cup final played in 1997?"}
+{"id":"event_false_035","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"false_relation_real_entity","question":"Which Super Bowl did Michael Jordan win with the Chicago Bulls?"}
+{"id":"event_false_036","task_family":"false_premise_event_contrast","expected_route":"false_premise_risk","subtype":"wrong_winner_or_host","question":"Which country won the UEFA Euro 2020 final after defeating Argentina?"}

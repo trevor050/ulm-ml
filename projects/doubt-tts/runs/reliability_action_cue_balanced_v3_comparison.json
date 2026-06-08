@@ -1,0 +1,484 @@
+{
+  "paired": {
+    "gemma_compute_vs_qwen": {
+      "a_only": 42,
+      "b_only": 6,
+      "both": 172,
+      "exact_p": 1.0087482138487758e-07,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 80,
+      "net_a_minus_b": 36
+    },
+    "gemma_overlap_compute_vs_gemma_action": {
+      "a_only": 48,
+      "b_only": 25,
+      "both": 189,
+      "exact_p": 0.009542211425865475,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 38,
+      "net_a_minus_b": 23
+    },
+    "gemma_overlap_compute_vs_qwen_overlap": {
+      "a_only": 53,
+      "b_only": 22,
+      "both": 184,
+      "exact_p": 0.0004496479716438124,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 41,
+      "net_a_minus_b": 31
+    },
+    "gemma_overlap_validity_vs_gemma_action": {
+      "a_only": 18,
+      "b_only": 10,
+      "both": 236,
+      "exact_p": 0.1849333420395851,
+      "metric": "validity_correct",
+      "n": 300,
+      "neither": 36,
+      "net_a_minus_b": 8
+    },
+    "gemma_overlap_validity_vs_qwen_overlap": {
+      "a_only": 34,
+      "b_only": 16,
+      "both": 220,
+      "exact_p": 0.015346677832630107,
+      "metric": "validity_correct",
+      "n": 300,
+      "neither": 30,
+      "net_a_minus_b": 18
+    },
+    "gemma_overlap_vs_gemma_action": {
+      "a_only": 56,
+      "b_only": 25,
+      "both": 176,
+      "exact_p": 0.0007521260646340775,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 43,
+      "net_a_minus_b": 31
+    },
+    "gemma_overlap_vs_keyword": {
+      "a_only": 163,
+      "b_only": 18,
+      "both": 69,
+      "exact_p": 2.0750037598672828e-30,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 50,
+      "net_a_minus_b": 145
+    },
+    "gemma_overlap_vs_qwen_overlap": {
+      "a_only": 60,
+      "b_only": 20,
+      "both": 172,
+      "exact_p": 8.580559867049611e-06,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 48,
+      "net_a_minus_b": 40
+    },
+    "gemma_validity_vs_qwen": {
+      "a_only": 40,
+      "b_only": 20,
+      "both": 206,
+      "exact_p": 0.01348929373119186,
+      "metric": "validity_correct",
+      "n": 300,
+      "neither": 34,
+      "net_a_minus_b": 20
+    },
+    "gemma_vs_keyword": {
+      "a_only": 137,
+      "b_only": 23,
+      "both": 64,
+      "exact_p": 5.962579138116539e-21,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 76,
+      "net_a_minus_b": 114
+    },
+    "gemma_vs_qwen": {
+      "a_only": 38,
+      "b_only": 4,
+      "both": 163,
+      "exact_p": 5.65314621780999e-08,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 95,
+      "net_a_minus_b": 34
+    },
+    "qwen_overlap_compute_vs_qwen_action": {
+      "a_only": 46,
+      "b_only": 18,
+      "both": 160,
+      "exact_p": 0.0006173782640671298,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 76,
+      "net_a_minus_b": 28
+    },
+    "qwen_overlap_validity_vs_qwen_action": {
+      "a_only": 13,
+      "b_only": 3,
+      "both": 223,
+      "exact_p": 0.021270751953125,
+      "metric": "validity_correct",
+      "n": 300,
+      "neither": 61,
+      "net_a_minus_b": 10
+    },
+    "qwen_overlap_vs_keyword": {
+      "a_only": 135,
+      "b_only": 30,
+      "both": 57,
+      "exact_p": 4.156988971980213e-17,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 78,
+      "net_a_minus_b": 105
+    },
+    "qwen_overlap_vs_qwen_action": {
+      "a_only": 40,
+      "b_only": 15,
+      "both": 152,
+      "exact_p": 0.0010158471941252856,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 93,
+      "net_a_minus_b": 25
+    },
+    "qwen_vs_keyword": {
+      "a_only": 118,
+      "b_only": 38,
+      "both": 49,
+      "exact_p": 9.738534504771363e-11,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 95,
+      "net_a_minus_b": 80
+    }
+  },
+  "summary": {
+    "gemma4:26b:action_discriminating": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 19,
+          "joint_correct": 6,
+          "n": 60
+        }
+      },
+      "by_validity": {
+        "ambiguous": {
+          "n": 60,
+          "validity_correct": 60
+        },
+        "answerable": {
+          "n": 135,
+          "validity_correct": 98
+        },
+        "false_premise": {
+          "n": 105,
+          "validity_correct": 88
+        }
+      },
+      "compute_correct": 214,
+      "joint_correct": 201,
+      "method": "gemma4:26b:action_discriminating",
+      "n": 300,
+      "validity_correct": 246
+    },
+    "gemma4:26b:overlap_guard": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 20,
+          "joint_correct": 20,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 27,
+          "joint_correct": 27,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 34,
+          "joint_correct": 34,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60
+        }
+      },
+      "by_validity": {
+        "ambiguous": {
+          "n": 60,
+          "validity_correct": 60
+        },
+        "answerable": {
+          "n": 135,
+          "validity_correct": 98
+        },
+        "false_premise": {
+          "n": 105,
+          "validity_correct": 96
+        }
+      },
+      "compute_correct": 237,
+      "joint_correct": 232,
+      "method": "gemma4:26b:overlap_guard",
+      "n": 300,
+      "validity_correct": 254
+    },
+    "legacy_keyword_question_only_router": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 12,
+          "joint_correct": 12,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 30,
+          "joint_correct": 30,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 6,
+          "joint_correct": 6,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 27,
+          "joint_correct": 27,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 12,
+          "joint_correct": 12,
+          "n": 60
+        }
+      },
+      "by_validity": {
+        "ambiguous": {
+          "n": 60,
+          "validity_correct": 12
+        },
+        "answerable": {
+          "n": 135,
+          "validity_correct": 117
+        },
+        "false_premise": {
+          "n": 105,
+          "validity_correct": 21
+        }
+      },
+      "compute_correct": 87,
+      "joint_correct": 87,
+      "method": "legacy_keyword_question_only_router",
+      "n": 300,
+      "validity_correct": 150
+    },
+    "oracle_template_family_majority": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 0,
+          "joint_correct": 0,
+          "n": 60
+        }
+      },
+      "by_validity": {
+        "ambiguous": {
+          "n": 60,
+          "validity_correct": 60
+        },
+        "answerable": {
+          "n": 135,
+          "validity_correct": 0
+        },
+        "false_premise": {
+          "n": 105,
+          "validity_correct": 0
+        }
+      },
+      "compute_correct": 60,
+      "joint_correct": 60,
+      "method": "oracle_template_family_majority",
+      "n": 300,
+      "validity_correct": 60
+    },
+    "qwen3.5:9b:action_discriminating": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 10,
+          "joint_correct": 10,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 11,
+          "joint_correct": 0,
+          "n": 60
+        }
+      },
+      "by_validity": {
+        "ambiguous": {
+          "n": 60,
+          "validity_correct": 60
+        },
+        "answerable": {
+          "n": 135,
+          "validity_correct": 114
+        },
+        "false_premise": {
+          "n": 105,
+          "validity_correct": 52
+        }
+      },
+      "compute_correct": 178,
+      "joint_correct": 167,
+      "method": "qwen3.5:9b:action_discriminating",
+      "n": 300,
+      "validity_correct": 226
+    },
+    "qwen3.5:9b:overlap_guard": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 59,
+          "joint_correct": 59,
+          "n": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45
+        },
+        "direct_answer": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45
+        },
+        "premise_check": {
+          "compute_correct": 36,
+          "joint_correct": 36,
+          "n": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 11,
+          "n": 60
+        }
+      },
+      "by_validity": {
+        "ambiguous": {
+          "n": 60,
+          "validity_correct": 59
+        },
+        "answerable": {
+          "n": 135,
+          "validity_correct": 114
+        },
+        "false_premise": {
+          "n": 105,
+          "validity_correct": 63
+        }
+      },
+      "compute_correct": 206,
+      "joint_correct": 192,
+      "method": "qwen3.5:9b:overlap_guard",
+      "n": 300,
+      "validity_correct": 236
+    }
+  }
+}

@@ -14,6 +14,7 @@ This repo now follows a hard portfolio rule: every thread is either
 | 1 | Cyclic representation probes | Strong oracle/control plus learned memorization sanity check | Keep. Modular spectral, modular character, phase-state, and MLP split probes form one coherent track about cyclic representations, data geometry, and learned discovery. | Turn the MLP probe into a checkpointed dynamics sweep with Fourier alignment logs. |
 | 2 | Symmetry-augmented sparse recovery | Controlled synthetic recovery with false-symmetry control | Keep. Correct cyclic augmentation improves strict one-to-one recovery; shuffled augmentation shows that the win is not just row multiplication. | Move from handmade nonnegative dictionaries to controlled activation-like data with a known or estimated group action. |
 | 3 | Sequence-memory interference | Useful negative toy benchmark | Keep. Compact memories degrade predictably with `pairs/key_dim`; nearest-neighbor retrieval remains the ceiling, which is the point. | Add a constrained-retrieval setting where the lookup baseline has an explicit memory budget. |
+| 4 | Doubt-TTS / reliability-action routing | Strong negative controls plus small route/source/verifier probes | Keep. Generic doubt prompts are not the method; the live research object is selective QA as validity, action, source, verifier, and response-policy control. | Run the cue-balanced reliability-action controller against deterministic and text-only baselines under family-held-out and human-paraphrase splits. |
 
 ## Given Up As Active Research
 
@@ -36,6 +37,9 @@ This repo now follows a hard portfolio rule: every thread is either
 - **Infrastructure is not research.** Adaptive self-consistency has useful
   replay tooling, but no real-model trace evidence. It is parked until data
   exists.
+- **Prompt wording is not a mechanism.** Doubt-TTS only survives because the
+  neutral controls demoted "doubt prompting" and exposed route/action/source
+  selection as the measurable object.
 
 ## Evidence Ladder
 

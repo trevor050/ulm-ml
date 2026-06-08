@@ -28,5 +28,6 @@ Public monorepo for ULM machine-learning experiments. Keep this file tight: futu
 - If adding external data sources, document source, license/terms, retrieval date, and preprocessing path in `docs/research-log.md`.
 - Treat modular spectral features and phase channels as oracle/control probes unless a learned model actually discovers them.
 - For sparse recovery, use the unique one-to-one metric as the headline; loose best-match recovery is only diagnostic.
-- The active full-research tracks are cyclic representation probes, symmetry-augmented sparse recovery, and sequence-memory interference.
+- The active full-research tracks are cyclic representation probes, symmetry-augmented sparse recovery, sequence-memory interference, and Doubt-TTS / reliability-action routing.
+- Doubt-TTS / reliability-action routing now lives in `projects/doubt-tts/` as a full-research track; keep its claims negative-controlled and do not rebrand it as generic self-doubt prompting.
 - Adaptive self-consistency, EGPR prototype replay, and PACE bias-only TTA are given up as active standalone projects unless their `docs/given-up/` resurrection gates are satisfied.

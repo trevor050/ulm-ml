@@ -1,0 +1,4827 @@
+{
+  "n": 105,
+  "rows": [
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora is the expected answer for 97th Academy Awards."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000003",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_01_1_who_won_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora won Best Picture at the 97th Academy Awards; The Brutalist did not."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000004",
+      "missing_groups": [],
+      "negative_facts": [
+        "Who won Best Picture at the 97th Academy Awards for The Brutalist?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_01_1_who_won_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora is the expected answer for 97th Academy Awards."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000009",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_01_2_who_won_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora won Best Picture at the 97th Academy Awards; The Brutalist did not."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000010",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, who won Best Picture at the 97th Academy Awards for The Brutalist?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_01_2_who_won_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora is the expected answer for 97th Academy Awards."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000015",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_01_3_who_won_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora won Best Picture at the 97th Academy Awards; The Brutalist did not."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000016",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, who won Best Picture at the 97th Academy Awards for The Brutalist?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_01_3_who_won_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora won Best Picture at the 97th Academy Awards; The Brutalist did not."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000019",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, who won Best Picture at the 97th Academy Awards for The Brutalist?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_01_extra_who_won_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "boston celtics",
+            "celtics"
+          ],
+          "matched": [
+            "boston celtics",
+            "celtics"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "matched": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Boston Celtics is the expected answer for 2024 NBA Finals."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000023",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "nba_finals_2024",
+      "source_id": "v3cue_02_1_which_team_won_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "boston celtics",
+            "celtics"
+          ],
+          "matched": [
+            "boston celtics",
+            "celtics"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "matched": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "The Boston Celtics won the 2024 NBA Finals against the Dallas Mavericks."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000024",
+      "missing_groups": [],
+      "negative_facts": [
+        "Which team won the 2024 NBA Finals against the Los Angeles Lakers?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "nba_finals_2024",
+      "source_id": "v3cue_02_1_which_team_won_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "boston celtics",
+            "celtics"
+          ],
+          "matched": [
+            "boston celtics",
+            "celtics"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "matched": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Boston Celtics is the expected answer for 2024 NBA Finals."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000029",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "nba_finals_2024",
+      "source_id": "v3cue_02_2_which_team_won_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "boston celtics",
+            "celtics"
+          ],
+          "matched": [
+            "boston celtics",
+            "celtics"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "matched": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "The Boston Celtics won the 2024 NBA Finals against the Dallas Mavericks."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000030",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, which team won the 2024 NBA Finals against the Los Angeles Lakers?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "nba_finals_2024",
+      "source_id": "v3cue_02_2_which_team_won_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "boston celtics",
+            "celtics"
+          ],
+          "matched": [
+            "boston celtics",
+            "celtics"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "matched": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Boston Celtics is the expected answer for 2024 NBA Finals."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000035",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "nba_finals_2024",
+      "source_id": "v3cue_02_3_which_team_won_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "boston celtics",
+            "celtics"
+          ],
+          "matched": [
+            "boston celtics",
+            "celtics"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "matched": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "The Boston Celtics won the 2024 NBA Finals against the Dallas Mavericks."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000036",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, which team won the 2024 NBA Finals against the Los Angeles Lakers?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "nba_finals_2024",
+      "source_id": "v3cue_02_3_which_team_won_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "boston celtics",
+            "celtics"
+          ],
+          "matched": [
+            "boston celtics",
+            "celtics"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "matched": [
+            "dallas mavericks",
+            "mavericks",
+            "2024 nba finals"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "The Boston Celtics won the 2024 NBA Finals against the Dallas Mavericks."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000039",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, which team won the 2024 NBA Finals against the Los Angeles Lakers?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "nba_finals_2024",
+      "source_id": "v3cue_02_extra_which_team_won_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "matched": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Spain is the expected answer for UEFA Euro 2024."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000043",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_winner",
+      "source_id": "v3cue_03_1_which_country_won_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "matched": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Spain won UEFA Euro 2024 against England, not France."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000044",
+      "missing_groups": [],
+      "negative_facts": [
+        "Which country won UEFA Euro 2024 against France?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_winner",
+      "source_id": "v3cue_03_1_which_country_won_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "matched": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Spain is the expected answer for UEFA Euro 2024."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000049",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_winner",
+      "source_id": "v3cue_03_2_which_country_won_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "matched": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Spain won UEFA Euro 2024 against England, not France."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000050",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, which country won UEFA Euro 2024 against France?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_winner",
+      "source_id": "v3cue_03_2_which_country_won_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "matched": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Spain is the expected answer for UEFA Euro 2024."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000055",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_winner",
+      "source_id": "v3cue_03_3_which_country_won_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "matched": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Spain won UEFA Euro 2024 against England, not France."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000056",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, which country won UEFA Euro 2024 against France?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_winner",
+      "source_id": "v3cue_03_3_which_country_won_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "matched": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Spain won UEFA Euro 2024 against England, not France."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000059",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, which country won UEFA Euro 2024 against France?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_winner",
+      "source_id": "v3cue_03_extra_which_country_won_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2025"
+          ],
+          "matched": [
+            "2025"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Basel is the expected answer for Eurovision Song Contest 2025."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000063",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_host",
+      "source_id": "v3cue_04_1_which_city_hosted_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "switzerland"
+          ],
+          "matched": [
+            "switzerland"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Basel, Switzerland hosted the 2025 Eurovision Song Contest."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000064",
+      "missing_groups": [],
+      "negative_facts": [
+        "Which city hosted the 2025 Eurovision Song Contest in Germany?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_country",
+      "source_id": "v3cue_04_1_which_city_hosted_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2025"
+          ],
+          "matched": [
+            "2025"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Basel is the expected answer for Eurovision Song Contest 2025."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000069",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_host",
+      "source_id": "v3cue_04_2_which_city_hosted_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "switzerland"
+          ],
+          "matched": [
+            "switzerland"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Basel, Switzerland hosted the 2025 Eurovision Song Contest."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000070",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, which city hosted the 2025 Eurovision Song Contest in Germany?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_country",
+      "source_id": "v3cue_04_2_which_city_hosted_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2025"
+          ],
+          "matched": [
+            "2025"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Basel is the expected answer for Eurovision Song Contest 2025."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000075",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_host",
+      "source_id": "v3cue_04_3_which_city_hosted_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "switzerland"
+          ],
+          "matched": [
+            "switzerland"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Basel, Switzerland hosted the 2025 Eurovision Song Contest."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000076",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, which city hosted the 2025 Eurovision Song Contest in Germany?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_country",
+      "source_id": "v3cue_04_3_which_city_hosted_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "switzerland"
+          ],
+          "matched": [
+            "switzerland"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Basel, Switzerland hosted the 2025 Eurovision Song Contest."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000079",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, which city hosted the 2025 Eurovision Song Contest in Germany?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_country",
+      "source_id": "v3cue_04_extra_which_city_hosted_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Samantha Harvey is the expected answer for 2024 Booker Prize."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000083",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_05_1_who_wrote_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Samantha Harvey won the 2024 Booker Prize for Orbital; James was by Percival Everett."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000084",
+      "missing_groups": [],
+      "negative_facts": [
+        "Who wrote the 2024 Booker Prize winner James?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_05_1_who_wrote_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Samantha Harvey is the expected answer for 2024 Booker Prize."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000089",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_05_2_who_wrote_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Samantha Harvey won the 2024 Booker Prize for Orbital; James was by Percival Everett."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000090",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, who wrote the 2024 Booker Prize winner James?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_05_2_who_wrote_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Samantha Harvey is the expected answer for 2024 Booker Prize."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000095",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_05_3_who_wrote_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Samantha Harvey won the 2024 Booker Prize for Orbital; James was by Percival Everett."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000096",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, who wrote the 2024 Booker Prize winner James?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_05_3_who_wrote_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Samantha Harvey won the 2024 Booker Prize for Orbital; James was by Percival Everett."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000099",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, who wrote the 2024 Booker Prize winner James?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_05_extra_who_wrote_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "laura jones"
+          ],
+          "matched": [
+            "laura jones"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "tim winton"
+          ],
+          "matched": [
+            "tim winton"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "archibald"
+          ],
+          "matched": [
+            "archibald"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Laura Jones is the expected answer for Archibald Prize 2024."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000103",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "archibald_2024_winner",
+      "source_id": "v3cue_06_1_who_painted_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "laura jones"
+          ],
+          "matched": [
+            "laura jones"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "tim winton"
+          ],
+          "matched": [
+            "tim winton"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "archibald"
+          ],
+          "matched": [
+            "archibald"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Laura Jones won the 2024 Archibald Prize for a portrait of Tim Winton."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000104",
+      "missing_groups": [],
+      "negative_facts": [
+        "Who painted the 2024 Archibald Prize winner as a portrait of Julia Gutman?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "archibald_2024_winner",
+      "source_id": "v3cue_06_1_who_painted_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "laura jones"
+          ],
+          "matched": [
+            "laura jones"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "tim winton"
+          ],
+          "matched": [
+            "tim winton"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "archibald"
+          ],
+          "matched": [
+            "archibald"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Laura Jones is the expected answer for Archibald Prize 2024."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000109",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "archibald_2024_winner",
+      "source_id": "v3cue_06_2_who_painted_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "laura jones"
+          ],
+          "matched": [
+            "laura jones"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "tim winton"
+          ],
+          "matched": [
+            "tim winton"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "archibald"
+          ],
+          "matched": [
+            "archibald"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Laura Jones won the 2024 Archibald Prize for a portrait of Tim Winton."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000110",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, who painted the 2024 Archibald Prize winner as a portrait of Julia Gutman?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "archibald_2024_winner",
+      "source_id": "v3cue_06_2_who_painted_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "laura jones"
+          ],
+          "matched": [
+            "laura jones"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "tim winton"
+          ],
+          "matched": [
+            "tim winton"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "archibald"
+          ],
+          "matched": [
+            "archibald"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Laura Jones is the expected answer for Archibald Prize 2024."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000115",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "archibald_2024_winner",
+      "source_id": "v3cue_06_3_who_painted_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "laura jones"
+          ],
+          "matched": [
+            "laura jones"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "tim winton"
+          ],
+          "matched": [
+            "tim winton"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "archibald"
+          ],
+          "matched": [
+            "archibald"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Laura Jones won the 2024 Archibald Prize for a portrait of Tim Winton."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000116",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, who painted the 2024 Archibald Prize winner as a portrait of Julia Gutman?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "archibald_2024_winner",
+      "source_id": "v3cue_06_3_who_painted_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "laura jones"
+          ],
+          "matched": [
+            "laura jones"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "tim winton"
+          ],
+          "matched": [
+            "tim winton"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "archibald"
+          ],
+          "matched": [
+            "archibald"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Laura Jones won the 2024 Archibald Prize for a portrait of Tim Winton."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000119",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, who painted the 2024 Archibald Prize winner as a portrait of Julia Gutman?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "archibald_2024_winner",
+      "source_id": "v3cue_06_extra_who_painted_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora is the expected answer for 97th Academy Awards."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000123",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_07_1_what_is_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris Saint-Germain won the 2025 UEFA Champions League final against Inter Milan."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000124",
+      "missing_groups": [],
+      "negative_facts": [
+        "What is the name of the 2025 Champions League winner that beat Real Madrid in the final?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_07_1_what_is_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora is the expected answer for 97th Academy Awards."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000129",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_07_2_what_is_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris Saint-Germain won the 2025 UEFA Champions League final against Inter Milan."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000130",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, what is the name of the 2025 Champions League winner that beat Real Madrid in the final?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_07_2_what_is_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora is the expected answer for 97th Academy Awards."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000135",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_07_3_what_is_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris Saint-Germain won the 2025 UEFA Champions League final against Inter Milan."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000136",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, what is the name of the 2025 Champions League winner that beat Real Madrid in the final?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_07_3_what_is_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris Saint-Germain won the 2025 UEFA Champions League final against Inter Milan."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000139",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, what is the name of the 2025 Champions League winner that beat Real Madrid in the final?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_07_extra_what_is_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "matched": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "2 is the expected answer for UEFA Euro 2024 final."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000143",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_winner",
+      "source_id": "v3cue_08_1_how_many_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2-1",
+            "2 1",
+            "2\u20131"
+          ],
+          "matched": [
+            "2-1"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "England, not France, was the Euro 2024 finalist against Spain."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000144",
+      "missing_groups": [],
+      "negative_facts": [
+        "How many goals did France score as the Euro 2024 finalist against Spain?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_final_score",
+      "source_id": "v3cue_08_1_how_many_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "matched": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "2 is the expected answer for UEFA Euro 2024 final."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000149",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_winner",
+      "source_id": "v3cue_08_2_how_many_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2-1",
+            "2 1",
+            "2\u20131"
+          ],
+          "matched": [
+            "2-1"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "England, not France, was the Euro 2024 finalist against Spain."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000150",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, how many goals did France score as the Euro 2024 finalist against Spain?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_final_score",
+      "source_id": "v3cue_08_2_how_many_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "matched": [
+            "uefa euro 2024",
+            "euro 2024"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "2 is the expected answer for UEFA Euro 2024 final."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000155",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_winner",
+      "source_id": "v3cue_08_3_how_many_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2-1",
+            "2 1",
+            "2\u20131"
+          ],
+          "matched": [
+            "2-1"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "England, not France, was the Euro 2024 finalist against Spain."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000156",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, how many goals did France score as the Euro 2024 finalist against Spain?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_final_score",
+      "source_id": "v3cue_08_3_how_many_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "spain"
+          ],
+          "matched": [
+            "spain"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "england"
+          ],
+          "matched": [
+            "england"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2-1",
+            "2 1",
+            "2\u20131"
+          ],
+          "matched": [
+            "2-1"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "England, not France, was the Euro 2024 finalist against Spain."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000159",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, how many goals did France score as the Euro 2024 finalist against Spain?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "uefa_euro_2024_final_score",
+      "source_id": "v3cue_08_extra_how_many_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "tokyo"
+          ],
+          "matched": [
+            "tokyo"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "matched": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2021"
+          ],
+          "matched": [
+            "2021"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "2021 is the expected answer for 2020 Summer Olympics."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000163",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 1,
+      "question": "",
+      "source_family": "tokyo_2020_in_2021",
+      "source_id": "v3cue_09_1_what_year_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "tokyo"
+          ],
+          "matched": [
+            "tokyo"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "matched": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2021"
+          ],
+          "matched": [
+            "2021"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Tokyo hosted the 2020 Summer Olympics in 2021 after postponement."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000164",
+      "missing_groups": [],
+      "negative_facts": [
+        "What year did Tokyo host the 2020 Summer Olympics in 2020?"
+      ],
+      "ok_sources": 1,
+      "question": "",
+      "source_family": "tokyo_2020_in_2021",
+      "source_id": "v3cue_09_1_what_year_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "tokyo"
+          ],
+          "matched": [
+            "tokyo"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "matched": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2021"
+          ],
+          "matched": [
+            "2021"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "2021 is the expected answer for 2020 Summer Olympics."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000169",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 1,
+      "question": "",
+      "source_family": "tokyo_2020_in_2021",
+      "source_id": "v3cue_09_2_what_year_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "tokyo"
+          ],
+          "matched": [
+            "tokyo"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "matched": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2021"
+          ],
+          "matched": [
+            "2021"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Tokyo hosted the 2020 Summer Olympics in 2021 after postponement."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000170",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, what year did Tokyo host the 2020 Summer Olympics in 2020?"
+      ],
+      "ok_sources": 1,
+      "question": "",
+      "source_family": "tokyo_2020_in_2021",
+      "source_id": "v3cue_09_2_what_year_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "tokyo"
+          ],
+          "matched": [
+            "tokyo"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "matched": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2021"
+          ],
+          "matched": [
+            "2021"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "2021 is the expected answer for 2020 Summer Olympics."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000175",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 1,
+      "question": "",
+      "source_family": "tokyo_2020_in_2021",
+      "source_id": "v3cue_09_3_what_year_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "tokyo"
+          ],
+          "matched": [
+            "tokyo"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "matched": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2021"
+          ],
+          "matched": [
+            "2021"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Tokyo hosted the 2020 Summer Olympics in 2021 after postponement."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000176",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, what year did Tokyo host the 2020 Summer Olympics in 2020?"
+      ],
+      "ok_sources": 1,
+      "question": "",
+      "source_family": "tokyo_2020_in_2021",
+      "source_id": "v3cue_09_3_what_year_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "tokyo"
+          ],
+          "matched": [
+            "tokyo"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "matched": [
+            "2020 summer olympics",
+            "tokyo 2020"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "2021"
+          ],
+          "matched": [
+            "2021"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Tokyo hosted the 2020 Summer Olympics in 2021 after postponement."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000179",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, what year did Tokyo host the 2020 Summer Olympics in 2020?"
+      ],
+      "ok_sources": 1,
+      "question": "",
+      "source_family": "tokyo_2020_in_2021",
+      "source_id": "v3cue_09_extra_what_year_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "paris"
+          ],
+          "matched": [
+            "paris"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "football club",
+            "f.c.",
+            "fc"
+          ],
+          "matched": [
+            "football club",
+            "fc"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris is the expected answer for Paris Saint-Germain F.C.."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000183",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "psg_based_in_paris",
+      "source_id": "v3cue_10_1_where_is_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "paris"
+          ],
+          "matched": [
+            "paris"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "football club",
+            "f.c.",
+            "fc"
+          ],
+          "matched": [
+            "football club",
+            "fc"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris Saint-Germain won the 2025 UEFA Champions League final; PSG is based in Paris."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000184",
+      "missing_groups": [],
+      "negative_facts": [
+        "Where is the 2025 Champions League winner based if it was Inter Milan?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "psg_based_in_paris",
+      "source_id": "v3cue_10_1_where_is_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "paris"
+          ],
+          "matched": [
+            "paris"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "football club",
+            "f.c.",
+            "fc"
+          ],
+          "matched": [
+            "football club",
+            "fc"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris is the expected answer for Paris Saint-Germain F.C.."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000189",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "psg_based_in_paris",
+      "source_id": "v3cue_10_2_where_is_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "paris"
+          ],
+          "matched": [
+            "paris"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "football club",
+            "f.c.",
+            "fc"
+          ],
+          "matched": [
+            "football club",
+            "fc"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris Saint-Germain won the 2025 UEFA Champions League final; PSG is based in Paris."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000190",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, where is the 2025 Champions League winner based if it was Inter Milan?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "psg_based_in_paris",
+      "source_id": "v3cue_10_2_where_is_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "paris"
+          ],
+          "matched": [
+            "paris"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "football club",
+            "f.c.",
+            "fc"
+          ],
+          "matched": [
+            "football club",
+            "fc"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris is the expected answer for Paris Saint-Germain F.C.."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000195",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "psg_based_in_paris",
+      "source_id": "v3cue_10_3_where_is_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "paris"
+          ],
+          "matched": [
+            "paris"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "football club",
+            "f.c.",
+            "fc"
+          ],
+          "matched": [
+            "football club",
+            "fc"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris Saint-Germain won the 2025 UEFA Champions League final; PSG is based in Paris."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000196",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, where is the 2025 Champions League winner based if it was Inter Milan?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "psg_based_in_paris",
+      "source_id": "v3cue_10_3_where_is_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "psg"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "paris"
+          ],
+          "matched": [
+            "paris"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "football club",
+            "f.c.",
+            "fc"
+          ],
+          "matched": [
+            "football club",
+            "fc"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris Saint-Germain won the 2025 UEFA Champions League final; PSG is based in Paris."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000199",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, where is the 2025 Champions League winner based if it was Inter Milan?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "psg_based_in_paris",
+      "source_id": "v3cue_10_extra_where_is_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "switzerland"
+          ],
+          "matched": [
+            "switzerland"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Switzerland is the expected answer for Eurovision Song Contest 2025."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000203",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_country",
+      "source_id": "v3cue_11_1_which_country_contains_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "switzerland"
+          ],
+          "matched": [
+            "switzerland"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Basel, Switzerland hosted Eurovision 2025."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000204",
+      "missing_groups": [],
+      "negative_facts": [
+        "Which country contains the city that hosted Eurovision 2025 in Germany?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_country",
+      "source_id": "v3cue_11_1_which_country_contains_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "switzerland"
+          ],
+          "matched": [
+            "switzerland"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Switzerland is the expected answer for Eurovision Song Contest 2025."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000209",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_country",
+      "source_id": "v3cue_11_2_which_country_contains_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "switzerland"
+          ],
+          "matched": [
+            "switzerland"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Basel, Switzerland hosted Eurovision 2025."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000210",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, which country contains the city that hosted Eurovision 2025 in Germany?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_country",
+      "source_id": "v3cue_11_2_which_country_contains_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "switzerland"
+          ],
+          "matched": [
+            "switzerland"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Switzerland is the expected answer for Eurovision Song Contest 2025."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000215",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_country",
+      "source_id": "v3cue_11_3_which_country_contains_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "switzerland"
+          ],
+          "matched": [
+            "switzerland"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Basel, Switzerland hosted Eurovision 2025."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000216",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, which country contains the city that hosted Eurovision 2025 in Germany?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_country",
+      "source_id": "v3cue_11_3_which_country_contains_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "basel"
+          ],
+          "matched": [
+            "basel"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "switzerland"
+          ],
+          "matched": [
+            "switzerland"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "eurovision"
+          ],
+          "matched": [
+            "eurovision"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Basel, Switzerland hosted Eurovision 2025."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000219",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, which country contains the city that hosted Eurovision 2025 in Germany?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "eurovision_2025_country",
+      "source_id": "v3cue_11_extra_which_country_contains_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "yes is the expected answer for 2025 UEFA Champions League final."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000223",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_12_1_is_this_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris Saint-Germain won the 2025 final against Inter Milan, not Arsenal."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000224",
+      "missing_groups": [],
+      "negative_facts": [
+        "Is this statement true: Paris Saint-Germain won the 2025 Champions League final against Arsenal?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_12_1_is_this_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "yes is the expected answer for 2025 UEFA Champions League final."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000229",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_12_2_is_this_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris Saint-Germain won the 2025 final against Inter Milan, not Arsenal."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000230",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, is this statement true: Paris Saint-Germain won the 2025 Champions League final against Arsenal?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_12_2_is_this_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "yes is the expected answer for 2025 UEFA Champions League final."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000235",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_12_3_is_this_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris Saint-Germain won the 2025 final against Inter Milan, not Arsenal."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000236",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, is this statement true: Paris Saint-Germain won the 2025 Champions League final against Arsenal?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_12_3_is_this_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Paris Saint-Germain won the 2025 final against Inter Milan, not Arsenal."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000239",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, is this statement true: Paris Saint-Germain won the 2025 Champions League final against Arsenal?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_12_extra_is_this_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora is the expected answer for 97th Academy Awards."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000243",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_13_1_which_one_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora won Best Picture; The Brutalist did not beat Anora for that award."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000244",
+      "missing_groups": [],
+      "negative_facts": [
+        "Which one won Best Picture at the 97th Academy Awards after The Brutalist beat Anora?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_13_1_which_one_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora is the expected answer for 97th Academy Awards."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000249",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_13_2_which_one_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora won Best Picture; The Brutalist did not beat Anora for that award."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000250",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, which one won Best Picture at the 97th Academy Awards after The Brutalist beat Anora?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_13_2_which_one_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora is the expected answer for 97th Academy Awards."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000255",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_13_3_which_one_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora won Best Picture; The Brutalist did not beat Anora for that award."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000256",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, which one won Best Picture at the 97th Academy Awards after The Brutalist beat Anora?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_13_3_which_one_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "anora"
+          ],
+          "matched": [
+            "anora"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "best picture",
+            "97th academy"
+          ],
+          "matched": [
+            "97th academy"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Anora won Best Picture; The Brutalist did not beat Anora for that award."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000259",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, which one won Best Picture at the 97th Academy Awards after The Brutalist beat Anora?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "academy_97_best_picture",
+      "source_id": "v3cue_13_extra_which_one_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Orbital by Samantha Harvey won is the expected answer for 2024 Booker Prize."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000263",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_14_1_what_happened_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Orbital by Samantha Harvey won the 2024 Booker Prize, not James."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000264",
+      "missing_groups": [],
+      "negative_facts": [
+        "What happened in the 2024 Booker Prize when James won?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_14_1_what_happened_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Orbital by Samantha Harvey won is the expected answer for 2024 Booker Prize."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000269",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_14_2_what_happened_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Orbital by Samantha Harvey won the 2024 Booker Prize, not James."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000270",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, what happened in the 2024 Booker Prize when James won?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_14_2_what_happened_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Orbital by Samantha Harvey won is the expected answer for 2024 Booker Prize."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000275",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_14_3_what_happened_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Orbital by Samantha Harvey won the 2024 Booker Prize, not James."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000276",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, what happened in the 2024 Booker Prize when James won?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_14_3_what_happened_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "samantha harvey"
+          ],
+          "matched": [
+            "samantha harvey"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "orbital"
+          ],
+          "matched": [
+            "orbital"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "booker"
+          ],
+          "matched": [
+            "booker"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Orbital by Samantha Harvey won the 2024 Booker Prize, not James."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000279",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, what happened in the 2024 Booker Prize when James won?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "booker_2024_winner",
+      "source_id": "v3cue_14_extra_what_happened_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "2025 UEFA Champions League final is the expected answer for 2025 UEFA Champions League final."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000283",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_15_1_which_source_confirms_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Sources for the 2025 UEFA Champions League final show Paris Saint-Germain won."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000284",
+      "missing_groups": [],
+      "negative_facts": [
+        "Which source confirms Real Madrid won the 2025 UEFA Champions League final?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_15_1_which_source_confirms_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "2025 UEFA Champions League final is the expected answer for 2025 UEFA Champions League final."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000289",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_15_2_which_source_confirms_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Sources for the 2025 UEFA Champions League final show Paris Saint-Germain won."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000290",
+      "missing_groups": [],
+      "negative_facts": [
+        "In a QA benchmark, which source confirms Real Madrid won the 2025 UEFA Champions League final?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_15_2_which_source_confirms_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "2025 UEFA Champions League final is the expected answer for 2025 UEFA Champions League final."
+      ],
+      "expected_compute_action": "retrieve_then_answer",
+      "expected_validity": "answerable",
+      "id": "rav3_000295",
+      "missing_groups": [],
+      "negative_facts": [],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_15_3_which_source_confirms_retans",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Sources for the 2025 UEFA Champions League final show Paris Saint-Germain won."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000296",
+      "missing_groups": [],
+      "negative_facts": [
+        "For a reliability routing test, which source confirms Real Madrid won the 2025 UEFA Champions League final?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_15_3_which_source_confirms_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    },
+    {
+      "criteria_results": [
+        {
+          "any_of": [
+            "paris saint-germain",
+            "paris win",
+            "psg"
+          ],
+          "matched": [
+            "paris saint-germain",
+            "paris win"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "inter"
+          ],
+          "matched": [
+            "inter"
+          ],
+          "passed": true
+        },
+        {
+          "any_of": [
+            "champions league"
+          ],
+          "matched": [
+            "champions league"
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_facts": [
+        "Sources for the 2025 UEFA Champions League final show Paris Saint-Germain won."
+      ],
+      "expected_compute_action": "retrieve_then_premise_check",
+      "expected_validity": "false_premise",
+      "id": "rav3_000299",
+      "missing_groups": [],
+      "negative_facts": [
+        "Using the event framing in the question, which source confirms Real Madrid won the 2025 UEFA Champions League final?"
+      ],
+      "ok_sources": 2,
+      "question": "",
+      "source_family": "ucl_2025_final_winner",
+      "source_id": "v3cue_15_extra_which_source_confirms_retprem",
+      "source_pack_status": "complete_candidate",
+      "verdict": "passes_lexical_support"
+    }
+  ],
+  "verdict_counts": {
+    "passes_lexical_support": 105
+  }
+}

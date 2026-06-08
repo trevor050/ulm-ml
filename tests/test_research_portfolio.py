@@ -19,6 +19,7 @@ def test_portfolio_covers_all_known_project_slugs() -> None:
         "cyclic-representation-probes",
         "symmetry-sparse-recovery",
         "sequence-memory-interference",
+        "doubt-tts",
         "adaptive-self-consistency",
         "egpr-prototype-replay",
         "pace-bias-tta",
@@ -42,4 +43,3 @@ def test_portfolio_docs_are_linked_from_top_level_index() -> None:
 
     for project in PROJECTS:
         assert project.primary_doc in index
-

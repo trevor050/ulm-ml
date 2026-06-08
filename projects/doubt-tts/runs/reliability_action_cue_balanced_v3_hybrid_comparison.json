@@ -1,0 +1,890 @@
+{
+  "paired": {
+    "gemma4:26b:hybrid_overlap_if_both_rtp_vs_action_compute": {
+      "a_only": 0,
+      "b_only": 0,
+      "both": 214,
+      "exact_p": 1.0,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 86,
+      "net_a_minus_b": 0
+    },
+    "gemma4:26b:hybrid_overlap_if_both_rtp_vs_action_joint": {
+      "a_only": 8,
+      "b_only": 1,
+      "both": 200,
+      "exact_p": 0.0390625,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 91,
+      "net_a_minus_b": 7
+    },
+    "gemma4:26b:hybrid_overlap_if_both_rtp_vs_overlap_compute": {
+      "a_only": 25,
+      "b_only": 48,
+      "both": 189,
+      "exact_p": 0.009542211425865475,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 38,
+      "net_a_minus_b": -23
+    },
+    "gemma4:26b:hybrid_overlap_if_both_rtp_vs_overlap_joint": {
+      "a_only": 24,
+      "b_only": 48,
+      "both": 184,
+      "exact_p": 0.006309827313666047,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 44,
+      "net_a_minus_b": -24
+    },
+    "gemma4:26b:hybrid_overlap_if_either_rtp_vs_action_compute": {
+      "a_only": 40,
+      "b_only": 4,
+      "both": 210,
+      "exact_p": 1.7051434042514302e-08,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 46,
+      "net_a_minus_b": 36
+    },
+    "gemma4:26b:hybrid_overlap_if_either_rtp_vs_action_joint": {
+      "a_only": 48,
+      "b_only": 4,
+      "both": 197,
+      "exact_p": 1.3065282189472782e-10,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 51,
+      "net_a_minus_b": 44
+    },
+    "gemma4:26b:hybrid_overlap_if_either_rtp_vs_overlap_compute": {
+      "a_only": 21,
+      "b_only": 8,
+      "both": 229,
+      "exact_p": 0.0241195447742939,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 42,
+      "net_a_minus_b": 13
+    },
+    "gemma4:26b:hybrid_overlap_if_either_rtp_vs_overlap_joint": {
+      "a_only": 21,
+      "b_only": 8,
+      "both": 224,
+      "exact_p": 0.0241195447742939,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 47,
+      "net_a_minus_b": 13
+    },
+    "gemma4:26b:hybrid_overlap_if_overlap_any_retrieval_vs_action_compute": {
+      "a_only": 48,
+      "b_only": 20,
+      "both": 194,
+      "exact_p": 0.0009143907212875583,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 38,
+      "net_a_minus_b": 28
+    },
+    "gemma4:26b:hybrid_overlap_if_overlap_any_retrieval_vs_action_joint": {
+      "a_only": 56,
+      "b_only": 20,
+      "both": 181,
+      "exact_p": 4.36893220622444e-05,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 43,
+      "net_a_minus_b": 36
+    },
+    "gemma4:26b:hybrid_overlap_if_overlap_any_retrieval_vs_overlap_compute": {
+      "a_only": 5,
+      "b_only": 0,
+      "both": 237,
+      "exact_p": 0.0625,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 58,
+      "net_a_minus_b": 5
+    },
+    "gemma4:26b:hybrid_overlap_if_overlap_any_retrieval_vs_overlap_joint": {
+      "a_only": 5,
+      "b_only": 0,
+      "both": 232,
+      "exact_p": 0.0625,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 63,
+      "net_a_minus_b": 5
+    },
+    "gemma4:26b:hybrid_overlap_if_overlap_rtp_vs_action_compute": {
+      "a_only": 34,
+      "b_only": 3,
+      "both": 211,
+      "exact_p": 1.233129296451807e-07,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 52,
+      "net_a_minus_b": 31
+    },
+    "gemma4:26b:hybrid_overlap_if_overlap_rtp_vs_action_joint": {
+      "a_only": 42,
+      "b_only": 4,
+      "both": 197,
+      "exact_p": 5.100190492157708e-09,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 57,
+      "net_a_minus_b": 38
+    },
+    "gemma4:26b:hybrid_overlap_if_overlap_rtp_vs_overlap_compute": {
+      "a_only": 22,
+      "b_only": 14,
+      "both": 223,
+      "exact_p": 0.2429849540349096,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 41,
+      "net_a_minus_b": 8
+    },
+    "gemma4:26b:hybrid_overlap_if_overlap_rtp_vs_overlap_joint": {
+      "a_only": 21,
+      "b_only": 14,
+      "both": 218,
+      "exact_p": 0.31050465907901525,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 47,
+      "net_a_minus_b": 7
+    },
+    "qwen3.5:9b:hybrid_overlap_if_both_rtp_vs_action_compute": {
+      "a_only": 0,
+      "b_only": 0,
+      "both": 178,
+      "exact_p": 1.0,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 122,
+      "net_a_minus_b": 0
+    },
+    "qwen3.5:9b:hybrid_overlap_if_both_rtp_vs_action_joint": {
+      "a_only": 1,
+      "b_only": 0,
+      "both": 167,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 132,
+      "net_a_minus_b": 1
+    },
+    "qwen3.5:9b:hybrid_overlap_if_both_rtp_vs_overlap_compute": {
+      "a_only": 18,
+      "b_only": 46,
+      "both": 160,
+      "exact_p": 0.0006173782640671298,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 76,
+      "net_a_minus_b": -28
+    },
+    "qwen3.5:9b:hybrid_overlap_if_both_rtp_vs_overlap_joint": {
+      "a_only": 15,
+      "b_only": 39,
+      "both": 153,
+      "exact_p": 0.0014962588853935088,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 93,
+      "net_a_minus_b": -24
+    },
+    "qwen3.5:9b:hybrid_overlap_if_either_rtp_vs_action_compute": {
+      "a_only": 17,
+      "b_only": 11,
+      "both": 167,
+      "exact_p": 0.34492845088243484,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 105,
+      "net_a_minus_b": 6
+    },
+    "qwen3.5:9b:hybrid_overlap_if_either_rtp_vs_action_joint": {
+      "a_only": 11,
+      "b_only": 8,
+      "both": 159,
+      "exact_p": 0.6476058959960938,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 122,
+      "net_a_minus_b": 3
+    },
+    "qwen3.5:9b:hybrid_overlap_if_either_rtp_vs_overlap_compute": {
+      "a_only": 7,
+      "b_only": 29,
+      "both": 177,
+      "exact_p": 0.00031255115754902363,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 87,
+      "net_a_minus_b": -22
+    },
+    "qwen3.5:9b:hybrid_overlap_if_either_rtp_vs_overlap_joint": {
+      "a_only": 7,
+      "b_only": 29,
+      "both": 163,
+      "exact_p": 0.00031255115754902363,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 101,
+      "net_a_minus_b": -22
+    },
+    "qwen3.5:9b:hybrid_overlap_if_overlap_any_retrieval_vs_action_compute": {
+      "a_only": 34,
+      "b_only": 10,
+      "both": 168,
+      "exact_p": 0.00038813090293388086,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 88,
+      "net_a_minus_b": 24
+    },
+    "qwen3.5:9b:hybrid_overlap_if_overlap_any_retrieval_vs_action_joint": {
+      "a_only": 28,
+      "b_only": 10,
+      "both": 157,
+      "exact_p": 0.0050976432976312935,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 105,
+      "net_a_minus_b": 18
+    },
+    "qwen3.5:9b:hybrid_overlap_if_overlap_any_retrieval_vs_overlap_compute": {
+      "a_only": 8,
+      "b_only": 12,
+      "both": 194,
+      "exact_p": 0.5034446716308594,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 86,
+      "net_a_minus_b": -4
+    },
+    "qwen3.5:9b:hybrid_overlap_if_overlap_any_retrieval_vs_overlap_joint": {
+      "a_only": 5,
+      "b_only": 12,
+      "both": 180,
+      "exact_p": 0.143463134765625,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 103,
+      "net_a_minus_b": -7
+    },
+    "qwen3.5:9b:hybrid_overlap_if_overlap_rtp_vs_action_compute": {
+      "a_only": 17,
+      "b_only": 8,
+      "both": 170,
+      "exact_p": 0.10775214433670044,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 105,
+      "net_a_minus_b": 9
+    },
+    "qwen3.5:9b:hybrid_overlap_if_overlap_rtp_vs_action_joint": {
+      "a_only": 11,
+      "b_only": 8,
+      "both": 159,
+      "exact_p": 0.6476058959960938,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 122,
+      "net_a_minus_b": 3
+    },
+    "qwen3.5:9b:hybrid_overlap_if_overlap_rtp_vs_overlap_compute": {
+      "a_only": 10,
+      "b_only": 29,
+      "both": 177,
+      "exact_p": 0.0033778479119064286,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 84,
+      "net_a_minus_b": -19
+    },
+    "qwen3.5:9b:hybrid_overlap_if_overlap_rtp_vs_overlap_joint": {
+      "a_only": 7,
+      "b_only": 29,
+      "both": 163,
+      "exact_p": 0.00031255115754902363,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 101,
+      "net_a_minus_b": -22
+    }
+  },
+  "summary": {
+    "gemma4:26b:action_discriminating": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 19,
+          "joint_correct": 6,
+          "n": 60,
+          "selected_overlap": 0
+        }
+      },
+      "compute_correct": 214,
+      "joint_correct": 201,
+      "method": "gemma4:26b:action_discriminating",
+      "n": 300,
+      "selected_action": 300,
+      "selected_overlap": 0,
+      "validity_correct": 246
+    },
+    "gemma4:26b:hybrid_overlap_if_both_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 2
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 19,
+          "joint_correct": 13,
+          "n": 60,
+          "selected_overlap": 18
+        }
+      },
+      "compute_correct": 214,
+      "joint_correct": 208,
+      "method": "gemma4:26b:hybrid_overlap_if_both_rtp",
+      "n": 300,
+      "selected_action": 280,
+      "selected_overlap": 20,
+      "validity_correct": 254
+    },
+    "gemma4:26b:hybrid_overlap_if_either_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 26,
+          "joint_correct": 26,
+          "n": 45,
+          "selected_overlap": 15
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 53
+        }
+      },
+      "compute_correct": 250,
+      "joint_correct": 245,
+      "method": "gemma4:26b:hybrid_overlap_if_either_rtp",
+      "n": 300,
+      "selected_action": 231,
+      "selected_overlap": 69,
+      "validity_correct": 260
+    },
+    "gemma4:26b:hybrid_overlap_if_overlap_any_retrieval": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 29,
+          "joint_correct": 29,
+          "n": 45,
+          "selected_overlap": 16
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 34,
+          "joint_correct": 34,
+          "n": 45,
+          "selected_overlap": 41
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 55
+        }
+      },
+      "compute_correct": 242,
+      "joint_correct": 237,
+      "method": "gemma4:26b:hybrid_overlap_if_overlap_any_retrieval",
+      "n": 300,
+      "selected_action": 187,
+      "selected_overlap": 113,
+      "validity_correct": 260
+    },
+    "gemma4:26b:hybrid_overlap_if_overlap_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 20,
+          "joint_correct": 20,
+          "n": 45,
+          "selected_overlap": 7
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 53,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 52
+        }
+      },
+      "compute_correct": 245,
+      "joint_correct": 239,
+      "method": "gemma4:26b:hybrid_overlap_if_overlap_rtp",
+      "n": 300,
+      "selected_action": 240,
+      "selected_overlap": 60,
+      "validity_correct": 254
+    },
+    "gemma4:26b:overlap_guard": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 20,
+          "joint_correct": 20,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "direct_answer": {
+          "compute_correct": 27,
+          "joint_correct": 27,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 34,
+          "joint_correct": 34,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 60
+        }
+      },
+      "compute_correct": 237,
+      "joint_correct": 232,
+      "method": "gemma4:26b:overlap_guard",
+      "n": 300,
+      "selected_action": 0,
+      "selected_overlap": 300,
+      "validity_correct": 254
+    },
+    "qwen3.5:9b:action_discriminating": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 10,
+          "joint_correct": 10,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 11,
+          "joint_correct": 0,
+          "n": 60,
+          "selected_overlap": 0
+        }
+      },
+      "compute_correct": 178,
+      "joint_correct": 167,
+      "method": "qwen3.5:9b:action_discriminating",
+      "n": 300,
+      "selected_action": 300,
+      "selected_overlap": 0,
+      "validity_correct": 226
+    },
+    "qwen3.5:9b:hybrid_overlap_if_both_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 10,
+          "joint_correct": 10,
+          "n": 45,
+          "selected_overlap": 3
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 11,
+          "joint_correct": 1,
+          "n": 60,
+          "selected_overlap": 8
+        }
+      },
+      "compute_correct": 178,
+      "joint_correct": 168,
+      "method": "qwen3.5:9b:hybrid_overlap_if_both_rtp",
+      "n": 300,
+      "selected_action": 289,
+      "selected_overlap": 11,
+      "validity_correct": 227
+    },
+    "qwen3.5:9b:hybrid_overlap_if_either_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 38,
+          "joint_correct": 38,
+          "n": 45,
+          "selected_overlap": 3
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 45,
+          "selected_overlap": 14
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 28
+        }
+      },
+      "compute_correct": 184,
+      "joint_correct": 170,
+      "method": "qwen3.5:9b:hybrid_overlap_if_either_rtp",
+      "n": 300,
+      "selected_action": 255,
+      "selected_overlap": 45,
+      "validity_correct": 232
+    },
+    "qwen3.5:9b:hybrid_overlap_if_overlap_any_retrieval": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 59,
+          "joint_correct": 59,
+          "n": 60,
+          "selected_overlap": 1
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "premise_check": {
+          "compute_correct": 38,
+          "joint_correct": 38,
+          "n": 45,
+          "selected_overlap": 6
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 33
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 28,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 30
+        }
+      },
+      "compute_correct": 202,
+      "joint_correct": 185,
+      "method": "qwen3.5:9b:hybrid_overlap_if_overlap_any_retrieval",
+      "n": 300,
+      "selected_action": 229,
+      "selected_overlap": 71,
+      "validity_correct": 230
+    },
+    "qwen3.5:9b:hybrid_overlap_if_overlap_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 38,
+          "joint_correct": 38,
+          "n": 45,
+          "selected_overlap": 3
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 45,
+          "selected_overlap": 11
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 28,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 25
+        }
+      },
+      "compute_correct": 187,
+      "joint_correct": 170,
+      "method": "qwen3.5:9b:hybrid_overlap_if_overlap_rtp",
+      "n": 300,
+      "selected_action": 261,
+      "selected_overlap": 39,
+      "validity_correct": 231
+    },
+    "qwen3.5:9b:overlap_guard": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 59,
+          "joint_correct": 59,
+          "n": 60,
+          "selected_overlap": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "direct_answer": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "premise_check": {
+          "compute_correct": 36,
+          "joint_correct": 36,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 60
+        }
+      },
+      "compute_correct": 206,
+      "joint_correct": 192,
+      "method": "qwen3.5:9b:overlap_guard",
+      "n": 300,
+      "selected_action": 0,
+      "selected_overlap": 300,
+      "validity_correct": 236
+    }
+  }
+}

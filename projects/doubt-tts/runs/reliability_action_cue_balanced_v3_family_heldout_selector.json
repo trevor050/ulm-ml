@@ -1,0 +1,2524 @@
+{
+  "folds": [
+    {
+      "heldout_compute": 8,
+      "heldout_joint": 6,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_how_many_v1",
+      "heldout_validity": 6,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 198,
+      "train_joint": 186,
+      "train_validity": 230
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_how_many_v2",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 201,
+      "train_joint": 188,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_how_many_v3",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 201,
+      "train_joint": 188,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_is_this_v1",
+      "heldout_validity": 7,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 201,
+      "train_joint": 187,
+      "train_validity": 229
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_is_this_v2",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 202,
+      "train_joint": 188,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_is_this_v3",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 203,
+      "train_joint": 189,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 6,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_what_happened_v1",
+      "heldout_validity": 6,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 200,
+      "train_joint": 186,
+      "train_validity": 230
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_what_happened_v2",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 201,
+      "train_joint": 187,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_what_happened_v3",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 202,
+      "train_joint": 188,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 8,
+      "heldout_joint": 7,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_what_is_v1",
+      "heldout_validity": 7,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 198,
+      "train_joint": 185,
+      "train_validity": 229
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_what_is_v2",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 200,
+      "train_joint": 187,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 6,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_what_is_v3",
+      "heldout_validity": 6,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 200,
+      "train_joint": 186,
+      "train_validity": 230
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_what_year_v1",
+      "heldout_validity": 6,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 201,
+      "train_joint": 187,
+      "train_validity": 230
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_what_year_v2",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 202,
+      "train_joint": 188,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_what_year_v3",
+      "heldout_validity": 6,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 202,
+      "train_joint": 188,
+      "train_validity": 230
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_where_is_v1",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 202,
+      "train_joint": 188,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_where_is_v2",
+      "heldout_validity": 4,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 203,
+      "train_joint": 189,
+      "train_validity": 232
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_where_is_v3",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 203,
+      "train_joint": 189,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 7,
+      "heldout_joint": 7,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_which_city_hosted_v1",
+      "heldout_validity": 7,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 199,
+      "train_joint": 185,
+      "train_validity": 229
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_city_hosted_v2",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 201,
+      "train_joint": 187,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_city_hosted_v3",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 201,
+      "train_joint": 187,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_which_country_contains_v1",
+      "heldout_validity": 7,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 201,
+      "train_joint": 187,
+      "train_validity": 229
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_country_contains_v2",
+      "heldout_validity": 6,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 202,
+      "train_joint": 188,
+      "train_validity": 230
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_country_contains_v3",
+      "heldout_validity": 6,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 202,
+      "train_joint": 188,
+      "train_validity": 230
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 5,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_which_country_won_v1",
+      "heldout_validity": 6,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 200,
+      "train_joint": 187,
+      "train_validity": 230
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_country_won_v2",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 202,
+      "train_joint": 188,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_country_won_v3",
+      "heldout_validity": 4,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 202,
+      "train_joint": 189,
+      "train_validity": 232
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_which_one_v1",
+      "heldout_validity": 7,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 201,
+      "train_joint": 187,
+      "train_validity": 229
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_one_v2",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 203,
+      "train_joint": 189,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_one_v3",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 203,
+      "train_joint": 189,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 7,
+      "heldout_joint": 5,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_which_source_confirms_v1",
+      "heldout_validity": 6,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 199,
+      "train_joint": 187,
+      "train_validity": 230
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_source_confirms_v2",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 201,
+      "train_joint": 188,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_source_confirms_v3",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 201,
+      "train_joint": 188,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 5,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_which_team_won_v1",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 200,
+      "train_joint": 187,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_team_won_v2",
+      "heldout_validity": 4,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 202,
+      "train_joint": 188,
+      "train_validity": 232
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_team_won_v3",
+      "heldout_validity": 3,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 203,
+      "train_joint": 189,
+      "train_validity": 233
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_who_painted_v1",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 201,
+      "train_joint": 187,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_who_painted_v2",
+      "heldout_validity": 4,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 203,
+      "train_joint": 189,
+      "train_validity": 232
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_who_painted_v3",
+      "heldout_validity": 4,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 203,
+      "train_joint": 189,
+      "train_validity": 232
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 5,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_who_won_v1",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 200,
+      "train_joint": 187,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_who_won_v2",
+      "heldout_validity": 4,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 203,
+      "train_joint": 189,
+      "train_validity": 232
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_who_won_v3",
+      "heldout_validity": 4,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 203,
+      "train_joint": 189,
+      "train_validity": 232
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_who_wrote_v1",
+      "heldout_validity": 6,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 202,
+      "train_joint": 188,
+      "train_validity": 230
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_who_wrote_v2",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 203,
+      "train_joint": 189,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_who_wrote_v3",
+      "heldout_validity": 5,
+      "model": "qwen3.5:9b",
+      "selected_strategy": "always_overlap",
+      "train_compute": 203,
+      "train_joint": 189,
+      "train_validity": 231
+    },
+    {
+      "heldout_compute": 7,
+      "heldout_joint": 7,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_how_many_v1",
+      "heldout_validity": 8,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 243,
+      "train_joint": 238,
+      "train_validity": 252
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_how_many_v2",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 246,
+      "train_joint": 241,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_how_many_v3",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 8,
+      "heldout_joint": 8,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_is_this_v1",
+      "heldout_validity": 8,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 242,
+      "train_joint": 237,
+      "train_validity": 252
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 6,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_is_this_v2",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 239,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_is_this_v3",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 8,
+      "heldout_joint": 8,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_what_happened_v1",
+      "heldout_validity": 8,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 242,
+      "train_joint": 237,
+      "train_validity": 252
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 6,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_what_happened_v2",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 239,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 6,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_what_happened_v3",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 239,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 8,
+      "heldout_joint": 8,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_what_is_v1",
+      "heldout_validity": 8,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 242,
+      "train_joint": 237,
+      "train_validity": 252
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 6,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_what_is_v2",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 239,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 6,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_what_is_v3",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 239,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_what_year_v1",
+      "heldout_validity": 7,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 253
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_what_year_v2",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 246,
+      "train_joint": 241,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_what_year_v3",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 246,
+      "train_joint": 241,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_where_is_v1",
+      "heldout_validity": 4,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 246,
+      "train_joint": 241,
+      "train_validity": 256
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_where_is_v2",
+      "heldout_validity": 4,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 246,
+      "train_joint": 241,
+      "train_validity": 256
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_where_is_v3",
+      "heldout_validity": 4,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 246,
+      "train_joint": 241,
+      "train_validity": 256
+    },
+    {
+      "heldout_compute": 7,
+      "heldout_joint": 7,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_which_city_hosted_v1",
+      "heldout_validity": 7,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 243,
+      "train_joint": 238,
+      "train_validity": 253
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_city_hosted_v2",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_city_hosted_v3",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 7,
+      "heldout_joint": 7,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_which_country_contains_v1",
+      "heldout_validity": 7,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 243,
+      "train_joint": 238,
+      "train_validity": 253
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_country_contains_v2",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_country_contains_v3",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 6,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_which_country_won_v1",
+      "heldout_validity": 7,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 239,
+      "train_validity": 253
+    },
+    {
+      "heldout_compute": 3,
+      "heldout_joint": 3,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_country_won_v2",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 247,
+      "train_joint": 242,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_country_won_v3",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 246,
+      "train_joint": 241,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 8,
+      "heldout_joint": 8,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_which_one_v1",
+      "heldout_validity": 8,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 242,
+      "train_joint": 237,
+      "train_validity": 252
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_one_v2",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_one_v3",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 8,
+      "heldout_joint": 7,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_which_source_confirms_v1",
+      "heldout_validity": 7,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 242,
+      "train_joint": 238,
+      "train_validity": 253
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_source_confirms_v2",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 240,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_source_confirms_v3",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 240,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 6,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_which_team_won_v1",
+      "heldout_validity": 7,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 239,
+      "train_validity": 253
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_team_won_v2",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_which_team_won_v3",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 7,
+      "heldout_joint": 6,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_who_painted_v1",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 243,
+      "train_joint": 239,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 6,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_who_painted_v2",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 239,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_who_painted_v3",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 240,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 6,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_who_won_v1",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 239,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_who_won_v2",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 5,
+      "heldout_joint": 5,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_who_won_v3",
+      "heldout_validity": 5,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 245,
+      "train_joint": 240,
+      "train_validity": 255
+    },
+    {
+      "heldout_compute": 6,
+      "heldout_joint": 6,
+      "heldout_n": 8,
+      "heldout_template_family": "cue_balanced_v3_who_wrote_v1",
+      "heldout_validity": 6,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 244,
+      "train_joint": 239,
+      "train_validity": 254
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_who_wrote_v2",
+      "heldout_validity": 4,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 246,
+      "train_joint": 241,
+      "train_validity": 256
+    },
+    {
+      "heldout_compute": 4,
+      "heldout_joint": 4,
+      "heldout_n": 6,
+      "heldout_template_family": "cue_balanced_v3_who_wrote_v3",
+      "heldout_validity": 4,
+      "model": "gemma4:26b",
+      "selected_strategy": "overlap_if_either_rtp",
+      "train_compute": 246,
+      "train_joint": 241,
+      "train_validity": 256
+    }
+  ],
+  "paired": {
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:action_discriminating_compute": {
+      "a_only": 40,
+      "b_only": 4,
+      "both": 210,
+      "exact_p": 1.7051434042514302e-08,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 46,
+      "net_a_minus_b": 36
+    },
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:action_discriminating_joint": {
+      "a_only": 48,
+      "b_only": 4,
+      "both": 197,
+      "exact_p": 1.3065282189472782e-10,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 51,
+      "net_a_minus_b": 44
+    },
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:always_action_joint": {
+      "a_only": 48,
+      "b_only": 4,
+      "both": 197,
+      "exact_p": 1.3065282189472782e-10,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 51,
+      "net_a_minus_b": 44
+    },
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:always_overlap_joint": {
+      "a_only": 21,
+      "b_only": 8,
+      "both": 224,
+      "exact_p": 0.0241195447742939,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 47,
+      "net_a_minus_b": 13
+    },
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:overlap_guard_compute": {
+      "a_only": 21,
+      "b_only": 8,
+      "both": 229,
+      "exact_p": 0.0241195447742939,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 42,
+      "net_a_minus_b": 13
+    },
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:overlap_guard_joint": {
+      "a_only": 21,
+      "b_only": 8,
+      "both": 224,
+      "exact_p": 0.0241195447742939,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 47,
+      "net_a_minus_b": 13
+    },
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:overlap_if_both_rtp_joint": {
+      "a_only": 40,
+      "b_only": 3,
+      "both": 205,
+      "exact_p": 3.0213413992896676e-09,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 52,
+      "net_a_minus_b": 37
+    },
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:overlap_if_disagree_and_overlap_rtp_joint": {
+      "a_only": 14,
+      "b_only": 1,
+      "both": 231,
+      "exact_p": 0.0009765625,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 54,
+      "net_a_minus_b": 13
+    },
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:overlap_if_either_any_retrieval_joint": {
+      "a_only": 16,
+      "b_only": 8,
+      "both": 229,
+      "exact_p": 0.15158963203430176,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 47,
+      "net_a_minus_b": 8
+    },
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:overlap_if_either_rtp_joint": {
+      "a_only": 0,
+      "b_only": 0,
+      "both": 245,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 55,
+      "net_a_minus_b": 0
+    },
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:overlap_if_overlap_any_retrieval_joint": {
+      "a_only": 16,
+      "b_only": 8,
+      "both": 229,
+      "exact_p": 0.15158963203430176,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 47,
+      "net_a_minus_b": 8
+    },
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:overlap_if_overlap_false_or_rtp_joint": {
+      "a_only": 8,
+      "b_only": 0,
+      "both": 237,
+      "exact_p": 0.0078125,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 55,
+      "net_a_minus_b": 8
+    },
+    "gemma4:26b:family_heldout_rule_selector_vs_gemma4:26b:overlap_if_overlap_rtp_joint": {
+      "a_only": 6,
+      "b_only": 0,
+      "both": 239,
+      "exact_p": 0.03125,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 55,
+      "net_a_minus_b": 6
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:action_discriminating_compute": {
+      "a_only": 46,
+      "b_only": 18,
+      "both": 160,
+      "exact_p": 0.0006173782640671298,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 76,
+      "net_a_minus_b": 28
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:action_discriminating_joint": {
+      "a_only": 40,
+      "b_only": 15,
+      "both": 152,
+      "exact_p": 0.0010158471941252856,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 93,
+      "net_a_minus_b": 25
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:always_action_joint": {
+      "a_only": 40,
+      "b_only": 15,
+      "both": 152,
+      "exact_p": 0.0010158471941252856,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 93,
+      "net_a_minus_b": 25
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:always_overlap_joint": {
+      "a_only": 0,
+      "b_only": 0,
+      "both": 192,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 108,
+      "net_a_minus_b": 0
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:overlap_guard_compute": {
+      "a_only": 0,
+      "b_only": 0,
+      "both": 206,
+      "exact_p": 1.0,
+      "metric": "compute_correct",
+      "n": 300,
+      "neither": 94,
+      "net_a_minus_b": 0
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:overlap_guard_joint": {
+      "a_only": 0,
+      "b_only": 0,
+      "both": 192,
+      "exact_p": 1.0,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 108,
+      "net_a_minus_b": 0
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:overlap_if_both_rtp_joint": {
+      "a_only": 39,
+      "b_only": 15,
+      "both": 153,
+      "exact_p": 0.0014962588853935088,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 93,
+      "net_a_minus_b": 24
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:overlap_if_disagree_and_overlap_rtp_joint": {
+      "a_only": 30,
+      "b_only": 7,
+      "both": 162,
+      "exact_p": 0.00019107642583549023,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 101,
+      "net_a_minus_b": 23
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:overlap_if_either_any_retrieval_joint": {
+      "a_only": 12,
+      "b_only": 5,
+      "both": 180,
+      "exact_p": 0.143463134765625,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 103,
+      "net_a_minus_b": 7
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:overlap_if_either_rtp_joint": {
+      "a_only": 29,
+      "b_only": 7,
+      "both": 163,
+      "exact_p": 0.00031255115754902363,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 101,
+      "net_a_minus_b": 22
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:overlap_if_overlap_any_retrieval_joint": {
+      "a_only": 12,
+      "b_only": 5,
+      "both": 180,
+      "exact_p": 0.143463134765625,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 103,
+      "net_a_minus_b": 7
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:overlap_if_overlap_false_or_rtp_joint": {
+      "a_only": 29,
+      "b_only": 7,
+      "both": 163,
+      "exact_p": 0.00031255115754902363,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 101,
+      "net_a_minus_b": 22
+    },
+    "qwen3.5:9b:family_heldout_rule_selector_vs_qwen3.5:9b:overlap_if_overlap_rtp_joint": {
+      "a_only": 29,
+      "b_only": 7,
+      "both": 163,
+      "exact_p": 0.00031255115754902363,
+      "metric": "joint_correct",
+      "n": 300,
+      "neither": 101,
+      "net_a_minus_b": 22
+    }
+  },
+  "summary": {
+    "gemma4:26b:action_discriminating": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 19,
+          "joint_correct": 6,
+          "n": 60,
+          "selected_overlap": 0
+        }
+      },
+      "compute_correct": 214,
+      "joint_correct": 201,
+      "method": "gemma4:26b:action_discriminating",
+      "n": 300,
+      "selected_overlap": 0,
+      "strategy_counts": {
+        "gemma4:26b:action_discriminating": 300
+      },
+      "validity_correct": 246
+    },
+    "gemma4:26b:always_action": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 19,
+          "joint_correct": 6,
+          "n": 60,
+          "selected_overlap": 0
+        }
+      },
+      "compute_correct": 214,
+      "joint_correct": 201,
+      "method": "gemma4:26b:always_action",
+      "n": 300,
+      "selected_overlap": 0,
+      "strategy_counts": {
+        "always_action": 300
+      },
+      "validity_correct": 246
+    },
+    "gemma4:26b:always_overlap": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 20,
+          "joint_correct": 20,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "direct_answer": {
+          "compute_correct": 27,
+          "joint_correct": 27,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 34,
+          "joint_correct": 34,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 60
+        }
+      },
+      "compute_correct": 237,
+      "joint_correct": 232,
+      "method": "gemma4:26b:always_overlap",
+      "n": 300,
+      "selected_overlap": 300,
+      "strategy_counts": {
+        "always_overlap": 300
+      },
+      "validity_correct": 254
+    },
+    "gemma4:26b:family_heldout_rule_selector": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 26,
+          "joint_correct": 26,
+          "n": 45,
+          "selected_overlap": 15
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 53
+        }
+      },
+      "compute_correct": 250,
+      "joint_correct": 245,
+      "method": "gemma4:26b:family_heldout_rule_selector",
+      "n": 300,
+      "selected_overlap": 69,
+      "strategy_counts": {
+        "overlap_if_either_rtp": 300
+      },
+      "validity_correct": 260
+    },
+    "gemma4:26b:overlap_guard": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 20,
+          "joint_correct": 20,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "direct_answer": {
+          "compute_correct": 27,
+          "joint_correct": 27,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 34,
+          "joint_correct": 34,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 60
+        }
+      },
+      "compute_correct": 237,
+      "joint_correct": 232,
+      "method": "gemma4:26b:overlap_guard",
+      "n": 300,
+      "selected_overlap": 300,
+      "strategy_counts": {
+        "gemma4:26b:overlap_guard": 300
+      },
+      "validity_correct": 254
+    },
+    "gemma4:26b:overlap_if_both_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 2
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 19,
+          "joint_correct": 13,
+          "n": 60,
+          "selected_overlap": 18
+        }
+      },
+      "compute_correct": 214,
+      "joint_correct": 208,
+      "method": "gemma4:26b:overlap_if_both_rtp",
+      "n": 300,
+      "selected_overlap": 20,
+      "strategy_counts": {
+        "overlap_if_both_rtp": 300
+      },
+      "validity_correct": 254
+    },
+    "gemma4:26b:overlap_if_disagree_and_overlap_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 20,
+          "joint_correct": 20,
+          "n": 45,
+          "selected_overlap": 5
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 53,
+          "joint_correct": 40,
+          "n": 60,
+          "selected_overlap": 34
+        }
+      },
+      "compute_correct": 245,
+      "joint_correct": 232,
+      "method": "gemma4:26b:overlap_if_disagree_and_overlap_rtp",
+      "n": 300,
+      "selected_overlap": 40,
+      "strategy_counts": {
+        "overlap_if_disagree_and_overlap_rtp": 300
+      },
+      "validity_correct": 246
+    },
+    "gemma4:26b:overlap_if_either_any_retrieval": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 29,
+          "joint_correct": 29,
+          "n": 45,
+          "selected_overlap": 16
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 34,
+          "joint_correct": 34,
+          "n": 45,
+          "selected_overlap": 43
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 55
+        }
+      },
+      "compute_correct": 242,
+      "joint_correct": 237,
+      "method": "gemma4:26b:overlap_if_either_any_retrieval",
+      "n": 300,
+      "selected_overlap": 115,
+      "strategy_counts": {
+        "overlap_if_either_any_retrieval": 300
+      },
+      "validity_correct": 260
+    },
+    "gemma4:26b:overlap_if_either_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 26,
+          "joint_correct": 26,
+          "n": 45,
+          "selected_overlap": 15
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 53
+        }
+      },
+      "compute_correct": 250,
+      "joint_correct": 245,
+      "method": "gemma4:26b:overlap_if_either_rtp",
+      "n": 300,
+      "selected_overlap": 69,
+      "strategy_counts": {
+        "overlap_if_either_rtp": 300
+      },
+      "validity_correct": 260
+    },
+    "gemma4:26b:overlap_if_overlap_any_retrieval": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 29,
+          "joint_correct": 29,
+          "n": 45,
+          "selected_overlap": 16
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 34,
+          "joint_correct": 34,
+          "n": 45,
+          "selected_overlap": 41
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 52,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 55
+        }
+      },
+      "compute_correct": 242,
+      "joint_correct": 237,
+      "method": "gemma4:26b:overlap_if_overlap_any_retrieval",
+      "n": 300,
+      "selected_overlap": 113,
+      "strategy_counts": {
+        "overlap_if_overlap_any_retrieval": 300
+      },
+      "validity_correct": 260
+    },
+    "gemma4:26b:overlap_if_overlap_false_or_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "direct_answer": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 20,
+          "joint_correct": 20,
+          "n": 45,
+          "selected_overlap": 9
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 53,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 56
+        }
+      },
+      "compute_correct": 243,
+      "joint_correct": 237,
+      "method": "gemma4:26b:overlap_if_overlap_false_or_rtp",
+      "n": 300,
+      "selected_overlap": 112,
+      "strategy_counts": {
+        "overlap_if_overlap_false_or_rtp": 300
+      },
+      "validity_correct": 252
+    },
+    "gemma4:26b:overlap_if_overlap_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 20,
+          "joint_correct": 20,
+          "n": 45,
+          "selected_overlap": 7
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 53,
+          "joint_correct": 47,
+          "n": 60,
+          "selected_overlap": 52
+        }
+      },
+      "compute_correct": 245,
+      "joint_correct": 239,
+      "method": "gemma4:26b:overlap_if_overlap_rtp",
+      "n": 300,
+      "selected_overlap": 60,
+      "strategy_counts": {
+        "overlap_if_overlap_rtp": 300
+      },
+      "validity_correct": 254
+    },
+    "qwen3.5:9b:action_discriminating": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 10,
+          "joint_correct": 10,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 11,
+          "joint_correct": 0,
+          "n": 60,
+          "selected_overlap": 0
+        }
+      },
+      "compute_correct": 178,
+      "joint_correct": 167,
+      "method": "qwen3.5:9b:action_discriminating",
+      "n": 300,
+      "selected_overlap": 0,
+      "strategy_counts": {
+        "qwen3.5:9b:action_discriminating": 300
+      },
+      "validity_correct": 226
+    },
+    "qwen3.5:9b:always_action": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 10,
+          "joint_correct": 10,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 11,
+          "joint_correct": 0,
+          "n": 60,
+          "selected_overlap": 0
+        }
+      },
+      "compute_correct": 178,
+      "joint_correct": 167,
+      "method": "qwen3.5:9b:always_action",
+      "n": 300,
+      "selected_overlap": 0,
+      "strategy_counts": {
+        "always_action": 300
+      },
+      "validity_correct": 226
+    },
+    "qwen3.5:9b:always_overlap": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 59,
+          "joint_correct": 59,
+          "n": 60,
+          "selected_overlap": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "direct_answer": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "premise_check": {
+          "compute_correct": 36,
+          "joint_correct": 36,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 60
+        }
+      },
+      "compute_correct": 206,
+      "joint_correct": 192,
+      "method": "qwen3.5:9b:always_overlap",
+      "n": 300,
+      "selected_overlap": 300,
+      "strategy_counts": {
+        "always_overlap": 300
+      },
+      "validity_correct": 236
+    },
+    "qwen3.5:9b:family_heldout_rule_selector": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 59,
+          "joint_correct": 59,
+          "n": 60,
+          "selected_overlap": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "direct_answer": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "premise_check": {
+          "compute_correct": 36,
+          "joint_correct": 36,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 60
+        }
+      },
+      "compute_correct": 206,
+      "joint_correct": 192,
+      "method": "qwen3.5:9b:family_heldout_rule_selector",
+      "n": 300,
+      "selected_overlap": 300,
+      "strategy_counts": {
+        "always_overlap": 300
+      },
+      "validity_correct": 236
+    },
+    "qwen3.5:9b:overlap_guard": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 59,
+          "joint_correct": 59,
+          "n": 60,
+          "selected_overlap": 60
+        },
+        "deterministic_verify": {
+          "compute_correct": 23,
+          "joint_correct": 23,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "direct_answer": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "premise_check": {
+          "compute_correct": 36,
+          "joint_correct": 36,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 45
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 60
+        }
+      },
+      "compute_correct": 206,
+      "joint_correct": 192,
+      "method": "qwen3.5:9b:overlap_guard",
+      "n": 300,
+      "selected_overlap": 300,
+      "strategy_counts": {
+        "qwen3.5:9b:overlap_guard": 300
+      },
+      "validity_correct": 236
+    },
+    "qwen3.5:9b:overlap_if_both_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 41,
+          "joint_correct": 41,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 10,
+          "joint_correct": 10,
+          "n": 45,
+          "selected_overlap": 3
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 11,
+          "joint_correct": 1,
+          "n": 60,
+          "selected_overlap": 8
+        }
+      },
+      "compute_correct": 178,
+      "joint_correct": 168,
+      "method": "qwen3.5:9b:overlap_if_both_rtp",
+      "n": 300,
+      "selected_overlap": 11,
+      "strategy_counts": {
+        "overlap_if_both_rtp": 300
+      },
+      "validity_correct": 227
+    },
+    "qwen3.5:9b:overlap_if_disagree_and_overlap_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 38,
+          "joint_correct": 38,
+          "n": 45,
+          "selected_overlap": 3
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 45,
+          "selected_overlap": 8
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 28,
+          "joint_correct": 10,
+          "n": 60,
+          "selected_overlap": 17
+        }
+      },
+      "compute_correct": 187,
+      "joint_correct": 169,
+      "method": "qwen3.5:9b:overlap_if_disagree_and_overlap_rtp",
+      "n": 300,
+      "selected_overlap": 28,
+      "strategy_counts": {
+        "overlap_if_disagree_and_overlap_rtp": 300
+      },
+      "validity_correct": 230
+    },
+    "qwen3.5:9b:overlap_if_either_any_retrieval": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 59,
+          "joint_correct": 59,
+          "n": 60,
+          "selected_overlap": 1
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "premise_check": {
+          "compute_correct": 38,
+          "joint_correct": 38,
+          "n": 45,
+          "selected_overlap": 6
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 36
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 34
+        }
+      },
+      "compute_correct": 199,
+      "joint_correct": 185,
+      "method": "qwen3.5:9b:overlap_if_either_any_retrieval",
+      "n": 300,
+      "selected_overlap": 78,
+      "strategy_counts": {
+        "overlap_if_either_any_retrieval": 300
+      },
+      "validity_correct": 231
+    },
+    "qwen3.5:9b:overlap_if_either_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 38,
+          "joint_correct": 38,
+          "n": 45,
+          "selected_overlap": 3
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 45,
+          "selected_overlap": 14
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 25,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 28
+        }
+      },
+      "compute_correct": 184,
+      "joint_correct": 170,
+      "method": "qwen3.5:9b:overlap_if_either_rtp",
+      "n": 300,
+      "selected_overlap": 45,
+      "strategy_counts": {
+        "overlap_if_either_rtp": 300
+      },
+      "validity_correct": 232
+    },
+    "qwen3.5:9b:overlap_if_overlap_any_retrieval": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 59,
+          "joint_correct": 59,
+          "n": 60,
+          "selected_overlap": 1
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 44,
+          "joint_correct": 44,
+          "n": 45,
+          "selected_overlap": 1
+        },
+        "premise_check": {
+          "compute_correct": 38,
+          "joint_correct": 38,
+          "n": 45,
+          "selected_overlap": 6
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 22,
+          "joint_correct": 22,
+          "n": 45,
+          "selected_overlap": 33
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 28,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 30
+        }
+      },
+      "compute_correct": 202,
+      "joint_correct": 185,
+      "method": "qwen3.5:9b:overlap_if_overlap_any_retrieval",
+      "n": 300,
+      "selected_overlap": 71,
+      "strategy_counts": {
+        "overlap_if_overlap_any_retrieval": 300
+      },
+      "validity_correct": 230
+    },
+    "qwen3.5:9b:overlap_if_overlap_false_or_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 38,
+          "joint_correct": 38,
+          "n": 45,
+          "selected_overlap": 39
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 45,
+          "selected_overlap": 11
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 27,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 38
+        }
+      },
+      "compute_correct": 186,
+      "joint_correct": 170,
+      "method": "qwen3.5:9b:overlap_if_overlap_false_or_rtp",
+      "n": 300,
+      "selected_overlap": 88,
+      "strategy_counts": {
+        "overlap_if_overlap_false_or_rtp": 300
+      },
+      "validity_correct": 239
+    },
+    "qwen3.5:9b:overlap_if_overlap_rtp": {
+      "by_action": {
+        "clarify": {
+          "compute_correct": 60,
+          "joint_correct": 60,
+          "n": 60,
+          "selected_overlap": 0
+        },
+        "deterministic_verify": {
+          "compute_correct": 11,
+          "joint_correct": 11,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "direct_answer": {
+          "compute_correct": 45,
+          "joint_correct": 45,
+          "n": 45,
+          "selected_overlap": 0
+        },
+        "premise_check": {
+          "compute_correct": 38,
+          "joint_correct": 38,
+          "n": 45,
+          "selected_overlap": 3
+        },
+        "retrieve_then_answer": {
+          "compute_correct": 5,
+          "joint_correct": 5,
+          "n": 45,
+          "selected_overlap": 11
+        },
+        "retrieve_then_premise_check": {
+          "compute_correct": 28,
+          "joint_correct": 11,
+          "n": 60,
+          "selected_overlap": 25
+        }
+      },
+      "compute_correct": 187,
+      "joint_correct": 170,
+      "method": "qwen3.5:9b:overlap_if_overlap_rtp",
+      "n": 300,
+      "selected_overlap": 39,
+      "strategy_counts": {
+        "overlap_if_overlap_rtp": 300
+      },
+      "validity_correct": 231
+    }
+  }
+}
